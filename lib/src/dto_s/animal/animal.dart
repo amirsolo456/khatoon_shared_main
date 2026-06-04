@@ -12,7 +12,7 @@ class Animal extends Equatable {
   final int id;
   final String tagNumber; // شماره گوشواره
   final String? name;
-  final AnimalType type;
+  final ProductsType type;
   final String? breed; // نژاد
   final Gender gender;
 
@@ -203,7 +203,7 @@ class Animal extends Equatable {
     String? id,
     String? tagNumber,
     String? name,
-    AnimalType? type,
+    ProductsType? type,
     String? breed,
     Gender? gender,
     DateTime? birthDate,
@@ -302,23 +302,23 @@ class Animal extends Equatable {
   }
 }
 
-extension AnimalTypeX on AnimalType {
-  String get persianName {
-    switch (this) {
-      case AnimalType.cow:
-        return 'گاو';
-      case AnimalType.sheep:
-        return 'گوسفند';
-      case AnimalType.goat:
-        return 'بز';
-      case AnimalType.camel:
-        return 'شتر';
-      case AnimalType.horse:
-        return 'اسب';
-      case AnimalType.poultry:
-        return 'طیور';
-      case AnimalType.other:
-        return 'سایر';
-    }
-  }
-}
+// extension AnimalTypeX on AnimalType {
+//   String get persianName {
+//     switch (this) {
+//       case AnimalType.cow:
+//         return 'گاو';
+//       case AnimalType.sheep:
+//         return 'گوسفند';
+//       case AnimalType.goat:
+//         return 'بز';
+//       case AnimalType.camel:
+//         return 'شتر';
+//       case AnimalType.horse:
+//         return 'اسب';
+//       case AnimalType.poultry:
+//         return 'طیور';
+//       case AnimalType.other:
+//         return 'سایر';
+//     }
+//   }
+// }

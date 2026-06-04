@@ -6,7 +6,7 @@ part of 'price_history.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-PriceHistory _$PriceHistoryFromJson(Map<String, dynamic> json) {
+PriceHistory _$PriceHistoryFromJson(Map json) {
   $checkKeys(json, requiredKeys: const ['date', 'price']);
   return PriceHistory(
     date: const DateTimeConverter().fromJson(json['date'] as String),

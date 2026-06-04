@@ -12,7 +12,7 @@ class InvoiceLine {
 
   final double unitPrice;
   final double lineTotal;
-  final int? partyId;
+  final int? personId;
   final int? sellerEmployeeId;
 
   final bool isDeleted;
@@ -27,7 +27,7 @@ class InvoiceLine {
     required this.quantity,
     required this.unitPrice,
     required this.lineTotal,
-    this.partyId,
+    this.personId,
     this.sellerEmployeeId,
 
     required this.isDeleted,

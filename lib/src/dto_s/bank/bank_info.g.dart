@@ -6,22 +6,22 @@ part of 'bank_info.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-BankInfo _$BankInfoFromJson(Map<String, dynamic> json) {
+BankInfo _$BankInfoFromJson(Map json) {
   $checkKeys(
     json,
-    requiredKeys: const ['bank_name', 'account_number', 'sheba_number'],
+    requiredKeys: const ['bankName', 'accountNumber', 'shebaNumber'],
   );
   return BankInfo(
-    bankName: json['bank_name'] as String,
-    accountNumber: json['account_number'] as String,
-    shebaNumber: json['sheba_number'] as String,
-    cardNumber: json['card_number'] as String?,
+    bankName: json['bankName'] as String,
+    accountNumber: json['accountNumber'] as String,
+    shebaNumber: json['shebaNumber'] as String,
+    cardNumber: json['cardNumber'] as String?,
   );
 }
 
 Map<String, dynamic> _$BankInfoToJson(BankInfo instance) => <String, dynamic>{
-  'bank_name': instance.bankName,
-  'account_number': instance.accountNumber,
-  'sheba_number': instance.shebaNumber,
-  'card_number': instance.cardNumber,
+  'bankName': instance.bankName,
+  'accountNumber': instance.accountNumber,
+  'shebaNumber': instance.shebaNumber,
+  'cardNumber': instance.cardNumber,
 };

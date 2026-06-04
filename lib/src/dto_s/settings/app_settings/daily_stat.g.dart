@@ -6,7 +6,7 @@ part of 'daily_stat.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-DailyStat _$DailyStatFromJson(Map<String, dynamic> json) {
+DailyStat _$DailyStatFromJson(Map json) {
   $checkKeys(json, requiredKeys: const ['date', 'orders', 'revenue']);
   return DailyStat(
     date: const DateTimeConverter().fromJson(json['date'] as String),

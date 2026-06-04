@@ -10,6 +10,7 @@ class Party {
   final String name;
   final String? phone;
   final String? address;
+  final String? nationalId;
   final String? notes;
 
   Party({
@@ -17,6 +18,7 @@ class Party {
     required this.invoiceId,
     required this.type,
     required this.name,
+    this.nationalId,
     this.phone,
     this.address,
     this.notes,
@@ -35,6 +37,7 @@ class Party {
     String? phone,
     String? address,
     String? notes,
+    String? nationalId,
   }) {
     return Party(
       id: id ?? this.id,
@@ -44,6 +47,7 @@ class Party {
       phone: phone ?? this.phone,
       address: address ?? this.address,
       notes: notes ?? this.notes,
+      nationalId: nationalId ?? this.nationalId,
     );
   }
 }

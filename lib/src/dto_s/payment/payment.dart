@@ -9,8 +9,8 @@ class Payment {
   final double amount;
   final String direction;
   final String? paymentMethod;
-  final int? fromPartyId;
-  final int? toPartyId;
+  final int? fromPersonId;
+  final int? toPersonId;
   final String? reference;
   final String? notes;
 
@@ -24,8 +24,8 @@ class Payment {
     required this.amount,
     required this.direction,
     this.paymentMethod,
-    this.fromPartyId,
-    this.toPartyId,
+    this.fromPersonId,
+    this.toPersonId,
     this.reference,
     this.notes,
 

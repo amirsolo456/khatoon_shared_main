@@ -6,18 +6,18 @@ part of 'warranty_info.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-WarrantyInfo _$WarrantyInfoFromJson(Map<String, dynamic> json) {
-  $checkKeys(json, requiredKeys: const ['duration_months', 'description']);
+WarrantyInfo _$WarrantyInfoFromJson(Map json) {
+  $checkKeys(json, requiredKeys: const ['durationMonths', 'description']);
   return WarrantyInfo(
-    durationMonths: (json['duration_months'] as num).toInt(),
+    durationMonths: (json['durationMonths'] as num).toInt(),
     description: json['description'] as String,
     coveredItems:
-        (json['covered_items'] as List<dynamic>?)
+        (json['coveredItems'] as List<dynamic>?)
             ?.map((e) => e as String)
             .toList() ??
         const <String>[],
     excludedItems:
-        (json['excluded_items'] as List<dynamic>?)
+        (json['excludedItems'] as List<dynamic>?)
             ?.map((e) => e as String)
             .toList() ??
         const <String>[],
@@ -26,8 +26,8 @@ WarrantyInfo _$WarrantyInfoFromJson(Map<String, dynamic> json) {
 
 Map<String, dynamic> _$WarrantyInfoToJson(WarrantyInfo instance) =>
     <String, dynamic>{
-      'duration_months': instance.durationMonths,
+      'durationMonths': instance.durationMonths,
       'description': instance.description,
-      'covered_items': instance.coveredItems,
-      'excluded_items': instance.excludedItems,
+      'coveredItems': instance.coveredItems,
+      'excludedItems': instance.excludedItems,
     };

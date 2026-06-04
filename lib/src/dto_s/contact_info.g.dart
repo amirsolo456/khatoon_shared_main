@@ -6,7 +6,7 @@ part of 'contact_info.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-ContactInfo _$ContactInfoFromJson(Map<String, dynamic> json) {
+ContactInfo _$ContactInfoFromJson(Map json) {
   $checkKeys(json, requiredKeys: const ['name', 'phone']);
   return ContactInfo(
     email: json['email'] as String?,

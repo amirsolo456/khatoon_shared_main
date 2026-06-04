@@ -6,32 +6,36 @@ part of 'invoice.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-Invoice _$InvoiceFromJson(Map<String, dynamic> json) => Invoice(
+Invoice _$InvoiceFromJson(Map json) => Invoice(
   id: (json['id'] as num).toInt(),
-  invoiceNo: json['invoice_no'] as String,
+  invoiceNo: json['invoiceNo'] as String,
   type: json['type'] as String? ?? 'Sale',
-  partyId: (json['party_id'] as num?)?.toInt(),
-  sellerEmployeeId: (json['seller_employee_id'] as num?)?.toInt(),
-  totalAmount: (json['total_amount'] as num).toDouble(),
+  partyId: (json['partyId'] as num?)?.toInt(),
+  sellerEmployeeId: (json['sellerEmployeeId'] as num?)?.toInt(),
+  totalAmount: (json['totalAmount'] as num).toDouble(),
   status: json['status'] as String,
   notes: json['notes'] as String?,
   version: (json['version'] as num).toDouble(),
-  isDeleted: json['is_deleted'] as bool,
-  createdAt: DateTime.parse(json['created_at'] as String),
-  updatedAt: DateTime.parse(json['updated_at'] as String),
+  isDeleted: json['isDeleted'] as bool,
+  createdAt: DateTime.parse(json['createdAt'] as String),
+  updatedAt: DateTime.parse(json['updatedAt'] as String),
+  invoiceLines: (json['invoiceLines'] as List<dynamic>?)
+      ?.map((e) => InvoiceLine.fromJson(Map<String, dynamic>.from(e as Map)))
+      .toList(),
 );
 
 Map<String, dynamic> _$InvoiceToJson(Invoice instance) => <String, dynamic>{
   'id': instance.id,
-  'invoice_no': instance.invoiceNo,
+  'invoiceNo': instance.invoiceNo,
   'type': instance.type,
-  'party_id': instance.partyId,
-  'seller_employee_id': instance.sellerEmployeeId,
-  'total_amount': instance.totalAmount,
+  'partyId': instance.partyId,
+  'sellerEmployeeId': instance.sellerEmployeeId,
+  'totalAmount': instance.totalAmount,
   'status': instance.status,
   'notes': instance.notes,
-  'is_deleted': instance.isDeleted,
-  'created_at': instance.createdAt.toIso8601String(),
-  'updated_at': instance.updatedAt.toIso8601String(),
+  'isDeleted': instance.isDeleted,
+  'createdAt': instance.createdAt.toIso8601String(),
+  'updatedAt': instance.updatedAt.toIso8601String(),
   'version': instance.version,
+  'invoiceLines': instance.invoiceLines?.map((e) => e.toJson()).toList(),
 };
