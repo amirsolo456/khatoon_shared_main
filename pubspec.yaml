@@ -17,7 +17,12 @@ dependencies:
   equatable: ^2.0.8
   json_serializable: ^6.8.0
   event_bus: ^2.0.1
+  intl_utils: ^2.8.14
 
+
+
+  intl: any
+  flutter_localizations: any
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -28,8 +33,10 @@ dev_dependencies:
 # following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter packages.
+
 flutter:
   uses-material-design: true
+  generate: true
   # To add assets to your package, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
@@ -60,3 +67,5 @@ flutter:
   #
   # For details regarding fonts in packages, see
   # https://flutter.dev/to/font-from-package
+flutter_intl:
+  enabled: true

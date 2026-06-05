@@ -10,6 +10,7 @@ class Invoice {
   final String invoiceNo;
   @JsonKey(defaultValue: 'Sale')
   final String type;
+  @JsonKey(name: 'personId')
   final int? partyId;
   final int? sellerEmployeeId;
   final double totalAmount;
@@ -19,7 +20,7 @@ class Invoice {
   final DateTime createdAt;
   final DateTime updatedAt;
   final double version;
-
+  final double? price;
   // اضافه کردن لیست اقلام فاکتور
   @JsonKey(name: 'invoiceLines') // مطابق با نام خاصیت در سرور
   final List<InvoiceLine>? invoiceLines;
@@ -37,7 +38,7 @@ class Invoice {
     required this.isDeleted,
     required this.createdAt,
     required this.updatedAt,
-    this.invoiceLines, // پارامتر جدید
+    this.invoiceLines, this.price, // پارامتر جدید
   });
 
   factory Invoice.fromJson(Map<String, dynamic> json) => _$InvoiceFromJson(json);

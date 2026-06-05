@@ -45,7 +45,8 @@ enum MicroAppsName {
   home('home'),
   persons('persons'),
   personsForm('persons/form'),
-  animalProducts('animalProducts');
+  animalProducts('animalProducts'),
+  payment('payment');
 
   final String persianName;
 
