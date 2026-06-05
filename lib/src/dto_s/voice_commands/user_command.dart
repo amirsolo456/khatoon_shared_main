@@ -12,7 +12,7 @@ class UserCommand {
   });
 
   // تبدیل از Map (خروجی دیتابیس) به مدل
-  factory UserCommand.fromMap(Map<String, dynamic> map) {
+  factory UserCommand.fromJson(Map<String, dynamic> map) {
     return UserCommand(
       id: map['id'] as int?,
       action: map['action'] as String,
@@ -22,7 +22,7 @@ class UserCommand {
   }
 
   // تبدیل مدل به Map (برای درج یا بروزرسانی در دیتابیس)
-  Map<String, dynamic> toMap() {
+  Map<String, dynamic> toJson() {
     return {
       'id': id,
       'action': action,
