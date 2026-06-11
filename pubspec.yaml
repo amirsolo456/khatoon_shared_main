@@ -27,8 +27,12 @@ dev_dependencies:
   test: ^1.25.5
   build_runner: ^2.4.13        # منتقل شد
   json_serializable: ^6.8.0    # منتقل شد
-  intl_utils: ^2.8.14          # منتقل شد (ابزار تولید کد)
 
 flutter:
   uses-material-design: true
   generate: true
+  assets:
+    - assets/
+    - assets/avatar/
+    - assets/phase2/
+    - assets/tags/

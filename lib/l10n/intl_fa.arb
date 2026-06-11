@@ -1,6 +1,16 @@
 {
   "@@locale": "fa",
-  "title": "Flutter Example App",
+
+  "appName" : "برنامه خاتون",
+  "pageLoginUsername" : "نام کاربری شما",
+  "pageLoginPassword" : "رمز عبور شما",
+  "pageHomeTitle" : "خوش آمدید {firstName}",
+  "pageHomeInboxCount" : "{count, plural, zero{شما پیام جدیدی ندارید} one{شما ۱ پیام جدید دارید} other{شما {count} پیام جدید دارید}}",
+  "pageHomeBirthday": "{sex, select, male{تولد او} female{تولد او} other{تولد آن‌ها}}",
+  "commonVehicleType": "{vehicleType, select, sedan{سواری} cabriolet{کابریولت} truck{کامیون ۱۶ چرخ} other{سایر}}",
+  "pageHomeBalance" : "مانده حساب شما در تاریخ {date} مبلغ {amount} است",
+
+  "title": "اپلیکیشن خاتون",
   "@title": {
     "type": "text",
     "placeholders": {}

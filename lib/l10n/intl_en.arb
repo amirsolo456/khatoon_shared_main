@@ -142,7 +142,6 @@
   "invoice_discount": "Discount",
   "invoice_discount_code": "Discount Code",
   "invoice_tax": "Tax",
-  "invoice_cancel": "cancel invoice",
   "invoice_payableAmount": "Payable Amount",
   "invoice_buy_invoices": "Buy Invoices",
   "invoice_sale_invoices": "Sale Invoices",
@@ -237,4 +236,3 @@
   }
 
 }
-

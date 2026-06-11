@@ -9,17 +9,17 @@ class AppLocalizationsFa extends AppLocalizations {
   AppLocalizationsFa([String locale = 'fa']) : super(locale);
 
   @override
-  String get appName => 'Demo app';
+  String get appName => 'برنامه خاتون';
 
   @override
-  String get pageLoginUsername => 'Your username';
+  String get pageLoginUsername => 'نام کاربری شما';
 
   @override
-  String get pageLoginPassword => 'Your password';
+  String get pageLoginPassword => 'رمز عبور شما';
 
   @override
   String pageHomeTitle(Object firstName) {
-    return 'Welcome $firstName';
+    return 'خوش آمدید $firstName';
   }
 
   @override
@@ -27,9 +27,9 @@ class AppLocalizationsFa extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: 'You have $count new messages',
-      one: 'You have 1 new message',
-      zero: 'You have no new messages',
+      other: 'شما $count پیام جدید دارید',
+      one: 'شما ۱ پیام جدید دارید',
+      zero: 'شما پیام جدیدی ندارید',
     );
     return '$_temp0';
   }
@@ -37,9 +37,9 @@ class AppLocalizationsFa extends AppLocalizations {
   @override
   String pageHomeBirthday(String sex) {
     String _temp0 = intl.Intl.selectLogic(sex, {
-      'male': 'His birthday',
-      'female': 'Her birthday',
-      'other': 'Their birthday',
+      'male': 'تولد او',
+      'female': 'تولد او',
+      'other': 'تولد آن‌ها',
     });
     return '$_temp0';
   }
@@ -47,10 +47,10 @@ class AppLocalizationsFa extends AppLocalizations {
   @override
   String commonVehicleType(String vehicleType) {
     String _temp0 = intl.Intl.selectLogic(vehicleType, {
-      'sedan': 'Sedan',
-      'cabriolet': 'Solid roof cabriolet',
-      'truck': '16 wheel truck',
-      'other': 'Other',
+      'sedan': 'سواری',
+      'cabriolet': 'کابریولت',
+      'truck': 'کامیون ۱۶ چرخ',
+      'other': 'سایر',
     });
     return '$_temp0';
   }
@@ -69,7 +69,7 @@ class AppLocalizationsFa extends AppLocalizations {
     );
     final String amountString = amountNumberFormat.format(amount);
 
-    return 'Your balance is $amountString on $dateString';
+    return 'مانده حساب شما در تاریخ $dateString مبلغ $amountString است';
   }
 
   @override
@@ -289,9 +289,6 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get invoice_tax => 'مالیات';
-
-  @override
-  String get invoice_cancel => 'لغو فاکتور';
 
   @override
   String get invoice_payableAmount => 'مبلغ قابل پرداخت';

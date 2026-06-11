@@ -291,9 +291,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get invoice_tax => 'Tax';
 
   @override
-  String get invoice_cancel => 'cancel invoice';
-
-  @override
   String get invoice_payableAmount => 'Payable Amount';
 
   @override

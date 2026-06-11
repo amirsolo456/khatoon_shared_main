@@ -578,12 +578,6 @@ abstract class AppLocalizations {
   /// **'Tax'**
   String get invoice_tax;
 
-  /// No description provided for @invoice_cancel.
-  ///
-  /// In en, this message translates to:
-  /// **'cancel invoice'**
-  String get invoice_cancel;
-
   /// No description provided for @invoice_payableAmount.
   ///
   /// In en, this message translates to:
