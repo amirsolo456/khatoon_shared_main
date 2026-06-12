@@ -248,6 +248,714 @@ abstract class AppLocalizations {
   /// **'Form Submitted'**
   String get common_form_submit;
 
+  /// No description provided for @common_confirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm'**
+  String get common_confirm;
+
+  /// No description provided for @common_select_item.
+  ///
+  /// In en, this message translates to:
+  /// **'Select Item'**
+  String get common_select_item;
+
+  /// No description provided for @common_retry.
+  ///
+  /// In en, this message translates to:
+  /// **'Retry'**
+  String get common_retry;
+
+  /// No description provided for @common_add.
+  ///
+  /// In en, this message translates to:
+  /// **'Add'**
+  String get common_add;
+
+  /// No description provided for @common_description.
+  ///
+  /// In en, this message translates to:
+  /// **'Description'**
+  String get common_description;
+
+  /// No description provided for @common_amount.
+  ///
+  /// In en, this message translates to:
+  /// **'Amount'**
+  String get common_amount;
+
+  /// No description provided for @home_dashboard_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Management Dashboard'**
+  String get home_dashboard_title;
+
+  /// No description provided for @home_welcome_msg.
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome to Khatoon Management System'**
+  String get home_welcome_msg;
+
+  /// No description provided for @home_menu_purchase_invoices.
+  ///
+  /// In en, this message translates to:
+  /// **'Purchase Invoices'**
+  String get home_menu_purchase_invoices;
+
+  /// No description provided for @home_menu_products.
+  ///
+  /// In en, this message translates to:
+  /// **'Products'**
+  String get home_menu_products;
+
+  /// No description provided for @home_menu_reports.
+  ///
+  /// In en, this message translates to:
+  /// **'Reports'**
+  String get home_menu_reports;
+
+  /// No description provided for @home_menu_settings.
+  ///
+  /// In en, this message translates to:
+  /// **'Settings'**
+  String get home_menu_settings;
+
+  /// No description provided for @home_menu_profile.
+  ///
+  /// In en, this message translates to:
+  /// **'Profile'**
+  String get home_menu_profile;
+
+  /// No description provided for @home_menu_home.
+  ///
+  /// In en, this message translates to:
+  /// **'Home'**
+  String get home_menu_home;
+
+  /// No description provided for @home_menu_orders.
+  ///
+  /// In en, this message translates to:
+  /// **'Orders'**
+  String get home_menu_orders;
+
+  /// No description provided for @home_menu_customers.
+  ///
+  /// In en, this message translates to:
+  /// **'Customers'**
+  String get home_menu_customers;
+
+  /// No description provided for @home_menu_payments.
+  ///
+  /// In en, this message translates to:
+  /// **'Payments'**
+  String get home_menu_payments;
+
+  /// No description provided for @home_menu_logout.
+  ///
+  /// In en, this message translates to:
+  /// **'Logout'**
+  String get home_menu_logout;
+
+  /// No description provided for @home_menu_inventory.
+  ///
+  /// In en, this message translates to:
+  /// **'Inventory'**
+  String get home_menu_inventory;
+
+  /// No description provided for @home_menu_livestock.
+  ///
+  /// In en, this message translates to:
+  /// **'Livestock Management'**
+  String get home_menu_livestock;
+
+  /// No description provided for @product_form_new_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Define New Product'**
+  String get product_form_new_title;
+
+  /// No description provided for @product_form_edit_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit Product'**
+  String get product_form_edit_title;
+
+  /// No description provided for @product_form_section_basic.
+  ///
+  /// In en, this message translates to:
+  /// **'Basic Product Info'**
+  String get product_form_section_basic;
+
+  /// No description provided for @product_form_name_label.
+  ///
+  /// In en, this message translates to:
+  /// **'Product Name'**
+  String get product_form_name_label;
+
+  /// No description provided for @product_form_name_error.
+  ///
+  /// In en, this message translates to:
+  /// **'Name is required'**
+  String get product_form_name_error;
+
+  /// No description provided for @product_form_more_details.
+  ///
+  /// In en, this message translates to:
+  /// **'More details (Price, Code, etc.)'**
+  String get product_form_more_details;
+
+  /// No description provided for @product_form_less_details.
+  ///
+  /// In en, this message translates to:
+  /// **'Show less'**
+  String get product_form_less_details;
+
+  /// No description provided for @product_form_section_technical.
+  ///
+  /// In en, this message translates to:
+  /// **'Technical and Warehouse Details'**
+  String get product_form_section_technical;
+
+  /// No description provided for @product_form_code_label.
+  ///
+  /// In en, this message translates to:
+  /// **'Product Code / Barcode'**
+  String get product_form_code_label;
+
+  /// No description provided for @product_form_unit_label.
+  ///
+  /// In en, this message translates to:
+  /// **'Unit (e.g. Number, Pack, Kg)'**
+  String get product_form_unit_label;
+
+  /// No description provided for @product_form_purchase_price_label.
+  ///
+  /// In en, this message translates to:
+  /// **'Purchase Price (Toman)'**
+  String get product_form_purchase_price_label;
+
+  /// No description provided for @product_form_selling_price_label.
+  ///
+  /// In en, this message translates to:
+  /// **'Default Selling Price (Toman)'**
+  String get product_form_selling_price_label;
+
+  /// No description provided for @product_form_section_notes.
+  ///
+  /// In en, this message translates to:
+  /// **'Notes'**
+  String get product_form_section_notes;
+
+  /// No description provided for @product_form_notes_label.
+  ///
+  /// In en, this message translates to:
+  /// **'Notes and Description'**
+  String get product_form_notes_label;
+
+  /// No description provided for @product_form_save_btn.
+  ///
+  /// In en, this message translates to:
+  /// **'Save Product'**
+  String get product_form_save_btn;
+
+  /// No description provided for @product_form_category_label.
+  ///
+  /// In en, this message translates to:
+  /// **'Product Category'**
+  String get product_form_category_label;
+
+  /// No description provided for @product_form_select_category.
+  ///
+  /// In en, this message translates to:
+  /// **'Select Category'**
+  String get product_form_select_category;
+
+  /// No description provided for @animal_form_new_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Add Animal Product'**
+  String get animal_form_new_title;
+
+  /// No description provided for @animal_form_section_category.
+  ///
+  /// In en, this message translates to:
+  /// **'Category and Type'**
+  String get animal_form_section_category;
+
+  /// No description provided for @animal_form_type_label.
+  ///
+  /// In en, this message translates to:
+  /// **'Product Category Type'**
+  String get animal_form_type_label;
+
+  /// No description provided for @animal_form_section_id.
+  ///
+  /// In en, this message translates to:
+  /// **'Identification Info'**
+  String get animal_form_section_id;
+
+  /// No description provided for @animal_form_name_label.
+  ///
+  /// In en, this message translates to:
+  /// **'Product / Animal Name'**
+  String get animal_form_name_label;
+
+  /// No description provided for @animal_form_tag_label.
+  ///
+  /// In en, this message translates to:
+  /// **'Tag Number'**
+  String get animal_form_tag_label;
+
+  /// No description provided for @animal_form_breed_label.
+  ///
+  /// In en, this message translates to:
+  /// **'Breed'**
+  String get animal_form_breed_label;
+
+  /// No description provided for @animal_form_gender_label.
+  ///
+  /// In en, this message translates to:
+  /// **'Gender'**
+  String get animal_form_gender_label;
+
+  /// No description provided for @animal_form_birth_date_label.
+  ///
+  /// In en, this message translates to:
+  /// **'Birth / Entry Date'**
+  String get animal_form_birth_date_label;
+
+  /// No description provided for @animal_form_health_label.
+  ///
+  /// In en, this message translates to:
+  /// **'Health Status'**
+  String get animal_form_health_label;
+
+  /// No description provided for @animal_form_section_financial.
+  ///
+  /// In en, this message translates to:
+  /// **'Pricing and Value'**
+  String get animal_form_section_financial;
+
+  /// No description provided for @animal_form_purchase_price_label.
+  ///
+  /// In en, this message translates to:
+  /// **'Purchase Price (Toman)'**
+  String get animal_form_purchase_price_label;
+
+  /// No description provided for @animal_form_estimated_value_label.
+  ///
+  /// In en, this message translates to:
+  /// **'Estimated Value (Toman)'**
+  String get animal_form_estimated_value_label;
+
+  /// No description provided for @animal_form_section_notes.
+  ///
+  /// In en, this message translates to:
+  /// **'Additional Info'**
+  String get animal_form_section_notes;
+
+  /// No description provided for @animal_form_notes_label.
+  ///
+  /// In en, this message translates to:
+  /// **'Description and Notes'**
+  String get animal_form_notes_label;
+
+  /// No description provided for @animal_form_select_type.
+  ///
+  /// In en, this message translates to:
+  /// **'Select Product Type'**
+  String get animal_form_select_type;
+
+  /// No description provided for @animal_form_select_gender.
+  ///
+  /// In en, this message translates to:
+  /// **'Select Gender'**
+  String get animal_form_select_gender;
+
+  /// No description provided for @animal_form_select_health.
+  ///
+  /// In en, this message translates to:
+  /// **'Health Status'**
+  String get animal_form_select_health;
+
+  /// No description provided for @animal_form_unit_livestock.
+  ///
+  /// In en, this message translates to:
+  /// **'Head'**
+  String get animal_form_unit_livestock;
+
+  /// No description provided for @dialog_selection_search_hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Search...'**
+  String get dialog_selection_search_hint;
+
+  /// No description provided for @dialog_selection_no_items.
+  ///
+  /// In en, this message translates to:
+  /// **'No items found'**
+  String get dialog_selection_no_items;
+
+  /// No description provided for @dialog_selection_pagination.
+  ///
+  /// In en, this message translates to:
+  /// **'Page {page} of {total}'**
+  String dialog_selection_pagination(Object page, Object total);
+
+  /// No description provided for @dialog_selection_confirm_btn.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm selection'**
+  String get dialog_selection_confirm_btn;
+
+  /// No description provided for @person_list_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Person List'**
+  String get person_list_title;
+
+  /// No description provided for @person_list_no_persons.
+  ///
+  /// In en, this message translates to:
+  /// **'No persons found.'**
+  String get person_list_no_persons;
+
+  /// No description provided for @person_list_national_id.
+  ///
+  /// In en, this message translates to:
+  /// **'National ID: {id}'**
+  String person_list_national_id(Object id);
+
+  /// No description provided for @person_list_phone.
+  ///
+  /// In en, this message translates to:
+  /// **'Phone: {phone}'**
+  String person_list_phone(Object phone);
+
+  /// No description provided for @person_list_no_name.
+  ///
+  /// In en, this message translates to:
+  /// **'No name'**
+  String get person_list_no_name;
+
+  /// No description provided for @person_form_new_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Register New Person'**
+  String get person_form_new_title;
+
+  /// No description provided for @person_form_edit_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit Person Details'**
+  String get person_form_edit_title;
+
+  /// No description provided for @person_form_type_label.
+  ///
+  /// In en, this message translates to:
+  /// **'Person Type'**
+  String get person_form_type_label;
+
+  /// No description provided for @person_form_type_natural.
+  ///
+  /// In en, this message translates to:
+  /// **'Natural'**
+  String get person_form_type_natural;
+
+  /// No description provided for @person_form_type_legal.
+  ///
+  /// In en, this message translates to:
+  /// **'Legal'**
+  String get person_form_type_legal;
+
+  /// No description provided for @person_form_first_name.
+  ///
+  /// In en, this message translates to:
+  /// **'First Name'**
+  String get person_form_first_name;
+
+  /// No description provided for @person_form_last_name.
+  ///
+  /// In en, this message translates to:
+  /// **'Last Name'**
+  String get person_form_last_name;
+
+  /// No description provided for @person_form_company_name.
+  ///
+  /// In en, this message translates to:
+  /// **'Company Name'**
+  String get person_form_company_name;
+
+  /// No description provided for @person_form_economic_code.
+  ///
+  /// In en, this message translates to:
+  /// **'Economic Code'**
+  String get person_form_economic_code;
+
+  /// No description provided for @person_form_registration_number.
+  ///
+  /// In en, this message translates to:
+  /// **'Registration Number'**
+  String get person_form_registration_number;
+
+  /// No description provided for @person_form_national_id_label.
+  ///
+  /// In en, this message translates to:
+  /// **'National ID'**
+  String get person_form_national_id_label;
+
+  /// No description provided for @person_form_phone.
+  ///
+  /// In en, this message translates to:
+  /// **'Phone'**
+  String get person_form_phone;
+
+  /// No description provided for @person_form_mobile.
+  ///
+  /// In en, this message translates to:
+  /// **'Mobile'**
+  String get person_form_mobile;
+
+  /// No description provided for @person_form_email.
+  ///
+  /// In en, this message translates to:
+  /// **'Email'**
+  String get person_form_email;
+
+  /// No description provided for @person_form_address.
+  ///
+  /// In en, this message translates to:
+  /// **'Address'**
+  String get person_form_address;
+
+  /// No description provided for @person_form_postal_code.
+  ///
+  /// In en, this message translates to:
+  /// **'Postal Code'**
+  String get person_form_postal_code;
+
+  /// No description provided for @person_form_province.
+  ///
+  /// In en, this message translates to:
+  /// **'Province'**
+  String get person_form_province;
+
+  /// No description provided for @person_form_city.
+  ///
+  /// In en, this message translates to:
+  /// **'City'**
+  String get person_form_city;
+
+  /// No description provided for @person_form_notes.
+  ///
+  /// In en, this message translates to:
+  /// **'Notes'**
+  String get person_form_notes;
+
+  /// No description provided for @person_form_active.
+  ///
+  /// In en, this message translates to:
+  /// **'Active'**
+  String get person_form_active;
+
+  /// No description provided for @person_form_save_btn.
+  ///
+  /// In en, this message translates to:
+  /// **'Save Info'**
+  String get person_form_save_btn;
+
+  /// No description provided for @person_form_first_name_required.
+  ///
+  /// In en, this message translates to:
+  /// **'First name is required'**
+  String get person_form_first_name_required;
+
+  /// No description provided for @person_form_last_name_required.
+  ///
+  /// In en, this message translates to:
+  /// **'Last name is required'**
+  String get person_form_last_name_required;
+
+  /// No description provided for @person_form_company_name_required.
+  ///
+  /// In en, this message translates to:
+  /// **'Company name is required'**
+  String get person_form_company_name_required;
+
+  /// No description provided for @person_form_update_success.
+  ///
+  /// In en, this message translates to:
+  /// **'Information updated successfully'**
+  String get person_form_update_success;
+
+  /// No description provided for @person_form_save_success.
+  ///
+  /// In en, this message translates to:
+  /// **'Information saved successfully'**
+  String get person_form_save_success;
+
+  /// No description provided for @person_form_save_error.
+  ///
+  /// In en, this message translates to:
+  /// **'Error saving: {error}'**
+  String person_form_save_error(Object error);
+
+  /// No description provided for @person_form_error_cities.
+  ///
+  /// In en, this message translates to:
+  /// **'Error fetching cities'**
+  String get person_form_error_cities;
+
+  /// No description provided for @payment_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Payments'**
+  String get payment_title;
+
+  /// No description provided for @payment_empty.
+  ///
+  /// In en, this message translates to:
+  /// **'No payments registered.'**
+  String get payment_empty;
+
+  /// No description provided for @payment_new_btn.
+  ///
+  /// In en, this message translates to:
+  /// **'Register New Payment'**
+  String get payment_new_btn;
+
+  /// No description provided for @payment_received.
+  ///
+  /// In en, this message translates to:
+  /// **'Received'**
+  String get payment_received;
+
+  /// No description provided for @payment_paid.
+  ///
+  /// In en, this message translates to:
+  /// **'Paid'**
+  String get payment_paid;
+
+  /// No description provided for @payment_incoming.
+  ///
+  /// In en, this message translates to:
+  /// **'Incoming'**
+  String get payment_incoming;
+
+  /// No description provided for @payment_outgoing.
+  ///
+  /// In en, this message translates to:
+  /// **'Outgoing'**
+  String get payment_outgoing;
+
+  /// No description provided for @payment_delete_confirm_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete Payment'**
+  String get payment_delete_confirm_title;
+
+  /// No description provided for @payment_delete_confirm_msg.
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure you want to delete this payment?'**
+  String get payment_delete_confirm_msg;
+
+  /// No description provided for @payment_invoice_id_error.
+  ///
+  /// In en, this message translates to:
+  /// **'Invoice ID not found'**
+  String get payment_invoice_id_error;
+
+  /// No description provided for @payment_summary_total.
+  ///
+  /// In en, this message translates to:
+  /// **'Total Amount'**
+  String get payment_summary_total;
+
+  /// No description provided for @payment_summary_paid.
+  ///
+  /// In en, this message translates to:
+  /// **'Paid'**
+  String get payment_summary_paid;
+
+  /// No description provided for @payment_summary_balance.
+  ///
+  /// In en, this message translates to:
+  /// **'Balance'**
+  String get payment_summary_balance;
+
+  /// No description provided for @payment_currency.
+  ///
+  /// In en, this message translates to:
+  /// **'Toman'**
+  String get payment_currency;
+
+  /// No description provided for @payment_form_new_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Register New Payment'**
+  String get payment_form_new_title;
+
+  /// No description provided for @payment_form_edit_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit Payment'**
+  String get payment_form_edit_title;
+
+  /// No description provided for @payment_form_amount_label.
+  ///
+  /// In en, this message translates to:
+  /// **'Amount'**
+  String get payment_form_amount_label;
+
+  /// No description provided for @payment_form_amount_error.
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter amount'**
+  String get payment_form_amount_error;
+
+  /// No description provided for @payment_form_amount_invalid.
+  ///
+  /// In en, this message translates to:
+  /// **'Invalid amount'**
+  String get payment_form_amount_invalid;
+
+  /// No description provided for @payment_form_direction_label.
+  ///
+  /// In en, this message translates to:
+  /// **'Payment Direction'**
+  String get payment_form_direction_label;
+
+  /// No description provided for @payment_form_method_label.
+  ///
+  /// In en, this message translates to:
+  /// **'Payment Method (Optional)'**
+  String get payment_form_method_label;
+
+  /// No description provided for @payment_form_reference_label.
+  ///
+  /// In en, this message translates to:
+  /// **'Reference Number (Optional)'**
+  String get payment_form_reference_label;
+
+  /// No description provided for @payment_form_notes_label.
+  ///
+  /// In en, this message translates to:
+  /// **'Notes (Optional)'**
+  String get payment_form_notes_label;
+
+  /// No description provided for @error_loading.
+  ///
+  /// In en, this message translates to:
+  /// **'Loading Error'**
+  String get error_loading;
+
+  /// No description provided for @error_data_loading.
+  ///
+  /// In en, this message translates to:
+  /// **'Data Loading Error'**
+  String get error_data_loading;
+
   /// The required prefix for invoice numbers
   ///
   /// In en, this message translates to:
@@ -289,6 +997,84 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Invalid username or password'**
   String get auth_invalidCredentials;
+
+  /// No description provided for @auth_forgot_password.
+  ///
+  /// In en, this message translates to:
+  /// **'Forgot Password?'**
+  String get auth_forgot_password;
+
+  /// No description provided for @auth_login_success.
+  ///
+  /// In en, this message translates to:
+  /// **'Login Successful'**
+  String get auth_login_success;
+
+  /// No description provided for @auth_reset_password_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Reset Password'**
+  String get auth_reset_password_title;
+
+  /// No description provided for @auth_reset_link_sent.
+  ///
+  /// In en, this message translates to:
+  /// **'Reset link sent to your email'**
+  String get auth_reset_link_sent;
+
+  /// No description provided for @auth_send_link_btn.
+  ///
+  /// In en, this message translates to:
+  /// **'Send Link'**
+  String get auth_send_link_btn;
+
+  /// No description provided for @auth_welcome_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome to System'**
+  String get auth_welcome_title;
+
+  /// No description provided for @auth_email_label.
+  ///
+  /// In en, this message translates to:
+  /// **'Email'**
+  String get auth_email_label;
+
+  /// No description provided for @auth_email_hint.
+  ///
+  /// In en, this message translates to:
+  /// **'example@domain.com'**
+  String get auth_email_hint;
+
+  /// No description provided for @auth_email_error.
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter your email'**
+  String get auth_email_error;
+
+  /// No description provided for @auth_email_invalid.
+  ///
+  /// In en, this message translates to:
+  /// **'Invalid email'**
+  String get auth_email_invalid;
+
+  /// No description provided for @auth_password_label.
+  ///
+  /// In en, this message translates to:
+  /// **'Password'**
+  String get auth_password_label;
+
+  /// No description provided for @auth_password_error.
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter your password'**
+  String get auth_password_error;
+
+  /// No description provided for @auth_password_min_length.
+  ///
+  /// In en, this message translates to:
+  /// **'At least 6 characters'**
+  String get auth_password_min_length;
 
   /// No description provided for @dashboard.
   ///
@@ -1040,23 +1826,29 @@ abstract class AppLocalizations {
   /// **'Deletion failed'**
   String get delete_error;
 
-  /// Error message when the total amount field is empty
+  /// No description provided for @validation_enterTotalAmount.
   ///
   /// In en, this message translates to:
   /// **'Please enter total amount'**
   String get validation_enterTotalAmount;
 
-  /// Error message when the entered value is not a valid number
+  /// No description provided for @validation_enterValidNumber.
   ///
   /// In en, this message translates to:
   /// **'Please enter a valid number'**
   String get validation_enterValidNumber;
 
-  /// Error message when the entered amount is less than or equal to zero
+  /// No description provided for @validation_amountGreaterThanZero.
   ///
   /// In en, this message translates to:
   /// **'Amount must be greater than 0'**
   String get validation_amountGreaterThanZero;
+
+  /// No description provided for @profile_settings.
+  ///
+  /// In en, this message translates to:
+  /// **'Account Settings'**
+  String get profile_settings;
 }
 
 class _AppLocalizationsDelegate

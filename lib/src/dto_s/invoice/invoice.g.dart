@@ -22,7 +22,6 @@ Invoice _$InvoiceFromJson(Map json) => Invoice(
   invoiceLines: (json['invoiceLines'] as List<dynamic>?)
       ?.map((e) => InvoiceLine.fromJson(Map<String, dynamic>.from(e as Map)))
       .toList(),
-  // price: (json['price'] as num?)?.toDouble(),
 );
 
 Map<String, dynamic> _$InvoiceToJson(Invoice instance) => <String, dynamic>{
@@ -38,6 +37,5 @@ Map<String, dynamic> _$InvoiceToJson(Invoice instance) => <String, dynamic>{
   'createdAt': instance.createdAt.toIso8601String(),
   'updatedAt': instance.updatedAt.toIso8601String(),
   'version': instance.version,
-  // 'price': instance.price,
   'invoiceLines': instance.invoiceLines?.map((e) => e.toJson()).toList(),
 };

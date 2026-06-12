@@ -18,9 +18,7 @@ ProductsType _$ProductsTypeFromJson(Map json) => ProductsType(
   parent: json['parent'] == null
       ? null
       : ProductsType.fromJson(Map<String, dynamic>.from(json['parent'] as Map)),
-  children: (json['children'] as List<dynamic>?)
-      ?.map((e) => ProductsType.fromJson(Map<String, dynamic>.from(e as Map)))
-      .toList(),
+  children: ProductsType._childrenFromJson(json['children'] as List?),
 );
 
 Map<String, dynamic> _$ProductsTypeToJson(ProductsType instance) =>
@@ -34,5 +32,5 @@ Map<String, dynamic> _$ProductsTypeToJson(ProductsType instance) =>
       'createdAt': instance.createdAt.toIso8601String(),
       'updatedAt': instance.updatedAt.toIso8601String(),
       'parent': instance.parent?.toJson(),
-      'children': instance.children?.map((e) => e.toJson()).toList(),
+      'children': ProductsType._childrenToJson(instance.children),
     };

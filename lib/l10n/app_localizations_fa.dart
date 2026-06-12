@@ -124,6 +124,369 @@ class AppLocalizationsFa extends AppLocalizations {
   String get common_form_submit => 'تأیید اطلاعات';
 
   @override
+  String get common_confirm => 'تایید';
+
+  @override
+  String get common_select_item => 'انتخاب کنید';
+
+  @override
+  String get common_retry => 'تلاش مجدد';
+
+  @override
+  String get common_add => 'افزودن';
+
+  @override
+  String get common_description => 'شرح';
+
+  @override
+  String get common_amount => 'مبلغ';
+
+  @override
+  String get home_dashboard_title => 'پیشخوان مدیریت';
+
+  @override
+  String get home_welcome_msg => 'به سامانه مدیریت خاتون خوش آمدید';
+
+  @override
+  String get home_menu_purchase_invoices => 'فاکتورهای خرید';
+
+  @override
+  String get home_menu_products => 'محصولات';
+
+  @override
+  String get home_menu_reports => 'گزارشات';
+
+  @override
+  String get home_menu_settings => 'تنظیمات';
+
+  @override
+  String get home_menu_profile => 'پروفایل';
+
+  @override
+  String get home_menu_home => 'خانه';
+
+  @override
+  String get home_menu_orders => 'سفارشات';
+
+  @override
+  String get home_menu_customers => 'مشتریان';
+
+  @override
+  String get home_menu_payments => 'پرداختی ها';
+
+  @override
+  String get home_menu_logout => 'خروج';
+
+  @override
+  String get home_menu_inventory => 'موجودی انبار';
+
+  @override
+  String get home_menu_livestock => 'مدیریت دام‌ها';
+
+  @override
+  String get product_form_new_title => 'تعریف محصول جدید';
+
+  @override
+  String get product_form_edit_title => 'ویرایش محصول';
+
+  @override
+  String get product_form_section_basic => 'اطلاعات اصلی کالا';
+
+  @override
+  String get product_form_name_label => 'نام محصول';
+
+  @override
+  String get product_form_name_error => 'نام الزامی است';
+
+  @override
+  String get product_form_more_details => 'جزئیات بیشتر (قیمت، کد و غیره)';
+
+  @override
+  String get product_form_less_details => 'نمایش کمتر';
+
+  @override
+  String get product_form_section_technical => 'جزئیات فنی و انبارداری';
+
+  @override
+  String get product_form_code_label => 'کد محصول / بارکد';
+
+  @override
+  String get product_form_unit_label => 'واحد (مثلا عدد، بسته، کیلو)';
+
+  @override
+  String get product_form_purchase_price_label => 'قیمت خرید (تومان)';
+
+  @override
+  String get product_form_selling_price_label => 'قیمت فروش پیش‌فرض (تومان)';
+
+  @override
+  String get product_form_section_notes => 'یادداشت‌ها';
+
+  @override
+  String get product_form_notes_label => 'یادداشت و توضیحات';
+
+  @override
+  String get product_form_save_btn => 'ذخیره نهایی محصول';
+
+  @override
+  String get product_form_category_label => 'دسته بندی محصول';
+
+  @override
+  String get product_form_select_category => 'انتخاب دسته‌بندی';
+
+  @override
+  String get animal_form_new_title => 'افزودن محصول';
+
+  @override
+  String get animal_form_section_category => 'دسته‌بندی و نوع';
+
+  @override
+  String get animal_form_type_label => 'نوع دسته بندی کالا';
+
+  @override
+  String get animal_form_section_id => 'اطلاعات شناسایی';
+
+  @override
+  String get animal_form_name_label => 'نام کالا / دام';
+
+  @override
+  String get animal_form_tag_label => 'شماره گوشواره';
+
+  @override
+  String get animal_form_breed_label => 'نژاد';
+
+  @override
+  String get animal_form_gender_label => 'جنسیت';
+
+  @override
+  String get animal_form_birth_date_label => 'تاریخ تولد / ورود';
+
+  @override
+  String get animal_form_health_label => 'وضعیت سلامت';
+
+  @override
+  String get animal_form_section_financial => 'قیمت‌گذاری و ارزش';
+
+  @override
+  String get animal_form_purchase_price_label => 'قیمت خرید (تومان)';
+
+  @override
+  String get animal_form_estimated_value_label => 'ارزش تخمینی (تومان)';
+
+  @override
+  String get animal_form_section_notes => 'توضیحات تکمیلی';
+
+  @override
+  String get animal_form_notes_label => 'توضیحات و یادداشت‌ها';
+
+  @override
+  String get animal_form_select_type => 'انتخاب نوع کالا';
+
+  @override
+  String get animal_form_select_gender => 'انتخاب جنسیت';
+
+  @override
+  String get animal_form_select_health => 'وضعیت سلامت';
+
+  @override
+  String get animal_form_unit_livestock => 'رأس';
+
+  @override
+  String get dialog_selection_search_hint => 'جستجو...';
+
+  @override
+  String get dialog_selection_no_items => 'موردی یافت نشد';
+
+  @override
+  String dialog_selection_pagination(Object page, Object total) {
+    return 'صفحه $page از $total';
+  }
+
+  @override
+  String get dialog_selection_confirm_btn => 'تایید انتخاب';
+
+  @override
+  String get person_list_title => 'لیست اشخاص';
+
+  @override
+  String get person_list_no_persons => 'هیچ شخصی یافت نشد.';
+
+  @override
+  String person_list_national_id(Object id) {
+    return 'کد ملی/شناسه ملی: $id';
+  }
+
+  @override
+  String person_list_phone(Object phone) {
+    return 'تماس: $phone';
+  }
+
+  @override
+  String get person_list_no_name => 'بدون نام';
+
+  @override
+  String get person_form_new_title => 'ثبت شخص جدید';
+
+  @override
+  String get person_form_edit_title => 'ویرایش اطلاعات شخص';
+
+  @override
+  String get person_form_type_label => 'نوع شخص';
+
+  @override
+  String get person_form_type_natural => 'حقیقی (Natural)';
+
+  @override
+  String get person_form_type_legal => 'حقوقی (Legal)';
+
+  @override
+  String get person_form_first_name => 'نام';
+
+  @override
+  String get person_form_last_name => 'نام خانوادگی';
+
+  @override
+  String get person_form_company_name => 'نام شرکت';
+
+  @override
+  String get person_form_economic_code => 'کد اقتصادی';
+
+  @override
+  String get person_form_registration_number => 'شماره ثبت';
+
+  @override
+  String get person_form_national_id_label =>
+      'کد ملی (حقیقی) / شناسه ملی (حقوقی)';
+
+  @override
+  String get person_form_phone => 'تلفن';
+
+  @override
+  String get person_form_mobile => 'موبایل';
+
+  @override
+  String get person_form_email => 'ایمیل';
+
+  @override
+  String get person_form_address => 'آدرس';
+
+  @override
+  String get person_form_postal_code => 'کد پستی';
+
+  @override
+  String get person_form_province => 'استان';
+
+  @override
+  String get person_form_city => 'شهر';
+
+  @override
+  String get person_form_notes => 'توضیحات';
+
+  @override
+  String get person_form_active => 'فعال';
+
+  @override
+  String get person_form_save_btn => 'ذخیره اطلاعات';
+
+  @override
+  String get person_form_first_name_required => 'نام اجباری است';
+
+  @override
+  String get person_form_last_name_required => 'نام خانوادگی اجباری است';
+
+  @override
+  String get person_form_company_name_required => 'نام شرکت اجباری است';
+
+  @override
+  String get person_form_update_success => 'اطلاعات با موفقیت به‌روزرسانی شد';
+
+  @override
+  String get person_form_save_success => 'اطلاعات با موفقیت ذخیره شد';
+
+  @override
+  String person_form_save_error(Object error) {
+    return 'خطا در ذخیره: $error';
+  }
+
+  @override
+  String get person_form_error_cities => 'خطا در دریافت شهرها';
+
+  @override
+  String get payment_title => 'پرداخت‌ها';
+
+  @override
+  String get payment_empty => 'هیچ پرداختی ثبت نشده است.';
+
+  @override
+  String get payment_new_btn => 'ثبت پرداخت جدید';
+
+  @override
+  String get payment_received => 'دریافت';
+
+  @override
+  String get payment_paid => 'پرداخت';
+
+  @override
+  String get payment_incoming => 'دریافتی';
+
+  @override
+  String get payment_outgoing => 'پرداختی';
+
+  @override
+  String get payment_delete_confirm_title => 'حذف پرداخت';
+
+  @override
+  String get payment_delete_confirm_msg => 'آیا از حذف این پرداخت مطمئن هستید؟';
+
+  @override
+  String get payment_invoice_id_error => 'شناسه فاکتور مشخص نیست';
+
+  @override
+  String get payment_summary_total => 'مبلغ کل';
+
+  @override
+  String get payment_summary_paid => 'پرداخت شده';
+
+  @override
+  String get payment_summary_balance => 'مانده';
+
+  @override
+  String get payment_currency => 'تومان';
+
+  @override
+  String get payment_form_new_title => 'ثبت پرداخت جدید';
+
+  @override
+  String get payment_form_edit_title => 'ویرایش پرداخت';
+
+  @override
+  String get payment_form_amount_label => 'مبلغ';
+
+  @override
+  String get payment_form_amount_error => 'لطفاً مبلغ را وارد کنید';
+
+  @override
+  String get payment_form_amount_invalid => 'مبلغ نامعتبر است';
+
+  @override
+  String get payment_form_direction_label => 'نوع پرداخت';
+
+  @override
+  String get payment_form_method_label => 'روش پرداخت (اختیاری)';
+
+  @override
+  String get payment_form_reference_label => 'شماره پیگیری / مرجع (اختیاری)';
+
+  @override
+  String get payment_form_notes_label => 'توضیحات (اختیاری)';
+
+  @override
+  String get error_loading => 'خطا در بارگذاری';
+
+  @override
+  String get error_data_loading => 'خطا در لود داده';
+
+  @override
   String componentsMessagesInvoiceNumberPrefix(Object prefix) {
     return 'شماره فاکتور باید با $prefix شروع شود';
   }
@@ -145,6 +508,45 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get auth_invalidCredentials => 'نام کاربری یا رمز عبور نادرست است';
+
+  @override
+  String get auth_forgot_password => 'فراموشی رمز عبور؟';
+
+  @override
+  String get auth_login_success => 'ورود موفقیت‌آمیز بود';
+
+  @override
+  String get auth_reset_password_title => 'بازیابی رمز عبور';
+
+  @override
+  String get auth_reset_link_sent => 'لینک بازیابی به ایمیل شما ارسال شد';
+
+  @override
+  String get auth_send_link_btn => 'ارسال لینک';
+
+  @override
+  String get auth_welcome_title => 'به سیستم خوش آمدید';
+
+  @override
+  String get auth_email_label => 'ایمیل';
+
+  @override
+  String get auth_email_hint => 'example@domain.com';
+
+  @override
+  String get auth_email_error => 'ایمیل خود را وارد کنید';
+
+  @override
+  String get auth_email_invalid => 'ایمیل معتبر نیست';
+
+  @override
+  String get auth_password_label => 'رمز عبور';
+
+  @override
+  String get auth_password_error => 'رمز عبور را وارد کنید';
+
+  @override
+  String get auth_password_min_length => 'حداقل ۶ کاراکتر';
 
   @override
   String get dashboard => 'داشبورد';
@@ -531,4 +933,7 @@ class AppLocalizationsFa extends AppLocalizations {
   @override
   String get validation_amountGreaterThanZero =>
       'مبلغ باید بزرگ‌تر از صفر باشد';
+
+  @override
+  String get profile_settings => 'تنظیمات حساب';
 }

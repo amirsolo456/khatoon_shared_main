@@ -124,6 +124,371 @@ class AppLocalizationsEn extends AppLocalizations {
   String get common_form_submit => 'Form Submitted';
 
   @override
+  String get common_confirm => 'Confirm';
+
+  @override
+  String get common_select_item => 'Select Item';
+
+  @override
+  String get common_retry => 'Retry';
+
+  @override
+  String get common_add => 'Add';
+
+  @override
+  String get common_description => 'Description';
+
+  @override
+  String get common_amount => 'Amount';
+
+  @override
+  String get home_dashboard_title => 'Management Dashboard';
+
+  @override
+  String get home_welcome_msg => 'Welcome to Khatoon Management System';
+
+  @override
+  String get home_menu_purchase_invoices => 'Purchase Invoices';
+
+  @override
+  String get home_menu_products => 'Products';
+
+  @override
+  String get home_menu_reports => 'Reports';
+
+  @override
+  String get home_menu_settings => 'Settings';
+
+  @override
+  String get home_menu_profile => 'Profile';
+
+  @override
+  String get home_menu_home => 'Home';
+
+  @override
+  String get home_menu_orders => 'Orders';
+
+  @override
+  String get home_menu_customers => 'Customers';
+
+  @override
+  String get home_menu_payments => 'Payments';
+
+  @override
+  String get home_menu_logout => 'Logout';
+
+  @override
+  String get home_menu_inventory => 'Inventory';
+
+  @override
+  String get home_menu_livestock => 'Livestock Management';
+
+  @override
+  String get product_form_new_title => 'Define New Product';
+
+  @override
+  String get product_form_edit_title => 'Edit Product';
+
+  @override
+  String get product_form_section_basic => 'Basic Product Info';
+
+  @override
+  String get product_form_name_label => 'Product Name';
+
+  @override
+  String get product_form_name_error => 'Name is required';
+
+  @override
+  String get product_form_more_details => 'More details (Price, Code, etc.)';
+
+  @override
+  String get product_form_less_details => 'Show less';
+
+  @override
+  String get product_form_section_technical =>
+      'Technical and Warehouse Details';
+
+  @override
+  String get product_form_code_label => 'Product Code / Barcode';
+
+  @override
+  String get product_form_unit_label => 'Unit (e.g. Number, Pack, Kg)';
+
+  @override
+  String get product_form_purchase_price_label => 'Purchase Price (Toman)';
+
+  @override
+  String get product_form_selling_price_label =>
+      'Default Selling Price (Toman)';
+
+  @override
+  String get product_form_section_notes => 'Notes';
+
+  @override
+  String get product_form_notes_label => 'Notes and Description';
+
+  @override
+  String get product_form_save_btn => 'Save Product';
+
+  @override
+  String get product_form_category_label => 'Product Category';
+
+  @override
+  String get product_form_select_category => 'Select Category';
+
+  @override
+  String get animal_form_new_title => 'Add Animal Product';
+
+  @override
+  String get animal_form_section_category => 'Category and Type';
+
+  @override
+  String get animal_form_type_label => 'Product Category Type';
+
+  @override
+  String get animal_form_section_id => 'Identification Info';
+
+  @override
+  String get animal_form_name_label => 'Product / Animal Name';
+
+  @override
+  String get animal_form_tag_label => 'Tag Number';
+
+  @override
+  String get animal_form_breed_label => 'Breed';
+
+  @override
+  String get animal_form_gender_label => 'Gender';
+
+  @override
+  String get animal_form_birth_date_label => 'Birth / Entry Date';
+
+  @override
+  String get animal_form_health_label => 'Health Status';
+
+  @override
+  String get animal_form_section_financial => 'Pricing and Value';
+
+  @override
+  String get animal_form_purchase_price_label => 'Purchase Price (Toman)';
+
+  @override
+  String get animal_form_estimated_value_label => 'Estimated Value (Toman)';
+
+  @override
+  String get animal_form_section_notes => 'Additional Info';
+
+  @override
+  String get animal_form_notes_label => 'Description and Notes';
+
+  @override
+  String get animal_form_select_type => 'Select Product Type';
+
+  @override
+  String get animal_form_select_gender => 'Select Gender';
+
+  @override
+  String get animal_form_select_health => 'Health Status';
+
+  @override
+  String get animal_form_unit_livestock => 'Head';
+
+  @override
+  String get dialog_selection_search_hint => 'Search...';
+
+  @override
+  String get dialog_selection_no_items => 'No items found';
+
+  @override
+  String dialog_selection_pagination(Object page, Object total) {
+    return 'Page $page of $total';
+  }
+
+  @override
+  String get dialog_selection_confirm_btn => 'Confirm selection';
+
+  @override
+  String get person_list_title => 'Person List';
+
+  @override
+  String get person_list_no_persons => 'No persons found.';
+
+  @override
+  String person_list_national_id(Object id) {
+    return 'National ID: $id';
+  }
+
+  @override
+  String person_list_phone(Object phone) {
+    return 'Phone: $phone';
+  }
+
+  @override
+  String get person_list_no_name => 'No name';
+
+  @override
+  String get person_form_new_title => 'Register New Person';
+
+  @override
+  String get person_form_edit_title => 'Edit Person Details';
+
+  @override
+  String get person_form_type_label => 'Person Type';
+
+  @override
+  String get person_form_type_natural => 'Natural';
+
+  @override
+  String get person_form_type_legal => 'Legal';
+
+  @override
+  String get person_form_first_name => 'First Name';
+
+  @override
+  String get person_form_last_name => 'Last Name';
+
+  @override
+  String get person_form_company_name => 'Company Name';
+
+  @override
+  String get person_form_economic_code => 'Economic Code';
+
+  @override
+  String get person_form_registration_number => 'Registration Number';
+
+  @override
+  String get person_form_national_id_label => 'National ID';
+
+  @override
+  String get person_form_phone => 'Phone';
+
+  @override
+  String get person_form_mobile => 'Mobile';
+
+  @override
+  String get person_form_email => 'Email';
+
+  @override
+  String get person_form_address => 'Address';
+
+  @override
+  String get person_form_postal_code => 'Postal Code';
+
+  @override
+  String get person_form_province => 'Province';
+
+  @override
+  String get person_form_city => 'City';
+
+  @override
+  String get person_form_notes => 'Notes';
+
+  @override
+  String get person_form_active => 'Active';
+
+  @override
+  String get person_form_save_btn => 'Save Info';
+
+  @override
+  String get person_form_first_name_required => 'First name is required';
+
+  @override
+  String get person_form_last_name_required => 'Last name is required';
+
+  @override
+  String get person_form_company_name_required => 'Company name is required';
+
+  @override
+  String get person_form_update_success => 'Information updated successfully';
+
+  @override
+  String get person_form_save_success => 'Information saved successfully';
+
+  @override
+  String person_form_save_error(Object error) {
+    return 'Error saving: $error';
+  }
+
+  @override
+  String get person_form_error_cities => 'Error fetching cities';
+
+  @override
+  String get payment_title => 'Payments';
+
+  @override
+  String get payment_empty => 'No payments registered.';
+
+  @override
+  String get payment_new_btn => 'Register New Payment';
+
+  @override
+  String get payment_received => 'Received';
+
+  @override
+  String get payment_paid => 'Paid';
+
+  @override
+  String get payment_incoming => 'Incoming';
+
+  @override
+  String get payment_outgoing => 'Outgoing';
+
+  @override
+  String get payment_delete_confirm_title => 'Delete Payment';
+
+  @override
+  String get payment_delete_confirm_msg =>
+      'Are you sure you want to delete this payment?';
+
+  @override
+  String get payment_invoice_id_error => 'Invoice ID not found';
+
+  @override
+  String get payment_summary_total => 'Total Amount';
+
+  @override
+  String get payment_summary_paid => 'Paid';
+
+  @override
+  String get payment_summary_balance => 'Balance';
+
+  @override
+  String get payment_currency => 'Toman';
+
+  @override
+  String get payment_form_new_title => 'Register New Payment';
+
+  @override
+  String get payment_form_edit_title => 'Edit Payment';
+
+  @override
+  String get payment_form_amount_label => 'Amount';
+
+  @override
+  String get payment_form_amount_error => 'Please enter amount';
+
+  @override
+  String get payment_form_amount_invalid => 'Invalid amount';
+
+  @override
+  String get payment_form_direction_label => 'Payment Direction';
+
+  @override
+  String get payment_form_method_label => 'Payment Method (Optional)';
+
+  @override
+  String get payment_form_reference_label => 'Reference Number (Optional)';
+
+  @override
+  String get payment_form_notes_label => 'Notes (Optional)';
+
+  @override
+  String get error_loading => 'Loading Error';
+
+  @override
+  String get error_data_loading => 'Data Loading Error';
+
+  @override
   String componentsMessagesInvoiceNumberPrefix(Object prefix) {
     return 'Invoice number should start with $prefix';
   }
@@ -145,6 +510,45 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get auth_invalidCredentials => 'Invalid username or password';
+
+  @override
+  String get auth_forgot_password => 'Forgot Password?';
+
+  @override
+  String get auth_login_success => 'Login Successful';
+
+  @override
+  String get auth_reset_password_title => 'Reset Password';
+
+  @override
+  String get auth_reset_link_sent => 'Reset link sent to your email';
+
+  @override
+  String get auth_send_link_btn => 'Send Link';
+
+  @override
+  String get auth_welcome_title => 'Welcome to System';
+
+  @override
+  String get auth_email_label => 'Email';
+
+  @override
+  String get auth_email_hint => 'example@domain.com';
+
+  @override
+  String get auth_email_error => 'Please enter your email';
+
+  @override
+  String get auth_email_invalid => 'Invalid email';
+
+  @override
+  String get auth_password_label => 'Password';
+
+  @override
+  String get auth_password_error => 'Please enter your password';
+
+  @override
+  String get auth_password_min_length => 'At least 6 characters';
 
   @override
   String get dashboard => 'Dashboard';
@@ -530,4 +934,7 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get validation_amountGreaterThanZero =>
       'Amount must be greater than 0';
+
+  @override
+  String get profile_settings => 'Account Settings';
 }
