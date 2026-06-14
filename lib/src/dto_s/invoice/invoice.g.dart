@@ -17,6 +17,8 @@ Invoice _$InvoiceFromJson(Map json) => Invoice(
   notes: json['notes'] as String?,
   version: (json['version'] as num).toDouble(),
   isDeleted: json['isDeleted'] as bool,
+  isMultiShipment: json['isMultiShipment'] as bool,
+  isMultiSettlement: json['isMultiSettlement'] as bool,
   createdAt: DateTime.parse(json['createdAt'] as String),
   updatedAt: DateTime.parse(json['updatedAt'] as String),
   invoiceLines: (json['invoiceLines'] as List<dynamic>?)
@@ -37,5 +39,7 @@ Map<String, dynamic> _$InvoiceToJson(Invoice instance) => <String, dynamic>{
   'createdAt': instance.createdAt.toIso8601String(),
   'updatedAt': instance.updatedAt.toIso8601String(),
   'version': instance.version,
+  'isMultiShipment': instance.isMultiShipment,
+  'isMultiSettlement': instance.isMultiSettlement,
   'invoiceLines': instance.invoiceLines?.map((e) => e.toJson()).toList(),
 };

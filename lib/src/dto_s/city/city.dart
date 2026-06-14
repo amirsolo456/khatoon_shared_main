@@ -5,14 +5,14 @@ part 'city.g.dart';
 @JsonSerializable()
 class City {
   final int id;
-  @JsonKey(name: 'province_Id')
+  @JsonKey(name: 'provinceId')
   final int provinceId;
   final String name;
-  @JsonKey(name: 'city_type')
+  @JsonKey(name: 'cityType')
   final int? cityType;      // nullable
   final int? cityestan;     // nullable
   final int? bakhsh;        // nullable
-  @JsonKey(name: 'amar_code')
+  @JsonKey(name: 'amarCode')
   final String? amarCode;   // nullable
 
 

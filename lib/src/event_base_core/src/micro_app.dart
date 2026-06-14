@@ -86,10 +86,5 @@ abstract class MicroApp {
   ///
   void injectionsRegister();
 
-  ///
-  /// * Map Route to Event
-  ///
-  /// Returns the specific event for a given route within this micro app.
-  ///
-  // PersonShownEvent mapRouteToEvent(String route, Object? arguments) => PersonShownEvent();
+
 }

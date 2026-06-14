@@ -20,6 +20,8 @@ class Invoice {
   final DateTime createdAt;
   final DateTime updatedAt;
   final double version;
+  final bool isMultiShipment;
+  final bool isMultiSettlement;
   // final double? price;
   // اضافه کردن لیست اقلام فاکتور
   @JsonKey(name: 'invoiceLines') // مطابق با نام خاصیت در سرور
@@ -36,6 +38,8 @@ class Invoice {
     this.notes,
     required this.version,
     required this.isDeleted,
+    required this.isMultiShipment,
+    required this.isMultiSettlement,
     required this.createdAt,
     required this.updatedAt,
     this.invoiceLines,

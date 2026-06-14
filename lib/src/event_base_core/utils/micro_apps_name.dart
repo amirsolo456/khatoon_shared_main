@@ -3,7 +3,6 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 // part 'micro_apps_name.g.dart';
 @JsonEnum()
 enum MicroAppsName {
-  purchases('purchases'),
   settings('settings'),
   signIn('signIn'),
   profile('profile'),
@@ -12,31 +11,51 @@ enum MicroAppsName {
   shortCuts('shortCuts'),
   menu('menu'),
   home('home'),
+  purchases('purchases'),
+  purchasesForm('purchases/purchasesForm'),
   persons('persons'),
-  animalProducts('animalProducts');
+  personsForm('persons/personsForm'),
+  animalProductsForm('animalProducts/animalProductsForm'),
+  animalProducts('animalProducts'),
+  productsForm('products/productsForm'),
+  products('products'),
+  ordersForm('orders/ordersForm'),
+  ordersPendingStates('orders/ordersPendingState'),
+  orders('orders'),
+  payment('payment');
 
   final String persianName;
 
   const MicroAppsName(this.persianName);
 
-  Map<String, MicroAppsName> microAppsNameArray() => <String, MicroAppsName>{
-    purchases.name: purchases,
-    settings.name: settings,
-    signIn.name: signIn,
-    profile.name: profile,
-    notFound.name: notFound,
-    reports.name: reports,
-    shortCuts.name: shortCuts,
-    menu.name: menu,
-    persons.name: persons,
-    animalProducts.name: animalProducts,
+  static Map<String, MicroAppsName> microAppsNameArray() =>
+      <String, MicroAppsName>{
+        purchases.name: purchases,
+        home.name: home,
+        purchasesForm.name: purchasesForm,
+        settings.name: settings,
+        signIn.name: signIn,
+        profile.name: profile,
+        notFound.name: notFound,
+        reports.name: reports,
+        shortCuts.name: shortCuts,
+        menu.name: menu,
+        persons.name: persons,
+        personsForm.name: personsForm,
+        animalProducts.name: animalProducts,
+        animalProductsForm.name: animalProductsForm,
+        orders.name: orders,
+        ordersPendingStates.name: ordersPendingStates,
+        ordersForm.name: ordersForm,
+      };
+  static final Map<String, MicroAppsName> _nameToEnum = {
+    for (var e in MicroAppsName.values) e.persianName: e,
   };
 
-  MicroAppsName? getByString(String value) {
-    final array = microAppsNameArray();
+  static MicroAppsName? fromPersianName(String persianName) =>
+      _nameToEnum[persianName];
 
-    return (array[value] as Map<String, MicroAppsName>).values.firstOrNull;
+  static MicroAppsName getByString(String value, {MicroAppsName defaultValue = notFound}) {
+    return microAppsNameArray()[value] ?? defaultValue;
   }
-
-
 }
