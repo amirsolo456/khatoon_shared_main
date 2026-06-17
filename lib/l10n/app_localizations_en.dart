@@ -73,6 +73,9 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String get title => 'Khatoon Application';
+
+  @override
   String get appTitle => 'Accounting App';
 
   @override
@@ -794,6 +797,66 @@ class AppLocalizationsEn extends AppLocalizations {
   String get report_toDate => 'To Date';
 
   @override
+  String get report_all_activities => 'Activities Report';
+
+  @override
+  String get report_invoices => 'Invoices Report';
+
+  @override
+  String get report_payments => 'Payments Report';
+
+  @override
+  String get report_orders => 'Orders Report';
+
+  @override
+  String get report_users => 'Users Report';
+
+  @override
+  String get report_persons => 'Persons Report';
+
+  @override
+  String get report_products => 'Products Report';
+
+  @override
+  String get report_animals => 'Animals Report';
+
+  @override
+  String get report_combined => 'Combined Report';
+
+  @override
+  String get report_total_count => 'Total Count';
+
+  @override
+  String get report_total_amount => 'Total Amount';
+
+  @override
+  String get report_filter_type => 'Type';
+
+  @override
+  String get report_filter_status => 'Status';
+
+  @override
+  String get report_clear_filters => 'Clear Filters';
+
+  @override
+  String get report_no_data => 'No data found';
+
+  @override
+  String get report_error => 'Error fetching report';
+
+  @override
+  String get report_category => 'Category';
+
+  @override
+  String get report_date => 'Date';
+
+  @override
+  String get report_number => 'Number';
+
+  @override
+  String get report_customer => 'Customer/Party';
+
+  @override
   String get settings_settings => 'Settings';
 
   @override
@@ -937,4 +1000,58 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get profile_settings => 'Account Settings';
+
+  @override
+  String get profile_personal_info => 'Personal Info';
+
+  @override
+  String get profile_create_user => 'Create New User';
+
+  @override
+  String get profile_todo_reminders => 'Planning & Reminders';
+
+  @override
+  String get profile_general_settings => 'App Settings';
+
+  @override
+  String get profile_edit_info => 'Edit Info';
+
+  @override
+  String get profile_save_changes => 'Save Changes';
+
+  @override
+  String get profile_cancel => 'Cancel';
+
+  @override
+  String get profile_new_user_success => 'New user created successfully';
+
+  @override
+  String get profile_update_success => 'Information updated successfully';
+
+  @override
+  String get profile_db_connection => 'Database Connection Settings';
+
+  @override
+  String get profile_base_url => 'Server URL (API)';
+
+  @override
+  String get profile_font_settings => 'Font Settings';
+
+  @override
+  String get profile_theme_settings => 'Theme Settings';
+
+  @override
+  String get profile_language_settings => 'Language Settings';
+
+  @override
+  String get profile_todo_empty => 'Todo list is empty';
+
+  @override
+  String get profile_add_todo => 'Add new task or reminder...';
+
+  @override
+  String get profile_guest_user => 'Guest User';
+
+  @override
+  String get profile_not_logged_in => 'Please log in to your account';
 }

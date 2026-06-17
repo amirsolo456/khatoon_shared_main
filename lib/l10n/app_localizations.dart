@@ -146,6 +146,12 @@ abstract class AppLocalizations {
   /// **'Your balance is {amount} on {date}'**
   String pageHomeBalance(double amount, DateTime date);
 
+  /// No description provided for @title.
+  ///
+  /// In en, this message translates to:
+  /// **'Khatoon Application'**
+  String get title;
+
   /// No description provided for @appTitle.
   ///
   /// In en, this message translates to:
@@ -1562,6 +1568,126 @@ abstract class AppLocalizations {
   /// **'To Date'**
   String get report_toDate;
 
+  /// No description provided for @report_all_activities.
+  ///
+  /// In en, this message translates to:
+  /// **'Activities Report'**
+  String get report_all_activities;
+
+  /// No description provided for @report_invoices.
+  ///
+  /// In en, this message translates to:
+  /// **'Invoices Report'**
+  String get report_invoices;
+
+  /// No description provided for @report_payments.
+  ///
+  /// In en, this message translates to:
+  /// **'Payments Report'**
+  String get report_payments;
+
+  /// No description provided for @report_orders.
+  ///
+  /// In en, this message translates to:
+  /// **'Orders Report'**
+  String get report_orders;
+
+  /// No description provided for @report_users.
+  ///
+  /// In en, this message translates to:
+  /// **'Users Report'**
+  String get report_users;
+
+  /// No description provided for @report_persons.
+  ///
+  /// In en, this message translates to:
+  /// **'Persons Report'**
+  String get report_persons;
+
+  /// No description provided for @report_products.
+  ///
+  /// In en, this message translates to:
+  /// **'Products Report'**
+  String get report_products;
+
+  /// No description provided for @report_animals.
+  ///
+  /// In en, this message translates to:
+  /// **'Animals Report'**
+  String get report_animals;
+
+  /// No description provided for @report_combined.
+  ///
+  /// In en, this message translates to:
+  /// **'Combined Report'**
+  String get report_combined;
+
+  /// No description provided for @report_total_count.
+  ///
+  /// In en, this message translates to:
+  /// **'Total Count'**
+  String get report_total_count;
+
+  /// No description provided for @report_total_amount.
+  ///
+  /// In en, this message translates to:
+  /// **'Total Amount'**
+  String get report_total_amount;
+
+  /// No description provided for @report_filter_type.
+  ///
+  /// In en, this message translates to:
+  /// **'Type'**
+  String get report_filter_type;
+
+  /// No description provided for @report_filter_status.
+  ///
+  /// In en, this message translates to:
+  /// **'Status'**
+  String get report_filter_status;
+
+  /// No description provided for @report_clear_filters.
+  ///
+  /// In en, this message translates to:
+  /// **'Clear Filters'**
+  String get report_clear_filters;
+
+  /// No description provided for @report_no_data.
+  ///
+  /// In en, this message translates to:
+  /// **'No data found'**
+  String get report_no_data;
+
+  /// No description provided for @report_error.
+  ///
+  /// In en, this message translates to:
+  /// **'Error fetching report'**
+  String get report_error;
+
+  /// No description provided for @report_category.
+  ///
+  /// In en, this message translates to:
+  /// **'Category'**
+  String get report_category;
+
+  /// No description provided for @report_date.
+  ///
+  /// In en, this message translates to:
+  /// **'Date'**
+  String get report_date;
+
+  /// No description provided for @report_number.
+  ///
+  /// In en, this message translates to:
+  /// **'Number'**
+  String get report_number;
+
+  /// No description provided for @report_customer.
+  ///
+  /// In en, this message translates to:
+  /// **'Customer/Party'**
+  String get report_customer;
+
   /// No description provided for @settings_settings.
   ///
   /// In en, this message translates to:
@@ -1849,6 +1975,114 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Account Settings'**
   String get profile_settings;
+
+  /// No description provided for @profile_personal_info.
+  ///
+  /// In en, this message translates to:
+  /// **'Personal Info'**
+  String get profile_personal_info;
+
+  /// No description provided for @profile_create_user.
+  ///
+  /// In en, this message translates to:
+  /// **'Create New User'**
+  String get profile_create_user;
+
+  /// No description provided for @profile_todo_reminders.
+  ///
+  /// In en, this message translates to:
+  /// **'Planning & Reminders'**
+  String get profile_todo_reminders;
+
+  /// No description provided for @profile_general_settings.
+  ///
+  /// In en, this message translates to:
+  /// **'App Settings'**
+  String get profile_general_settings;
+
+  /// No description provided for @profile_edit_info.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit Info'**
+  String get profile_edit_info;
+
+  /// No description provided for @profile_save_changes.
+  ///
+  /// In en, this message translates to:
+  /// **'Save Changes'**
+  String get profile_save_changes;
+
+  /// No description provided for @profile_cancel.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get profile_cancel;
+
+  /// No description provided for @profile_new_user_success.
+  ///
+  /// In en, this message translates to:
+  /// **'New user created successfully'**
+  String get profile_new_user_success;
+
+  /// No description provided for @profile_update_success.
+  ///
+  /// In en, this message translates to:
+  /// **'Information updated successfully'**
+  String get profile_update_success;
+
+  /// No description provided for @profile_db_connection.
+  ///
+  /// In en, this message translates to:
+  /// **'Database Connection Settings'**
+  String get profile_db_connection;
+
+  /// No description provided for @profile_base_url.
+  ///
+  /// In en, this message translates to:
+  /// **'Server URL (API)'**
+  String get profile_base_url;
+
+  /// No description provided for @profile_font_settings.
+  ///
+  /// In en, this message translates to:
+  /// **'Font Settings'**
+  String get profile_font_settings;
+
+  /// No description provided for @profile_theme_settings.
+  ///
+  /// In en, this message translates to:
+  /// **'Theme Settings'**
+  String get profile_theme_settings;
+
+  /// No description provided for @profile_language_settings.
+  ///
+  /// In en, this message translates to:
+  /// **'Language Settings'**
+  String get profile_language_settings;
+
+  /// No description provided for @profile_todo_empty.
+  ///
+  /// In en, this message translates to:
+  /// **'Todo list is empty'**
+  String get profile_todo_empty;
+
+  /// No description provided for @profile_add_todo.
+  ///
+  /// In en, this message translates to:
+  /// **'Add new task or reminder...'**
+  String get profile_add_todo;
+
+  /// No description provided for @profile_guest_user.
+  ///
+  /// In en, this message translates to:
+  /// **'Guest User'**
+  String get profile_guest_user;
+
+  /// No description provided for @profile_not_logged_in.
+  ///
+  /// In en, this message translates to:
+  /// **'Please log in to your account'**
+  String get profile_not_logged_in;
 }
 
 class _AppLocalizationsDelegate

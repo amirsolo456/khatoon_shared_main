@@ -44,6 +44,8 @@ enum MicroAppsName {
         personsForm.name: personsForm,
         animalProducts.name: animalProducts,
         animalProductsForm.name: animalProductsForm,
+        products.name: products,
+        productsForm.name: productsForm,
         orders.name: orders,
         ordersPendingStates.name: ordersPendingStates,
         ordersForm.name: ordersForm,

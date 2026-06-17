@@ -7,6 +7,9 @@ export 'src/repositories/i_user_repository.dart';
 
 export 'src/dto_s/user.dart';
 export 'src/dto_s/enum/enum.dart';
+export 'src/dto_s/enum/enums_model.dart';
+export 'src/dto_s/enum/enums_tittle_model.dart';
+export 'src/dto_s/enum/enum_tree_node.dart';
 export 'src/dto_s/animal/animal.dart';
 export 'src/dto_s/base_response.dart';
 

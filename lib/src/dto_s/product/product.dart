@@ -8,6 +8,8 @@ class Product {
   final int id;
   final String name;
   final String? code;
+  @JsonKey(name: 'product_Code')
+  final int product_code;
   final String? description;
   final String? unit;
   final double? defaultPrice;
@@ -24,6 +26,7 @@ class Product {
   Product({
     required this.id,
     required this.name,
+    required this.product_code,
     this.code,
     this.description,
     this.unit,

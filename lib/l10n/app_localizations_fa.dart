@@ -73,6 +73,9 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
+  String get title => 'اپلیکیشن خاتون';
+
+  @override
   String get appTitle => 'نرم‌افزار حسابداری';
 
   @override
@@ -793,6 +796,66 @@ class AppLocalizationsFa extends AppLocalizations {
   String get report_toDate => 'تا تاریخ';
 
   @override
+  String get report_all_activities => 'گزارش فعالیت‌ها';
+
+  @override
+  String get report_invoices => 'گزارش فاکتورها';
+
+  @override
+  String get report_payments => 'گزارش پرداخت‌ها';
+
+  @override
+  String get report_orders => 'گزارش سفارش‌ها';
+
+  @override
+  String get report_users => 'گزارش کاربران';
+
+  @override
+  String get report_persons => 'گزارش اشخاص';
+
+  @override
+  String get report_products => 'گزارش کالاها';
+
+  @override
+  String get report_animals => 'گزارش دام‌ها';
+
+  @override
+  String get report_combined => 'گزارش ترکیبی';
+
+  @override
+  String get report_total_count => 'تعداد کل';
+
+  @override
+  String get report_total_amount => 'مبلغ کل';
+
+  @override
+  String get report_filter_type => 'نوع';
+
+  @override
+  String get report_filter_status => 'وضعیت';
+
+  @override
+  String get report_clear_filters => 'پاکسازی فیلترها';
+
+  @override
+  String get report_no_data => 'داده‌ای یافت نشد';
+
+  @override
+  String get report_error => 'خطا در دریافت گزارش';
+
+  @override
+  String get report_category => 'دسته‌بندی';
+
+  @override
+  String get report_date => 'تاریخ';
+
+  @override
+  String get report_number => 'شماره';
+
+  @override
+  String get report_customer => 'طرف حساب';
+
+  @override
   String get settings_settings => 'تنظیمات';
 
   @override
@@ -936,4 +999,58 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get profile_settings => 'تنظیمات حساب';
+
+  @override
+  String get profile_personal_info => 'اطلاعات کاربری';
+
+  @override
+  String get profile_create_user => 'تعریف کاربر جدید';
+
+  @override
+  String get profile_todo_reminders => 'برنامه ریزی و یادآوری';
+
+  @override
+  String get profile_general_settings => 'تنظیمات برنامه';
+
+  @override
+  String get profile_edit_info => 'ویرایش اطلاعات';
+
+  @override
+  String get profile_save_changes => 'ذخیره تغییرات';
+
+  @override
+  String get profile_cancel => 'انصراف';
+
+  @override
+  String get profile_new_user_success => 'کاربر جدید با موفقیت ایجاد شد';
+
+  @override
+  String get profile_update_success => 'اطلاعات با موفقیت به‌روزرسانی شد';
+
+  @override
+  String get profile_db_connection => 'تنظیمات اتصال به دیتابیس';
+
+  @override
+  String get profile_base_url => 'آدرس سرور (API)';
+
+  @override
+  String get profile_font_settings => 'تنظیمات فونت';
+
+  @override
+  String get profile_theme_settings => 'تنظیمات تم';
+
+  @override
+  String get profile_language_settings => 'تنظیمات زبان';
+
+  @override
+  String get profile_todo_empty => 'لیست کارها خالی است';
+
+  @override
+  String get profile_add_todo => 'افزودن کار یا یادآوری جدید...';
+
+  @override
+  String get profile_guest_user => 'کاربر مهمان';
+
+  @override
+  String get profile_not_logged_in => 'لطفاً وارد حساب خود شوید';
 }

@@ -27,7 +27,7 @@ dev_dependencies:
   test: ^1.25.5
   build_runner: ^2.4.13        # منتقل شد
   json_serializable: ^6.8.0    # منتقل شد
-
+  l10n_gen: ^1.0.0
 flutter:
   uses-material-design: true
   generate: true
