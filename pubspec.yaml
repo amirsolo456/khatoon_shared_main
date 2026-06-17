@@ -19,6 +19,7 @@ dependencies:
   freezed_annotation: ^2.1.0
   equatable: ^2.0.8
   event_bus: ^2.0.1
+  flutter_svg: ^1.0.3
 
 dev_dependencies:
   flutter_test:
@@ -36,3 +37,15 @@ flutter:
     - assets/avatar/
     - assets/phase2/
     - assets/tags/
+flutter_assets_generator:
+  output_dir: generated/
+  output_filename: assets
+  class_name: Assets
+  auto_detection: true
+  # Automatically add missing dependencies (rive, flutter_svg, lottie) default: true
+  auto_add_dependencies: true
+  # Options: robust (default), legacy (old style)
+  style: robust
+  package_parameter_enabled: false
+  named_with_parent: true
+  path_ignore: [ ]

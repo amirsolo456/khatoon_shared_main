@@ -21,7 +21,8 @@ class Product {
 
   // فیلدهای جدید برای ارتباط با دسته‌بندی
   final int typeId;                     // non-nullable
-  final ProductsType? type;             // در صورت Include شدن در پاسخ API
+  final String? typeName;
+  // final ProductsType? type;             // در صورت Include شدن در پاسخ API
 
   Product({
     required this.id,
@@ -37,7 +38,8 @@ class Product {
     required this.createdAt,
     required this.updatedAt,
     required this.typeId,
-    this.type,
+    // this.type,
+     this.typeName,
   });
 
   factory Product.fromJson(Map<String, dynamic> json) => _$ProductFromJson(json);

@@ -41,6 +41,8 @@ export 'src/event_base_core/custom_event_bus/custom_event_bus.dart';
 export 'l10n/app_localizations.dart';
 export 'l10n/app_localizations_fa.dart';
 export 'l10n/app_localizations_en.dart';
+
+export 'generated/assets.dart';
 // export 'src/event_base_core/utils/MicroAppsName.dart';
 
 // export 'src/event_base_core/utils/enum.dart';

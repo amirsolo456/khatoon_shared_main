@@ -20,9 +20,7 @@ Product _$ProductFromJson(Map json) => Product(
   createdAt: DateTime.parse(json['createdAt'] as String),
   updatedAt: DateTime.parse(json['updatedAt'] as String),
   typeId: (json['typeId'] as num).toInt(),
-  type: json['type'] == null
-      ? null
-      : ProductsType.fromJson(Map<String, dynamic>.from(json['type'] as Map)),
+  typeName: json['typeName'] as String?,
 );
 
 Map<String, dynamic> _$ProductToJson(Product instance) => <String, dynamic>{
@@ -39,5 +37,5 @@ Map<String, dynamic> _$ProductToJson(Product instance) => <String, dynamic>{
   'createdAt': instance.createdAt.toIso8601String(),
   'updatedAt': instance.updatedAt.toIso8601String(),
   'typeId': instance.typeId,
-  'type': instance.type?.toJson(),
+  'typeName': instance.typeName,
 };
