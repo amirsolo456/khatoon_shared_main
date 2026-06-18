@@ -19,7 +19,7 @@ dependencies:
   freezed_annotation: ^2.1.0
   equatable: ^2.0.8
   event_bus: ^2.0.1
-  flutter_svg: ^1.0.3
+  flutter_svg: ^2.2.3
 
 dev_dependencies:
   flutter_test:

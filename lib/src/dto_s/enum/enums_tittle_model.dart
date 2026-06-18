@@ -8,12 +8,12 @@ part 'enums_tittle_model.g.dart';
 class EnumsTittleModel {
   final int id;
   final String title;
-  final List<EnumsModel>? enums;
+  // final List<EnumsModel>? enums;
 
   EnumsTittleModel({
     required this.id,
     required this.title,
-    this.enums,
+    // this.enums,
   });
 
   factory EnumsTittleModel.fromJson(Map<String, dynamic> json) =>

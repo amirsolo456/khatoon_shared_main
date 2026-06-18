@@ -38,8 +38,8 @@ class Product {
     required this.createdAt,
     required this.updatedAt,
     required this.typeId,
+      this.typeName,
     // this.type,
-     this.typeName,
   });
 
   factory Product.fromJson(Map<String, dynamic> json) => _$ProductFromJson(json);

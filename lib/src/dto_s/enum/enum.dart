@@ -182,3 +182,17 @@ class UserRankHelper {
         .key;
   }
 }
+
+enum ComboEnumsItem {
+  defaults(0),
+  orderState(1),
+  logType(2),
+  userPermission(3),
+  sendingType(4),
+  paymentMethod(5),
+  paymentDirection(6),units(7);
+
+  const ComboEnumsItem(this.code);
+
+  final int code;
+}

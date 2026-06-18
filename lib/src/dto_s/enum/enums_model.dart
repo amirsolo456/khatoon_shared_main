@@ -1,5 +1,6 @@
 // lib/features/enums/data/models/enums_model.dart
 import 'package:json_annotation/json_annotation.dart';
+import 'package:khatoon_shared/index.dart';
 
 part 'enums_model.g.dart';
 
@@ -7,18 +8,18 @@ part 'enums_model.g.dart';
 class EnumsModel {
   final int id;
   final String name;
-  final int tittleId;
+  // final int tittleId;
   final int? parentId;
-  final EnumsModel? parent;
-  final List<EnumsModel>? children;
+  final EnumsTittleModel? parent;
+  // final List<EnumsModel>? children;
 
   EnumsModel({
     required this.id,
     required this.name,
-    required this.tittleId,
+    // required this.tittleId,
     this.parentId,
     this.parent,
-    this.children,
+    // this.children,
   });
 
   factory EnumsModel.fromJson(Map<String, dynamic> json) =>
