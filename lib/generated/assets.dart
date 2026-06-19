@@ -88,6 +88,7 @@ class Assets {
   );
   static const SvgGenImage logoiconsvg = SvgGenImage('assets/logoiconsvg.svg');
   static const AssetGenImage mail = AssetGenImage('assets/mail.png');
+  static const SvgGenImage map = SvgGenImage('assets/map.svg');
   static const AssetGenImage menu = AssetGenImage('assets/menu.png');
   static const AssetGenImage menu2 = AssetGenImage('assets/menu2.png');
   static const AssetGenImage menuDark = AssetGenImage('assets/menu_dark.png');
@@ -95,9 +96,13 @@ class Assets {
   static const AssetGenImage newItem = AssetGenImage('assets/new_item.png');
   static const AssetGenImage orders = AssetGenImage('assets/orders.png');
   static const AssetGenImage payments = AssetGenImage('assets/payments.png');
+  static const SvgGenImage personAdd = SvgGenImage('assets/person_add.svg');
+  static const AssetGenImage printPng = AssetGenImage('assets/print.png');
+  static const SvgGenImage printSvg = SvgGenImage('assets/print.svg');
   static const AssetGenImage product = AssetGenImage('assets/product.png');
   static const AssetGenImage products = AssetGenImage('assets/products.png');
   static const AssetGenImage prohet = AssetGenImage('assets/prohet.png');
+  static const SvgGenImage refresh = SvgGenImage('assets/refresh.svg');
   static const SvgGenImage reports = SvgGenImage('assets/reports.svg');
   static const AssetGenImage revenue = AssetGenImage('assets/revenue.png');
   static const AssetGenImage saler = AssetGenImage('assets/saler.png');
@@ -128,6 +133,7 @@ class Assets {
     'assets/user_profile_dark.png',
   );
   static const $AssetsAvatarGen avatar = $AssetsAvatarGen();
+  static const $AssetsFontsGen fonts = $AssetsFontsGen();
   static const $AssetsPhase2Gen phase2 = $AssetsPhase2Gen();
   static const $AssetsTagsGen tags = $AssetsTagsGen();
 }
@@ -272,10 +278,26 @@ class $AssetsTagsGen {
   final AssetGenImage pending = const AssetGenImage('assets/tags/pending.png');
 }
 
+class $AssetsFontsGen {
+  const $AssetsFontsGen();
+
+  final String iRANSans = 'assets/fonts/IRANSans.ttf';
+  final String vazir = 'assets/fonts/Vazir.ttf';
+  final String vazirmatnBlack = 'assets/fonts/Vazirmatn-Black.ttf';
+  final String vazirmatnBold = 'assets/fonts/Vazirmatn-Bold.ttf';
+  final String vazirmatnExtraBold = 'assets/fonts/Vazirmatn-ExtraBold.ttf';
+  final String vazirmatnExtraLight = 'assets/fonts/Vazirmatn-ExtraLight.ttf';
+  final String vazirmatnLight = 'assets/fonts/Vazirmatn-Light.ttf';
+  final String vazirmatnRegular = 'assets/fonts/Vazirmatn-Regular.ttf';
+  final String vazirmatnSemiBold = 'assets/fonts/Vazirmatn-SemiBold.ttf';
+  final String vazirmatnThin = 'assets/fonts/Vazirmatn-Thin.ttf';
+}
+
 class AssetGenImage {
   const AssetGenImage(this._assetName, {this.size, this.flavors = const {}});
 
   final String _assetName;
+  static const String package = 'khatoon_shared';
 
   final Size? size;
   final Set<String> flavors;
@@ -300,7 +322,7 @@ class AssetGenImage {
     bool matchTextDirection = false,
     bool gaplessPlayback = false,
     bool isAntiAlias = false,
-    String? package,
+    String? package = package,
     FilterQuality filterQuality = FilterQuality.low,
     int? cacheWidth,
     int? cacheHeight,
@@ -333,7 +355,7 @@ class AssetGenImage {
     );
   }
 
-  ImageProvider provider({AssetBundle? bundle, String? package}) {
+  ImageProvider provider({AssetBundle? bundle, String? package = package}) {
     return AssetImage(_assetName, bundle: bundle, package: package);
   }
 
@@ -347,7 +369,7 @@ class AssetGenImage {
     );
   }
 
-  String get path => _assetName;
+  String get path => 'packages/khatoon_shared/$_assetName';
 
   String get keyName => _assetName;
 }
@@ -356,12 +378,13 @@ class SvgGenImage {
   const SvgGenImage(this._assetName);
 
   final String _assetName;
+  static const String package = 'khatoon_shared';
 
   SvgPicture svg({
     Key? key,
     bool matchTextDirection = false,
     AssetBundle? bundle,
-    String? package,
+    String? package = package,
     double? width,
     double? height,
     BoxFit fit = BoxFit.contain,
@@ -408,7 +431,7 @@ class SvgGenImage {
     );
   }
 
-  String get path => _assetName;
+  String get path => 'packages/khatoon_shared/$_assetName';
 
   String get keyName => _assetName;
 }

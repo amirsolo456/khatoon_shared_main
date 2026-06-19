@@ -101,7 +101,7 @@ abstract class AppLocalizations {
   /// No description provided for @appName.
   ///
   /// In en, this message translates to:
-  /// **'Demo app'**
+  /// **'Khatoon App'**
   String get appName;
 
   /// No description provided for @pageLoginUsername.
@@ -1352,6 +1352,12 @@ abstract class AppLocalizations {
   /// **'Total Amount'**
   String get invoice_totalAmount;
 
+  /// No description provided for @invoice_cancel.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel Invoice'**
+  String get invoice_cancel;
+
   /// No description provided for @invoice_discount.
   ///
   /// In en, this message translates to:
@@ -1429,6 +1435,186 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'No invoices found'**
   String get invoice_common_empty;
+
+  /// No description provided for @invoice_all_invoices.
+  ///
+  /// In en, this message translates to:
+  /// **'All Invoices'**
+  String get invoice_all_invoices;
+
+  /// No description provided for @invoice_seller_info.
+  ///
+  /// In en, this message translates to:
+  /// **'Seller Info'**
+  String get invoice_seller_info;
+
+  /// No description provided for @invoice_buyer_info.
+  ///
+  /// In en, this message translates to:
+  /// **'Buyer Info'**
+  String get invoice_buyer_info;
+
+  /// No description provided for @invoice_items.
+  ///
+  /// In en, this message translates to:
+  /// **'Invoice Items'**
+  String get invoice_items;
+
+  /// No description provided for @invoice_add_item.
+  ///
+  /// In en, this message translates to:
+  /// **'Add Line'**
+  String get invoice_add_item;
+
+  /// No description provided for @invoice_product_desc.
+  ///
+  /// In en, this message translates to:
+  /// **'Product Description'**
+  String get invoice_product_desc;
+
+  /// No description provided for @invoice_quantity.
+  ///
+  /// In en, this message translates to:
+  /// **'Quantity'**
+  String get invoice_quantity;
+
+  /// No description provided for @invoice_unit_price.
+  ///
+  /// In en, this message translates to:
+  /// **'Unit Price'**
+  String get invoice_unit_price;
+
+  /// No description provided for @invoice_line_total.
+  ///
+  /// In en, this message translates to:
+  /// **'Line Total'**
+  String get invoice_line_total;
+
+  /// No description provided for @invoice_select_product_hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Select Product...'**
+  String get invoice_select_product_hint;
+
+  /// No description provided for @invoice_currency_rial.
+  ///
+  /// In en, this message translates to:
+  /// **' Rial'**
+  String get invoice_currency_rial;
+
+  /// No description provided for @invoice_subtotal.
+  ///
+  /// In en, this message translates to:
+  /// **'Subtotal:'**
+  String get invoice_subtotal;
+
+  /// No description provided for @invoice_tax_label.
+  ///
+  /// In en, this message translates to:
+  /// **'Tax and Duties (9%):'**
+  String get invoice_tax_label;
+
+  /// No description provided for @invoice_grand_total.
+  ///
+  /// In en, this message translates to:
+  /// **'Grand Total:'**
+  String get invoice_grand_total;
+
+  /// No description provided for @invoice_preview_only.
+  ///
+  /// In en, this message translates to:
+  /// **'Preview Only'**
+  String get invoice_preview_only;
+
+  /// No description provided for @invoice_save_and_print.
+  ///
+  /// In en, this message translates to:
+  /// **'Save and Print Invoice'**
+  String get invoice_save_and_print;
+
+  /// No description provided for @invoice_save_only.
+  ///
+  /// In en, this message translates to:
+  /// **'Save Only'**
+  String get invoice_save_only;
+
+  /// No description provided for @invoice_cancel_confirm_msg.
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure? All data will be cleared.'**
+  String get invoice_cancel_confirm_msg;
+
+  /// No description provided for @invoice_cancel_confirm_yes.
+  ///
+  /// In en, this message translates to:
+  /// **'Yes, clear it'**
+  String get invoice_cancel_confirm_yes;
+
+  /// No description provided for @invoice_error_no_items.
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter at least one item with a valid price'**
+  String get invoice_error_no_items;
+
+  /// No description provided for @invoice_save_success.
+  ///
+  /// In en, this message translates to:
+  /// **'Invoice saved successfully'**
+  String get invoice_save_success;
+
+  /// No description provided for @invoice_save_error_prefix.
+  ///
+  /// In en, this message translates to:
+  /// **'Error saving invoice: '**
+  String get invoice_save_error_prefix;
+
+  /// No description provided for @invoice_error_timeout.
+  ///
+  /// In en, this message translates to:
+  /// **'Request timed out. Server is not responding.'**
+  String get invoice_error_timeout;
+
+  /// No description provided for @invoice_product_selection_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Select Goods and Services'**
+  String get invoice_product_selection_title;
+
+  /// No description provided for @invoice_product_search_hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Search product name or code...'**
+  String get invoice_product_search_hint;
+
+  /// No description provided for @invoice_product_code_prefix.
+  ///
+  /// In en, this message translates to:
+  /// **'Code: '**
+  String get invoice_product_code_prefix;
+
+  /// No description provided for @invoice_product_unit_prefix.
+  ///
+  /// In en, this message translates to:
+  /// **' | Unit: '**
+  String get invoice_product_unit_prefix;
+
+  /// No description provided for @invoice_product_load_error.
+  ///
+  /// In en, this message translates to:
+  /// **'Error loading products: '**
+  String get invoice_product_load_error;
+
+  /// No description provided for @invoice_multi_shipment.
+  ///
+  /// In en, this message translates to:
+  /// **'Multi Shipment'**
+  String get invoice_multi_shipment;
+
+  /// No description provided for @invoice_multi_settlement.
+  ///
+  /// In en, this message translates to:
+  /// **'Multi Settlement'**
+  String get invoice_multi_settlement;
 
   /// No description provided for @product_products.
   ///

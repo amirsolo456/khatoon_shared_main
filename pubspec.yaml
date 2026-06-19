@@ -28,7 +28,7 @@ dev_dependencies:
   test: ^1.25.5
   build_runner: ^2.4.13        # منتقل شد
   json_serializable: ^6.8.0    # منتقل شد
-  l10n_gen: ^1.0.0
+#  l10n_gen: ^1.0.0
 flutter:
   uses-material-design: true
   generate: true
@@ -37,6 +37,15 @@ flutter:
     - assets/avatar/
     - assets/phase2/
     - assets/tags/
+    - assets/fonts/
+  fonts:
+    - family: Vazir
+      fonts:
+        - asset: assets/fonts/Vazir.ttf
+    - family: IranSans
+      fonts:
+        - asset: assets/fonts/IRANSans.ttf
+
 flutter_assets_generator:
   output_dir: generated/
   output_filename: assets
@@ -46,6 +55,8 @@ flutter_assets_generator:
   auto_add_dependencies: true
   # Options: robust (default), legacy (old style)
   style: robust
-  package_parameter_enabled: false
-  named_with_parent: true
+  package_parameter_enabled: true
+  named_with_parent: false
   path_ignore: [ ]
+flutter_intl:
+  enabled: true

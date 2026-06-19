@@ -687,6 +687,9 @@ class AppLocalizationsFa extends AppLocalizations {
   String get invoice_totalAmount => 'مبلغ کل';
 
   @override
+  String get invoice_cancel => 'لغو فاکتور';
+
+  @override
   String get invoice_discount => 'تخفیف';
 
   @override
@@ -725,6 +728,99 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get invoice_common_empty => 'هیچ فاکتوری ثبت نشده است';
+
+  @override
+  String get invoice_all_invoices => 'همه صورتحساب ها';
+
+  @override
+  String get invoice_seller_info => 'مشخصات فروشنده';
+
+  @override
+  String get invoice_buyer_info => 'مشخصات خریدار';
+
+  @override
+  String get invoice_items => 'اقلام فاکتور';
+
+  @override
+  String get invoice_add_item => 'افزودن سطر';
+
+  @override
+  String get invoice_product_desc => 'شرح کالا';
+
+  @override
+  String get invoice_quantity => 'تعداد';
+
+  @override
+  String get invoice_unit_price => 'مبلغ واحد';
+
+  @override
+  String get invoice_line_total => 'مبلغ کل';
+
+  @override
+  String get invoice_select_product_hint => 'انتخاب کالا...';
+
+  @override
+  String get invoice_currency_rial => ' ریال';
+
+  @override
+  String get invoice_subtotal => 'جمع کل:';
+
+  @override
+  String get invoice_tax_label => 'مالیات و عوارض (9%):';
+
+  @override
+  String get invoice_grand_total => 'مبلغ قابل پرداخت:';
+
+  @override
+  String get invoice_preview_only => 'فقط پیش‌نمایش';
+
+  @override
+  String get invoice_save_and_print => 'ثبت و چاپ فاکتور';
+
+  @override
+  String get invoice_save_only => 'فقط ذخیره نهایی';
+
+  @override
+  String get invoice_cancel_confirm_msg =>
+      'آیا مطمئن هستید؟ تمام اطلاعات پاک خواهد شد.';
+
+  @override
+  String get invoice_cancel_confirm_yes => 'بله، پاک کن';
+
+  @override
+  String get invoice_error_no_items =>
+      'لطفاً حداقل یک کالا با قیمت معتبر وارد کنید';
+
+  @override
+  String get invoice_save_success => 'فاکتور با موفقیت ذخیره شد';
+
+  @override
+  String get invoice_save_error_prefix => 'خطا در ذخیره فاکتور: ';
+
+  @override
+  String get invoice_error_timeout =>
+      'زمان درخواست به پایان رسید. سرور پاسخ نمی‌دهد.';
+
+  @override
+  String get invoice_product_selection_title => 'انتخاب کالا و خدمات';
+
+  @override
+  String get invoice_product_search_hint => 'جستجوی نام یا کد کالا...';
+
+  @override
+  String get invoice_product_code_prefix => 'کد: ';
+
+  @override
+  String get invoice_product_unit_prefix => ' | واحد: ';
+
+  @override
+  String get invoice_product_load_error => 'خطا در بارگذاری محصولات: ';
+
+  @override
+  String get invoice_multi_shipment => 'چند محموله‌ای (Multi Shipment)';
+
+  @override
+  String get invoice_multi_settlement => 'چند تسویه‌ای (Multi Settlement)';
 
   @override
   String get product_products => 'کالاها';

@@ -9,7 +9,7 @@ class AppLocalizationsEn extends AppLocalizations {
   AppLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
-  String get appName => 'Demo app';
+  String get appName => 'Khatoon App';
 
   @override
   String get pageLoginUsername => 'Your username';
@@ -689,6 +689,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get invoice_totalAmount => 'Total Amount';
 
   @override
+  String get invoice_cancel => 'Cancel Invoice';
+
+  @override
   String get invoice_discount => 'Discount';
 
   @override
@@ -726,6 +729,99 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get invoice_common_empty => 'No invoices found';
+
+  @override
+  String get invoice_all_invoices => 'All Invoices';
+
+  @override
+  String get invoice_seller_info => 'Seller Info';
+
+  @override
+  String get invoice_buyer_info => 'Buyer Info';
+
+  @override
+  String get invoice_items => 'Invoice Items';
+
+  @override
+  String get invoice_add_item => 'Add Line';
+
+  @override
+  String get invoice_product_desc => 'Product Description';
+
+  @override
+  String get invoice_quantity => 'Quantity';
+
+  @override
+  String get invoice_unit_price => 'Unit Price';
+
+  @override
+  String get invoice_line_total => 'Line Total';
+
+  @override
+  String get invoice_select_product_hint => 'Select Product...';
+
+  @override
+  String get invoice_currency_rial => ' Rial';
+
+  @override
+  String get invoice_subtotal => 'Subtotal:';
+
+  @override
+  String get invoice_tax_label => 'Tax and Duties (9%):';
+
+  @override
+  String get invoice_grand_total => 'Grand Total:';
+
+  @override
+  String get invoice_preview_only => 'Preview Only';
+
+  @override
+  String get invoice_save_and_print => 'Save and Print Invoice';
+
+  @override
+  String get invoice_save_only => 'Save Only';
+
+  @override
+  String get invoice_cancel_confirm_msg =>
+      'Are you sure? All data will be cleared.';
+
+  @override
+  String get invoice_cancel_confirm_yes => 'Yes, clear it';
+
+  @override
+  String get invoice_error_no_items =>
+      'Please enter at least one item with a valid price';
+
+  @override
+  String get invoice_save_success => 'Invoice saved successfully';
+
+  @override
+  String get invoice_save_error_prefix => 'Error saving invoice: ';
+
+  @override
+  String get invoice_error_timeout =>
+      'Request timed out. Server is not responding.';
+
+  @override
+  String get invoice_product_selection_title => 'Select Goods and Services';
+
+  @override
+  String get invoice_product_search_hint => 'Search product name or code...';
+
+  @override
+  String get invoice_product_code_prefix => 'Code: ';
+
+  @override
+  String get invoice_product_unit_prefix => ' | Unit: ';
+
+  @override
+  String get invoice_product_load_error => 'Error loading products: ';
+
+  @override
+  String get invoice_multi_shipment => 'Multi Shipment';
+
+  @override
+  String get invoice_multi_settlement => 'Multi Settlement';
 
   @override
   String get product_products => 'Products';
