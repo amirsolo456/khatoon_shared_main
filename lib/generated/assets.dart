@@ -52,6 +52,9 @@ class Assets {
   );
   static const AssetGenImage customer = AssetGenImage('assets/customer.png');
   static const SvgGenImage customers = SvgGenImage('assets/customers.svg');
+  static const SvgGenImage customersWhite = SvgGenImage(
+    'assets/customers_white.svg',
+  );
   static const AssetGenImage dashboard = AssetGenImage('assets/dashboard.png');
   static const AssetGenImage dashboardDark = AssetGenImage(
     'assets/dashboard_dark.png',
@@ -104,9 +107,15 @@ class Assets {
   static const AssetGenImage prohet = AssetGenImage('assets/prohet.png');
   static const SvgGenImage refresh = SvgGenImage('assets/refresh.svg');
   static const SvgGenImage reports = SvgGenImage('assets/reports.svg');
+  static const SvgGenImage reportsWhite = SvgGenImage(
+    'assets/reports_white.svg',
+  );
   static const AssetGenImage revenue = AssetGenImage('assets/revenue.png');
   static const AssetGenImage saler = AssetGenImage('assets/saler.png');
   static const AssetGenImage salers = AssetGenImage('assets/salers.png');
+  static const AssetGenImage salersWhite = AssetGenImage(
+    'assets/salers_white.png',
+  );
   static const SvgGenImage save = SvgGenImage('assets/save.svg');
   static const AssetGenImage search = AssetGenImage('assets/search.png');
   static const AssetGenImage send = AssetGenImage('assets/send.png');
@@ -126,11 +135,17 @@ class Assets {
   static const AssetGenImage tag2 = AssetGenImage('assets/tag2.png');
   static const AssetGenImage tasks = AssetGenImage('assets/tasks.png');
   static const AssetGenImage tasksDark = AssetGenImage('assets/tasks_dark.png');
-  static const AssetGenImage userProfile = AssetGenImage(
+  static const AssetGenImage userProfilePng = AssetGenImage(
     'assets/user_profile.png',
+  );
+  static const SvgGenImage userProfileSvg = SvgGenImage(
+    'assets/user_profile.svg',
   );
   static const AssetGenImage userProfileDark = AssetGenImage(
     'assets/user_profile_dark.png',
+  );
+  static const SvgGenImage userProfileWhite = SvgGenImage(
+    'assets/user_profile_white.svg',
   );
   static const $AssetsAvatarGen avatar = $AssetsAvatarGen();
   static const $AssetsFontsGen fonts = $AssetsFontsGen();
