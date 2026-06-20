@@ -29,6 +29,8 @@ export 'src/dto_s/voice_commands/user_command.dart';
 export 'src/dto_s/voice/voice_command_model.dart';
 export 'src/dto_s/voice/voice_command_category_model.dart';
 
+export 'src/components/voice_recorder_component.dart';
+
 export 'src/event_base_core/utils/enum.dart';
 export 'src/event_base_core/src/default_micro_app.dart';
 export 'src/event_base_core/src/micro_app.dart' show MicroApp;
