@@ -24,6 +24,7 @@ export 'src/dto_s/party/party.dart';
 export 'src/dto_s/city/city.dart';
 export 'src/dto_s/province/province.dart';
 export 'src/dto_s/product/products_type.dart';
+export 'src/dto_s/menu/menu_item_dto.dart';
 export 'src/dto_s/voice_commands/command_log.dart';
 export 'src/dto_s/voice_commands/user_command.dart';
 export 'src/dto_s/voice/voice_command_model.dart';
