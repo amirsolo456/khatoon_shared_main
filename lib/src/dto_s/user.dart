@@ -8,6 +8,7 @@ class User {
   final int id;
   final String username;
   final String password;
+
   final String name;
   final int age;
   final String email;
@@ -19,7 +20,7 @@ class User {
   final String? passwordResetToken;
   final DateTime? resetTokenExpiry;  // یا String اگر به صورت رشته می‌آید
   final String? rowVersion;
-  @JsonKey(ignore: true) // از JSON خوانده نشود (اگر نمی‌خواهید)
+  // @JsonKey(ignore: true) // از JSON خوانده نشود (اگر نمی‌خواهید)
   final String? passwordHash;
 
   User({

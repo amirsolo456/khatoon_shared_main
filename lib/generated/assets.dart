@@ -7,30 +7,25 @@ class Assets {
   Assets._();
 
   static const AssetGenImage arhiveLight = AssetGenImage(
-    'assets/Arhive_light.png',
-  );
+      'assets/Arhive_light.png');
   static const AssetGenImage deskLight = AssetGenImage('assets/Desk_light.png');
-  static const AssetGenImage vector = AssetGenImage('assets/Vector.png');
   static const AssetGenImage addNewButton = AssetGenImage(
-    'assets/add_new_button.png',
-  );
+      'assets/add_new_button.png');
   static const AssetGenImage addUser = AssetGenImage('assets/add_user.png');
   static const AssetGenImage allProducts = AssetGenImage(
-    'assets/all_products.png',
-  );
+      'assets/all_products.png');
+  static const SvgGenImage audioAssistance = SvgGenImage(
+      'assets/audio_assistance.svg');
   static const AssetGenImage avatarFrame = AssetGenImage(
-    'assets/avatar_frame.png',
-  );
+      'assets/avatar_frame.png');
   static const AssetGenImage badgeBlue = AssetGenImage('assets/badge_blue.png');
   static const AssetGenImage badgeGreen = AssetGenImage(
-    'assets/badge_green.png',
-  );
+      'assets/badge_green.png');
   static const AssetGenImage badgeRed = AssetGenImage('assets/badge_red.png');
   static const AssetGenImage bookmark = AssetGenImage('assets/bookmark.png');
   static const AssetGenImage calendar = AssetGenImage('assets/calendar.png');
   static const AssetGenImage calendarDark = AssetGenImage(
-    'assets/calendar_dark.png',
-  );
+      'assets/calendar_dark.png');
   static const AssetGenImage camera = AssetGenImage('assets/camera.png');
   static const AssetGenImage cart = AssetGenImage('assets/cart.png');
   static const AssetGenImage chart = AssetGenImage('assets/chart.png');
@@ -42,53 +37,42 @@ class Assets {
   static const AssetGenImage closeDark = AssetGenImage('assets/close_dark.png');
   static const AssetGenImage company = AssetGenImage('assets/company.png');
   static const AssetGenImage createCustomer = AssetGenImage(
-    'assets/create_customer.png',
-  );
+      'assets/create_customer.png');
   static const SvgGenImage createProduct = SvgGenImage(
-    'assets/create_product.svg',
-  );
+      'assets/create_product.svg');
   static const AssetGenImage createSaler = AssetGenImage(
-    'assets/create_saler.png',
-  );
+      'assets/create_saler.png');
   static const AssetGenImage customer = AssetGenImage('assets/customer.png');
   static const SvgGenImage customers = SvgGenImage('assets/customers.svg');
   static const SvgGenImage customersWhite = SvgGenImage(
-    'assets/customers_white.svg',
-  );
+      'assets/customers_white.svg');
   static const AssetGenImage dashboard = AssetGenImage('assets/dashboard.png');
   static const AssetGenImage dashboardDark = AssetGenImage(
-    'assets/dashboard_dark.png',
-  );
+      'assets/dashboard_dark.png');
   static const AssetGenImage date = AssetGenImage('assets/date.png');
   static const AssetGenImage delete = AssetGenImage('assets/delete.png');
   static const AssetGenImage fileDockLight = AssetGenImage(
-    'assets/file_dock_light.png',
-  );
+      'assets/file_dock_light.png');
   static const AssetGenImage filtersButton = AssetGenImage(
-    'assets/filters_button.png',
-  );
+      'assets/filters_button.png');
   static const AssetGenImage google = AssetGenImage('assets/google.png');
   static const AssetGenImage gridView = AssetGenImage('assets/grid_view.png');
   static const AssetGenImage heart = AssetGenImage('assets/heart.png');
   static const AssetGenImage homePng = AssetGenImage('assets/home.png');
   static const SvgGenImage homeSvg = SvgGenImage('assets/home.svg');
   static const AssetGenImage iconNotFoundPng = AssetGenImage(
-    'assets/icon_not_found.png',
-  );
+      'assets/icon_not_found.png');
   static const SvgGenImage iconNotFoundSvg = SvgGenImage(
-    'assets/icon_not_found.svg',
-  );
+      'assets/icon_not_found.svg');
   static const AssetGenImage invoicePng = AssetGenImage('assets/invoice.png');
   static const SvgGenImage invoiceSvg = SvgGenImage('assets/invoice.svg');
   static const AssetGenImage invoiceDark = AssetGenImage(
-    'assets/invoice_dark.png',
-  );
+      'assets/invoice_dark.png');
   static const AssetGenImage logo = AssetGenImage('assets/logo.png');
   static const AssetGenImage logoDark = AssetGenImage('assets/logo_dark.png');
   static const AssetGenImage logoicon = AssetGenImage('assets/logoicon.png');
   static const AssetGenImage logoicon32 = AssetGenImage(
-    'assets/logoicon32.png',
-  );
+      'assets/logoicon32.png');
   static const SvgGenImage logoiconsvg = SvgGenImage('assets/logoiconsvg.svg');
   static const AssetGenImage mail = AssetGenImage('assets/mail.png');
   static const SvgGenImage map = SvgGenImage('assets/map.svg');
@@ -108,45 +92,37 @@ class Assets {
   static const SvgGenImage refresh = SvgGenImage('assets/refresh.svg');
   static const SvgGenImage reports = SvgGenImage('assets/reports.svg');
   static const SvgGenImage reportsWhite = SvgGenImage(
-    'assets/reports_white.svg',
-  );
+      'assets/reports_white.svg');
   static const AssetGenImage revenue = AssetGenImage('assets/revenue.png');
   static const AssetGenImage saler = AssetGenImage('assets/saler.png');
   static const AssetGenImage salers = AssetGenImage('assets/salers.png');
   static const AssetGenImage salersWhite = AssetGenImage(
-    'assets/salers_white.png',
-  );
+      'assets/salers_white.png');
   static const SvgGenImage save = SvgGenImage('assets/save.svg');
   static const AssetGenImage search = AssetGenImage('assets/search.png');
   static const AssetGenImage send = AssetGenImage('assets/send.png');
   static const AssetGenImage setting = AssetGenImage('assets/setting.png');
   static const AssetGenImage settingDark = AssetGenImage(
-    'assets/setting_dark.png',
-  );
+      'assets/setting_dark.png');
   static const AssetGenImage signOut = AssetGenImage('assets/sign_out.png');
   static const AssetGenImage signOutDark = AssetGenImage(
-    'assets/sign_out_dark.png',
-  );
+      'assets/sign_out_dark.png');
   static const AssetGenImage support = AssetGenImage('assets/support.png');
   static const AssetGenImage supportDark = AssetGenImage(
-    'assets/support_dark.png',
-  );
+      'assets/support_dark.png');
   static const AssetGenImage tag = AssetGenImage('assets/tag.png');
   static const AssetGenImage tag2 = AssetGenImage('assets/tag2.png');
   static const AssetGenImage tasks = AssetGenImage('assets/tasks.png');
   static const AssetGenImage tasksDark = AssetGenImage('assets/tasks_dark.png');
   static const AssetGenImage userProfilePng = AssetGenImage(
-    'assets/user_profile.png',
-  );
+      'assets/user_profile.png');
   static const SvgGenImage userProfileSvg = SvgGenImage(
-    'assets/user_profile.svg',
-  );
+      'assets/user_profile.svg');
   static const AssetGenImage userProfileDark = AssetGenImage(
-    'assets/user_profile_dark.png',
-  );
+      'assets/user_profile_dark.png');
   static const SvgGenImage userProfileWhite = SvgGenImage(
-    'assets/user_profile_white.svg',
-  );
+      'assets/user_profile_white.svg');
+  static const AssetGenImage vector = AssetGenImage('assets/vector.png');
   static const $AssetsAvatarGen avatar = $AssetsAvatarGen();
   static const $AssetsFontsGen fonts = $AssetsFontsGen();
   static const $AssetsPhase2Gen phase2 = $AssetsPhase2Gen();
@@ -175,97 +151,74 @@ class $AssetsPhase2Gen {
 
   final AssetGenImage image = const AssetGenImage('assets/phase2/Image.png');
   final AssetGenImage addImage = const AssetGenImage(
-    'assets/phase2/add_image.png',
-  );
+      'assets/phase2/add_image.png');
   final AssetGenImage addItems = const AssetGenImage(
-    'assets/phase2/add_items.png',
-  );
+      'assets/phase2/add_items.png');
   final AssetGenImage arrowBottom = const AssetGenImage(
-    'assets/phase2/arrow_bottom.png',
-  );
+      'assets/phase2/arrow_bottom.png');
   final AssetGenImage arrowLeft = const AssetGenImage(
-    'assets/phase2/arrow_left.png',
-  );
+      'assets/phase2/arrow_left.png');
   final AssetGenImage arrowRight = const AssetGenImage(
-    'assets/phase2/arrow_right.png',
-  );
+      'assets/phase2/arrow_right.png');
   final AssetGenImage arrowTop = const AssetGenImage(
-    'assets/phase2/arrow_top.png',
-  );
+      'assets/phase2/arrow_top.png');
   final AssetGenImage attach = const AssetGenImage('assets/phase2/attach.png');
   final AssetGenImage calendar = const AssetGenImage(
-    'assets/phase2/calendar.png',
-  );
+      'assets/phase2/calendar.png');
   final AssetGenImage call = const AssetGenImage('assets/phase2/call.png');
   final AssetGenImage cart = const AssetGenImage('assets/phase2/cart.png');
   final AssetGenImage chat = const AssetGenImage('assets/phase2/chat.png');
   final AssetGenImage checkmark = const AssetGenImage(
-    'assets/phase2/checkmark.png',
-  );
+      'assets/phase2/checkmark.png');
   final AssetGenImage clock = const AssetGenImage('assets/phase2/clock.png');
   final AssetGenImage close = const AssetGenImage('assets/phase2/close.png');
   final AssetGenImage comment = const AssetGenImage(
-    'assets/phase2/comment.png',
-  );
+      'assets/phase2/comment.png');
   final AssetGenImage cost = const AssetGenImage('assets/phase2/cost.png');
   final AssetGenImage csv = const AssetGenImage('assets/phase2/csv.png');
   final AssetGenImage dashboard = const AssetGenImage(
-    'assets/phase2/dashboard.png',
-  );
+      'assets/phase2/dashboard.png');
   final AssetGenImage delete = const AssetGenImage('assets/phase2/delete.png');
   final AssetGenImage discount = const AssetGenImage(
-    'assets/phase2/discount.png',
-  );
+      'assets/phase2/discount.png');
   final AssetGenImage download = const AssetGenImage(
-    'assets/phase2/download.png',
-  );
+      'assets/phase2/download.png');
   final AssetGenImage edite = const AssetGenImage('assets/phase2/edite.png');
   final AssetGenImage file = const AssetGenImage('assets/phase2/file.png');
   final AssetGenImage follower = const AssetGenImage(
-    'assets/phase2/follower.png',
-  );
+      'assets/phase2/follower.png');
   final AssetGenImage following = const AssetGenImage(
-    'assets/phase2/following.png',
-  );
+      'assets/phase2/following.png');
   final AssetGenImage history = const AssetGenImage(
-    'assets/phase2/history.png',
-  );
+      'assets/phase2/history.png');
   final AssetGenImage link = const AssetGenImage('assets/phase2/link.png');
   final AssetGenImage location = const AssetGenImage(
-    'assets/phase2/location.png',
-  );
+      'assets/phase2/location.png');
   final AssetGenImage lock = const AssetGenImage('assets/phase2/lock.png');
   final AssetGenImage menu = const AssetGenImage('assets/phase2/menu.png');
   final AssetGenImage mike = const AssetGenImage('assets/phase2/mike.png');
   final AssetGenImage minus = const AssetGenImage('assets/phase2/minus.png');
   final AssetGenImage notification = const AssetGenImage(
-    'assets/phase2/notification.png',
-  );
+      'assets/phase2/notification.png');
   final AssetGenImage order = const AssetGenImage('assets/phase2/order.png');
   final AssetGenImage pdf = const AssetGenImage('assets/phase2/pdf.png');
   final AssetGenImage plus = const AssetGenImage('assets/phase2/plus.png');
   final AssetGenImage printer = const AssetGenImage(
-    'assets/phase2/printer.png',
-  );
+      'assets/phase2/printer.png');
   final AssetGenImage projectPage = const AssetGenImage(
-    'assets/phase2/project_page.png',
-  );
+      'assets/phase2/project_page.png');
   final AssetGenImage rarFile = const AssetGenImage(
-    'assets/phase2/rar_file.png',
-  );
+      'assets/phase2/rar_file.png');
   final AssetGenImage reload = const AssetGenImage('assets/phase2/reload.png');
   final AssetGenImage search = const AssetGenImage('assets/phase2/search.png');
   final AssetGenImage setting = const AssetGenImage(
-    'assets/phase2/setting.png',
-  );
+      'assets/phase2/setting.png');
   final AssetGenImage share = const AssetGenImage('assets/phase2/share.png');
   final AssetGenImage sheild = const AssetGenImage('assets/phase2/sheild.png');
   final AssetGenImage smileEmoji = const AssetGenImage(
-    'assets/phase2/smile_emoji.png',
-  );
+      'assets/phase2/smile_emoji.png');
   final AssetGenImage thumbsUp = const AssetGenImage(
-    'assets/phase2/thumbs-up.png',
-  );
+      'assets/phase2/thumbs-up.png');
   final AssetGenImage upload = const AssetGenImage('assets/phase2/upload.png');
   final AssetGenImage user = const AssetGenImage('assets/phase2/user.png');
   final AssetGenImage users = const AssetGenImage('assets/phase2/users.png');
@@ -273,22 +226,18 @@ class $AssetsPhase2Gen {
   final AssetGenImage windy = const AssetGenImage('assets/phase2/windy.png');
   final AssetGenImage xls = const AssetGenImage('assets/phase2/xls.png');
   final AssetGenImage youtube = const AssetGenImage(
-    'assets/phase2/youtube.png',
-  );
+      'assets/phase2/youtube.png');
   final AssetGenImage zipFile = const AssetGenImage(
-    'assets/phase2/zip_file.png',
-  );
+      'assets/phase2/zip_file.png');
 }
 
 class $AssetsTagsGen {
   const $AssetsTagsGen();
 
   final AssetGenImage canceled = const AssetGenImage(
-    'assets/tags/canceled.png',
-  );
+      'assets/tags/canceled.png');
   final AssetGenImage completed = const AssetGenImage(
-    'assets/tags/completed.png',
-  );
+      'assets/tags/completed.png');
   final AssetGenImage failed = const AssetGenImage('assets/tags/failed.png');
   final AssetGenImage pending = const AssetGenImage('assets/tags/pending.png');
 }
@@ -370,8 +319,15 @@ class AssetGenImage {
     );
   }
 
-  ImageProvider provider({AssetBundle? bundle, String? package = package}) {
-    return AssetImage(_assetName, bundle: bundle, package: package);
+  ImageProvider provider({
+    AssetBundle? bundle,
+    String? package = package,
+  }) {
+    return AssetImage(
+      _assetName,
+      bundle: bundle,
+      package: package,
+    );
   }
 
   Widget custom({
@@ -450,3 +406,4 @@ class SvgGenImage {
 
   String get keyName => _assetName;
 }
+

@@ -191,7 +191,7 @@ class _VoiceRecorderComponentState extends State<VoiceRecorderComponent>
                 decoration: BoxDecoration(
                   color: isRecording
                       ? Color.fromRGBO(224, 48, 64, opacity)
-                      : Colors.white.withOpacity(opacity),
+                      : Colors.white.withValues(alpha: opacity),
                   borderRadius: BorderRadius.circular(2),
                 ),
               );
@@ -474,7 +474,7 @@ class _ActionButton extends StatelessWidget {
           borderRadius: BorderRadius.circular(100),
           border: filled
               ? null
-              : Border.all(color: Colors.white.withOpacity(0.07)),
+              : Border.all(color: Colors.white.withValues(alpha: 0.07)),
         ),
         child: Row(
           mainAxisSize: MainAxisSize.min,

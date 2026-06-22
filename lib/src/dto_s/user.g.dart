@@ -21,6 +21,7 @@ User _$UserFromJson(Map json) => User(
       ? null
       : DateTime.parse(json['resetTokenExpiry'] as String),
   rowVersion: json['rowVersion'] as String?,
+  passwordHash: json['passwordHash'] as String?,
 );
 
 Map<String, dynamic> _$UserToJson(User instance) => <String, dynamic>{
@@ -36,6 +37,7 @@ Map<String, dynamic> _$UserToJson(User instance) => <String, dynamic>{
   'passwordResetToken': instance.passwordResetToken,
   'resetTokenExpiry': instance.resetTokenExpiry?.toIso8601String(),
   'rowVersion': instance.rowVersion,
+  'passwordHash': instance.passwordHash,
 };
 
 const _$UserRankEnumMap = {
