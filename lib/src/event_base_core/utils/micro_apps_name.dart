@@ -24,7 +24,8 @@ enum MicroAppsName {
   orders('orders'),
   audio('audio'),
   aiVoice('aiVoice'),
-  payment('payment');
+  payment('payment'),
+  barcodeScanner('barcodeScanner');
 
   final String persianName;
 
@@ -53,6 +54,7 @@ enum MicroAppsName {
         ordersForm.name: ordersForm,
         audio.name: audio,
         aiVoice.name: aiVoice,
+        barcodeScanner.name: barcodeScanner,
       };
   static final Map<String, MicroAppsName> _nameToEnum = {
     for (var e in MicroAppsName.values) e.persianName: e,
