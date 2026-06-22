@@ -7,6 +7,7 @@ part 'product.g.dart';
 class Product {
   final int id;
   final String name;
+  final String? barCode;
   final String? code;
   @JsonKey(name: 'product_Code')
   final int product_code;
@@ -27,6 +28,7 @@ class Product {
   Product({
     required this.id,
     required this.name,
+      this.barCode,
     required this.product_code,
     this.code,
     this.description,

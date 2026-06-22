@@ -10,6 +10,7 @@ class Assets {
     'assets/Arhive_light.png',
   );
   static const AssetGenImage deskLight = AssetGenImage('assets/Desk_light.png');
+  static const AssetGenImage vector = AssetGenImage('assets/Vector.png');
   static const AssetGenImage addNewButton = AssetGenImage(
     'assets/add_new_button.png',
   );
@@ -146,7 +147,6 @@ class Assets {
   static const SvgGenImage userProfileWhite = SvgGenImage(
     'assets/user_profile_white.svg',
   );
-  static const AssetGenImage vector = AssetGenImage('assets/vector.png');
   static const $AssetsAvatarGen avatar = $AssetsAvatarGen();
   static const $AssetsFontsGen fonts = $AssetsFontsGen();
   static const $AssetsPhase2Gen phase2 = $AssetsPhase2Gen();

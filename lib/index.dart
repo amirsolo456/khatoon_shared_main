@@ -14,6 +14,7 @@ export 'src/dto_s/animal/animal.dart';
 export 'src/dto_s/base_response.dart';
 
 export 'src/dto_s/invoice/invoice.dart';
+export 'src/dto_s/menu/menu_item.dart';
 export 'src/dto_s/invoice_line/invoice_line.dart';
 export 'src/dto_s/payment/payment.dart';
 export 'src/dto_s/product/product.dart';
@@ -24,7 +25,6 @@ export 'src/dto_s/party/party.dart';
 export 'src/dto_s/city/city.dart';
 export 'src/dto_s/province/province.dart';
 export 'src/dto_s/product/products_type.dart';
-export 'src/dto_s/menu/menu_item_dto.dart';
 export 'src/dto_s/voice_commands/command_log.dart';
 export 'src/dto_s/voice_commands/user_command.dart';
 export 'src/dto_s/voice/voice_command_model.dart';
