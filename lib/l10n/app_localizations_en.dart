@@ -1150,4 +1150,41 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get profile_not_logged_in => 'Please log in to your account';
+
+  @override
+  String get settings_sal_mali_title => 'Financial Year Settings';
+
+  @override
+  String get settings_sal_mali_year => 'Financial Year (Number)';
+
+  @override
+  String get settings_sal_mali_has_tax => 'Calculate Tax';
+
+  @override
+  String get settings_sal_mali_tax_percent => 'Tax Percentage';
+
+  @override
+  String get settings_connection_string => 'Connection String';
+
+  @override
+  String get settings_connection_user => 'Instance Name (User)';
+
+  @override
+  String get settings_connection_password => 'Instance Password';
+
+  @override
+  String get settings_sal_mali_save_success => 'Financial year settings saved';
+
+  @override
+  String get settings_server_address_title => 'Server Address Settings';
+
+  @override
+  String get settings_server_address_hint => 'http://192.168.1.100:5127/api';
+
+  @override
+  String get settings_server_address_success =>
+      'Server address changed successfully';
+
+  @override
+  String get settings_connection_title => 'Connection Settings';
 }

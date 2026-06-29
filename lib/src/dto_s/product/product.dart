@@ -1,5 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'products_type.dart';
+
 
 part 'product.g.dart';
 
@@ -10,7 +10,7 @@ class Product {
   final String? barCode;
   final String? code;
   @JsonKey(name: 'product_Code')
-  final int product_code;
+  final int productCode;
   final String? description;
   final String? unit;
   final double? defaultPrice;
@@ -29,7 +29,7 @@ class Product {
     required this.id,
     required this.name,
       this.barCode,
-    required this.product_code,
+    required this.productCode,
     this.code,
     this.description,
     this.unit,

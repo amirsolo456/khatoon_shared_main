@@ -436,5 +436,17 @@
   "profile_todo_empty": "Todo list is empty",
   "profile_add_todo": "Add new task or reminder...",
   "profile_guest_user": "Guest User",
-  "profile_not_logged_in": "Please log in to your account"
+  "profile_not_logged_in": "Please log in to your account",
+  "settings_sal_mali_title": "Financial Year Settings",
+  "settings_sal_mali_year": "Financial Year (Number)",
+  "settings_sal_mali_has_tax": "Calculate Tax",
+  "settings_sal_mali_tax_percent": "Tax Percentage",
+  "settings_connection_string": "Connection String",
+  "settings_connection_user": "Instance Name (User)",
+  "settings_connection_password": "Instance Password",
+  "settings_sal_mali_save_success": "Financial year settings saved",
+  "settings_server_address_title": "Server Address Settings",
+  "settings_server_address_hint": "http://192.168.1.100:5127/api",
+  "settings_server_address_success": "Server address changed successfully",
+  "settings_connection_title": "Connection Settings"
 }

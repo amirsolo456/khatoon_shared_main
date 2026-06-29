@@ -224,7 +224,7 @@ class _VoiceRecorderComponentState extends State<VoiceRecorderComponent>
               ...List.generate(3, (i) {
                 return AnimatedBuilder(
                   animation: _pulseAnims[i],
-                  builder: (_, __) {
+                  builder: (context, child) {
                     final v = _pulseAnims[i].value;
                     // Multiply by isRecording to fade out when recording stops
                     final opacity = isRecording ? ((1 - v) * 0.5).clamp(0.0, 1.0) : 0.0;

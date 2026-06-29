@@ -27,8 +27,12 @@ class Order {
   final DateTime createdAt;
   final DateTime updatedAt;
 
+  @JsonKey(name: 'iDSal', defaultValue: 0)
+  final int iDSal;
+
   Order({
     required this.id,
+    this.iDSal = 0,
     this.invoiceId,
     required this.customerId,
     required this.createdByUserId,

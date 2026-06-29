@@ -9,16 +9,22 @@ part of 'invoice_line.dart';
 InvoiceLine _$InvoiceLineFromJson(Map json) => InvoiceLine(
   id: (json['id'] as num).toInt(),
   invoiceId: (json['invoiceId'] as num).toInt(),
+  iDSal: (json['iDSal'] as num?)?.toInt() ?? 0,
+  product: json['Product'] == null
+      ? null
+      : Product.fromJson(Map<String, dynamic>.from(json['Product'] as Map)),
   productId: (json['productId'] as num?)?.toInt(),
   description: json['description'] as String?,
   quantity: (json['quantity'] as num).toDouble(),
   unitPrice: (json['unitPrice'] as num).toDouble(),
   lineTotal: (json['lineTotal'] as num).toDouble(),
-  personId: (json['personId'] as num?)?.toInt(),
-  sellerEmployeeId: (json['sellerEmployeeId'] as num?)?.toInt(),
-  isDeleted: json['isDeleted'] as bool,
-  createdAt: DateTime.parse(json['createdAt'] as String),
-  updatedAt: DateTime.parse(json['updatedAt'] as String),
+  isDeleted: json['isDeleted'] as bool? ?? false,
+  createdAt: json['createdAt'] == null
+      ? null
+      : DateTime.parse(json['createdAt'] as String),
+  updatedAt: json['updatedAt'] == null
+      ? null
+      : DateTime.parse(json['updatedAt'] as String),
 );
 
 Map<String, dynamic> _$InvoiceLineToJson(InvoiceLine instance) =>
@@ -28,11 +34,11 @@ Map<String, dynamic> _$InvoiceLineToJson(InvoiceLine instance) =>
       'productId': instance.productId,
       'description': instance.description,
       'quantity': instance.quantity,
+      'Product': instance.product?.toJson(),
       'unitPrice': instance.unitPrice,
       'lineTotal': instance.lineTotal,
-      'personId': instance.personId,
-      'sellerEmployeeId': instance.sellerEmployeeId,
       'isDeleted': instance.isDeleted,
       'createdAt': instance.createdAt.toIso8601String(),
       'updatedAt': instance.updatedAt.toIso8601String(),
+      'iDSal': instance.iDSal,
     };

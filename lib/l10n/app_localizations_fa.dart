@@ -1149,4 +1149,40 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get profile_not_logged_in => 'لطفاً وارد حساب خود شوید';
+
+  @override
+  String get settings_sal_mali_title => 'تنظیمات سال مالی';
+
+  @override
+  String get settings_sal_mali_year => 'سال مالی (عدد)';
+
+  @override
+  String get settings_sal_mali_has_tax => 'احتساب مالیات';
+
+  @override
+  String get settings_sal_mali_tax_percent => 'درصد مالیات';
+
+  @override
+  String get settings_connection_string => 'رشته اتصال';
+
+  @override
+  String get settings_connection_user => 'نام Instance (کاربر)';
+
+  @override
+  String get settings_connection_password => 'رمز عبور Instance';
+
+  @override
+  String get settings_sal_mali_save_success => 'تنظیمات سال مالی ذخیره شد';
+
+  @override
+  String get settings_server_address_title => 'تنظیمات آدرس سرور';
+
+  @override
+  String get settings_server_address_hint => 'http://192.168.1.100:5127/api';
+
+  @override
+  String get settings_server_address_success => 'آدرس سرور با موفقیت تغییر کرد';
+
+  @override
+  String get settings_connection_title => 'تنظیمات اتصال';
 }

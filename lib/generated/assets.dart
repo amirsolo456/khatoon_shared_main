@@ -9,6 +9,9 @@ class Assets {
   static const AssetGenImage arhiveLight = AssetGenImage(
       'assets/Arhive_light.png');
   static const AssetGenImage deskLight = AssetGenImage('assets/Desk_light.png');
+  static const SvgGenImage settingWhite = SvgGenImage(
+      'assets/Setting_white.svg');
+  static const AssetGenImage vector = AssetGenImage('assets/Vector.png');
   static const AssetGenImage addNewButton = AssetGenImage(
       'assets/add_new_button.png');
   static const AssetGenImage addUser = AssetGenImage('assets/add_user.png');
@@ -75,6 +78,10 @@ class Assets {
       'assets/logoicon32.png');
   static const SvgGenImage logoiconsvg = SvgGenImage('assets/logoiconsvg.svg');
   static const AssetGenImage mail = AssetGenImage('assets/mail.png');
+  static const SvgGenImage mainSettingDark = SvgGenImage(
+      'assets/main_setting_dark.svg');
+  static const SvgGenImage mainSettingWhite = SvgGenImage(
+      'assets/main_setting_white.svg');
   static const SvgGenImage map = SvgGenImage('assets/map.svg');
   static const AssetGenImage menu = AssetGenImage('assets/menu.png');
   static const AssetGenImage menu2 = AssetGenImage('assets/menu2.png');
@@ -104,6 +111,7 @@ class Assets {
   static const AssetGenImage setting = AssetGenImage('assets/setting.png');
   static const AssetGenImage settingDark = AssetGenImage(
       'assets/setting_dark.png');
+  static const SvgGenImage settings = SvgGenImage('assets/settings.svg');
   static const AssetGenImage signOut = AssetGenImage('assets/sign_out.png');
   static const AssetGenImage signOutDark = AssetGenImage(
       'assets/sign_out_dark.png');
@@ -122,7 +130,6 @@ class Assets {
       'assets/user_profile_dark.png');
   static const SvgGenImage userProfileWhite = SvgGenImage(
       'assets/user_profile_white.svg');
-  static const AssetGenImage vector = AssetGenImage('assets/vector.png');
   static const $AssetsAvatarGen avatar = $AssetsAvatarGen();
   static const $AssetsFontsGen fonts = $AssetsFontsGen();
   static const $AssetsPhase2Gen phase2 = $AssetsPhase2Gen();

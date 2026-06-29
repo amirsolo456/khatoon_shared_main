@@ -390,5 +390,17 @@
   "profile_todo_empty": "لیست کارها خالی است",
   "profile_add_todo": "افزودن کار یا یادآوری جدید...",
   "profile_guest_user": "کاربر مهمان",
-  "profile_not_logged_in": "لطفاً وارد حساب خود شوید"
+  "profile_not_logged_in": "لطفاً وارد حساب خود شوید",
+  "settings_sal_mali_title": "تنظیمات سال مالی",
+  "settings_sal_mali_year": "سال مالی (عدد)",
+  "settings_sal_mali_has_tax": "احتساب مالیات",
+  "settings_sal_mali_tax_percent": "درصد مالیات",
+  "settings_connection_string": "رشته اتصال",
+  "settings_connection_user": "نام Instance (کاربر)",
+  "settings_connection_password": "رمز عبور Instance",
+  "settings_sal_mali_save_success": "تنظیمات سال مالی ذخیره شد",
+  "settings_server_address_title": "تنظیمات آدرس سرور",
+  "settings_server_address_hint": "http://192.168.1.100:5127/api",
+  "settings_server_address_success": "آدرس سرور با موفقیت تغییر کرد",
+  "settings_connection_title": "تنظیمات اتصال"
 }

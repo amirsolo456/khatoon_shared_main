@@ -2269,6 +2269,78 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Please log in to your account'**
   String get profile_not_logged_in;
+
+  /// No description provided for @settings_sal_mali_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Financial Year Settings'**
+  String get settings_sal_mali_title;
+
+  /// No description provided for @settings_sal_mali_year.
+  ///
+  /// In en, this message translates to:
+  /// **'Financial Year (Number)'**
+  String get settings_sal_mali_year;
+
+  /// No description provided for @settings_sal_mali_has_tax.
+  ///
+  /// In en, this message translates to:
+  /// **'Calculate Tax'**
+  String get settings_sal_mali_has_tax;
+
+  /// No description provided for @settings_sal_mali_tax_percent.
+  ///
+  /// In en, this message translates to:
+  /// **'Tax Percentage'**
+  String get settings_sal_mali_tax_percent;
+
+  /// No description provided for @settings_connection_string.
+  ///
+  /// In en, this message translates to:
+  /// **'Connection String'**
+  String get settings_connection_string;
+
+  /// No description provided for @settings_connection_user.
+  ///
+  /// In en, this message translates to:
+  /// **'Instance Name (User)'**
+  String get settings_connection_user;
+
+  /// No description provided for @settings_connection_password.
+  ///
+  /// In en, this message translates to:
+  /// **'Instance Password'**
+  String get settings_connection_password;
+
+  /// No description provided for @settings_sal_mali_save_success.
+  ///
+  /// In en, this message translates to:
+  /// **'Financial year settings saved'**
+  String get settings_sal_mali_save_success;
+
+  /// No description provided for @settings_server_address_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Server Address Settings'**
+  String get settings_server_address_title;
+
+  /// No description provided for @settings_server_address_hint.
+  ///
+  /// In en, this message translates to:
+  /// **'http://192.168.1.100:5127/api'**
+  String get settings_server_address_hint;
+
+  /// No description provided for @settings_server_address_success.
+  ///
+  /// In en, this message translates to:
+  /// **'Server address changed successfully'**
+  String get settings_server_address_success;
+
+  /// No description provided for @settings_connection_title.
+  ///
+  /// In en, this message translates to:
+  /// **'Connection Settings'**
+  String get settings_connection_title;
 }
 
 class _AppLocalizationsDelegate

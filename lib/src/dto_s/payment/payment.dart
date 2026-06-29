@@ -5,22 +5,22 @@ part 'payment.g.dart';
 @JsonSerializable()
 class Payment {
   final int id;
-  // final DateTime date;
+
   final double amount;
-  final String direction;
-  final String? paymentMethod;
+  final int? direction;
+  final int? paymentMethod;
   final int? fromPersonId;
   final int? toPersonId;
   final String? reference;
   final String? notes;
 
-  // final bool isDeleted;
-  // final DateTime createdAt;
-  // final DateTime updatedAt;
+
+  @JsonKey(name: 'iDSal', defaultValue: 0)
+  final int iDSal;
 
   Payment({
     required this.id,
-    // required this.date,
+    this.iDSal = 0,
     required this.amount,
     required this.direction,
     this.paymentMethod,
@@ -29,9 +29,6 @@ class Payment {
     this.reference,
     this.notes,
 
-    // required this.isDeleted,
-    // required this.createdAt,
-    // required this.updatedAt,
   });
 
   factory Payment.fromJson(Map<String, dynamic> json) =>

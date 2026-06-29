@@ -8,9 +8,10 @@ part of 'payment.dart';
 
 Payment _$PaymentFromJson(Map json) => Payment(
   id: (json['id'] as num).toInt(),
+  iDSal: (json['iDSal'] as num?)?.toInt() ?? 0,
   amount: (json['amount'] as num).toDouble(),
-  direction: json['direction'] as String,
-  paymentMethod: json['paymentMethod'] as String?,
+  direction: (json['direction'] as num?)?.toInt(),
+  paymentMethod: (json['paymentMethod'] as num?)?.toInt(),
   fromPersonId: (json['fromPersonId'] as num?)?.toInt(),
   toPersonId: (json['toPersonId'] as num?)?.toInt(),
   reference: json['reference'] as String?,
@@ -26,4 +27,5 @@ Map<String, dynamic> _$PaymentToJson(Payment instance) => <String, dynamic>{
   'toPersonId': instance.toPersonId,
   'reference': instance.reference,
   'notes': instance.notes,
+  'iDSal': instance.iDSal,
 };
