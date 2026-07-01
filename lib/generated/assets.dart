@@ -37,15 +37,21 @@ class Assets {
     'assets/calendar_dark.png',
   );
   static const AssetGenImage camera = AssetGenImage('assets/camera.png');
-  static const AssetGenImage cart = AssetGenImage('assets/cart.png');
-  static const AssetGenImage chart = AssetGenImage('assets/chart.png');
+  static const AssetGenImage cartPng = AssetGenImage('assets/cart.png');
+  static const SvgGenImage cartSvg = SvgGenImage('assets/cart.svg');
+  static const SvgGenImage cartWhite = SvgGenImage('assets/cart_white.svg');
+  static const AssetGenImage chartPng = AssetGenImage('assets/chart.png');
+  static const SvgGenImage chartSvg = SvgGenImage('assets/chart.svg');
   static const AssetGenImage chartDark = AssetGenImage('assets/chart_dark.png');
+  static const SvgGenImage chartWhite = SvgGenImage('assets/chart_white.svg');
   static const AssetGenImage chat = AssetGenImage('assets/chat.png');
   static const AssetGenImage chatDark = AssetGenImage('assets/chat_dark.png');
   static const AssetGenImage clients = AssetGenImage('assets/clients.png');
   static const AssetGenImage close = AssetGenImage('assets/close.png');
   static const AssetGenImage closeDark = AssetGenImage('assets/close_dark.png');
   static const AssetGenImage company = AssetGenImage('assets/company.png');
+  static const SvgGenImage copy = SvgGenImage('assets/copy.svg');
+  static const SvgGenImage copyLight = SvgGenImage('assets/copy_light.svg');
   static const AssetGenImage createCustomer = AssetGenImage(
     'assets/create_customer.png',
   );
@@ -66,6 +72,8 @@ class Assets {
   );
   static const AssetGenImage date = AssetGenImage('assets/date.png');
   static const AssetGenImage delete = AssetGenImage('assets/delete.png');
+  static const SvgGenImage edit = SvgGenImage('assets/edit.svg');
+  static const SvgGenImage editLight = SvgGenImage('assets/edit_light.svg');
   static const AssetGenImage fileDockLight = AssetGenImage(
     'assets/file_dock_light.png',
   );
@@ -115,6 +123,13 @@ class Assets {
   static const SvgGenImage menuOpenWhite = SvgGenImage(
     'assets/menu_open_white.svg',
   );
+  static const SvgGenImage multiActionIcon = SvgGenImage(
+    'assets/multi_action_icon.svg',
+  );
+  static const SvgGenImage nemoodar = SvgGenImage('assets/nemoodar.svg');
+  static const SvgGenImage nemoodarLight = SvgGenImage(
+    'assets/nemoodar_light.svg',
+  );
   static const AssetGenImage newItem = AssetGenImage('assets/new_item.png');
   static const AssetGenImage orders = AssetGenImage('assets/orders.png');
   static const AssetGenImage payments = AssetGenImage('assets/payments.png');
@@ -122,9 +137,14 @@ class Assets {
   static const AssetGenImage printPng = AssetGenImage('assets/print.png');
   static const SvgGenImage printSvg = SvgGenImage('assets/print.svg');
   static const AssetGenImage product = AssetGenImage('assets/product.png');
-  static const AssetGenImage products = AssetGenImage('assets/products.png');
+  static const AssetGenImage productsPng = AssetGenImage('assets/products.png');
+  static const SvgGenImage productsSvg = SvgGenImage('assets/products.svg');
+  static const SvgGenImage productsWhite = SvgGenImage(
+    'assets/products_white.svg',
+  );
   static const AssetGenImage prohet = AssetGenImage('assets/prohet.png');
   static const SvgGenImage refresh = SvgGenImage('assets/refresh.svg');
+  static const SvgGenImage remove = SvgGenImage('assets/remove.svg');
   static const SvgGenImage reports = SvgGenImage('assets/reports.svg');
   static const SvgGenImage reportsWhite = SvgGenImage(
     'assets/reports_white.svg',
@@ -148,6 +168,12 @@ class Assets {
   static const AssetGenImage signOut = AssetGenImage('assets/sign_out.png');
   static const AssetGenImage signOutDark = AssetGenImage(
     'assets/sign_out_dark.png',
+  );
+  static const SvgGenImage sortSettingIcon = SvgGenImage(
+    'assets/sort_setting_icon.svg',
+  );
+  static const SvgGenImage sortSettingIconLight = SvgGenImage(
+    'assets/sort_setting_icon_light.svg',
   );
   static const AssetGenImage support = AssetGenImage('assets/support.png');
   static const AssetGenImage supportDark = AssetGenImage(
