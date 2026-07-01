@@ -26,7 +26,7 @@ class InvoiceLine {
   InvoiceLine({
     required this.id,
     required this.invoiceId,
-    this.iDSal = 0,
+    required this.iDSal,
     this.product,
     this.productId,
     this.description,
@@ -43,4 +43,35 @@ class InvoiceLine {
       _$InvoiceLineFromJson(json);
 
   Map<String, dynamic> toJson() => _$InvoiceLineToJson(this);
+
+  InvoiceLine copyWith({
+    int? id,
+    int? invoiceId,
+    int? iDSal,
+    Product? product,
+    int? productId,
+    String? description,
+    double? quantity,
+    double? unitPrice,
+    double? lineTotal,
+    bool? isDeleted,
+    DateTime? createdAt,
+    DateTime? updatedAt,
+  }) {
+    return InvoiceLine(
+      id: id ?? this.id,
+      invoiceId: invoiceId ?? this.invoiceId,
+      iDSal: iDSal ?? this.iDSal,
+      product: product ?? this.product,
+      productId: productId ?? this.productId,
+      description: description ?? this.description,
+      quantity: quantity ?? this.quantity,
+      unitPrice: unitPrice ?? this.unitPrice,
+      lineTotal: lineTotal ?? this.lineTotal,
+      isDeleted: isDeleted ?? this.isDeleted,
+      createdAt: createdAt ?? this.createdAt,
+      updatedAt: updatedAt ?? this.updatedAt,
+    );
+  }
 }
+

@@ -20,7 +20,7 @@ class Payment {
 
   Payment({
     required this.id,
-    this.iDSal = 0,
+    required this.iDSal,
     required this.amount,
     required this.direction,
     this.paymentMethod,
@@ -35,4 +35,29 @@ class Payment {
       _$PaymentFromJson(json);
 
   Map<String, dynamic> toJson() => _$PaymentToJson(this);
+
+  Payment copyWith({
+    int? id,
+    double? amount,
+    int? direction,
+    int? paymentMethod,
+    int? fromPersonId,
+    int? toPersonId,
+    String? reference,
+    String? notes,
+    int? iDSal,
+  }) {
+    return Payment(
+      id: id ?? this.id,
+      amount: amount ?? this.amount,
+      direction: direction ?? this.direction,
+      paymentMethod: paymentMethod ?? this.paymentMethod,
+      fromPersonId: fromPersonId ?? this.fromPersonId,
+      toPersonId: toPersonId ?? this.toPersonId,
+      reference: reference ?? this.reference,
+      notes: notes ?? this.notes,
+      iDSal: iDSal ?? this.iDSal,
+    );
+  }
 }
+

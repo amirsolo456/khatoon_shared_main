@@ -61,12 +61,12 @@ class Invoice {
   @JsonKey(name: 'shipmentRequests', defaultValue: [])
   final List<ShipmentRequest> shipmentRequests;
 
-  @JsonKey(name: 'iDSal', defaultValue: 0)
+  @JsonKey(name: 'idSal', defaultValue: 0)
   final int iDSal;
 
   Invoice({
     required this.id,
-    this.iDSal = 0,
+    required this.iDSal,
     this.invoiceNo = '',
     this.type = 'Sale',
     this.personId,

@@ -21,7 +21,7 @@ CreateOrderDto _$CreateOrderDtoFromJson(Map json) => CreateOrderDto(
   shippingCost: (json['shippingCost'] as num?)?.toDouble(),
   shippingAddress: json['shippingAddress'] as String?,
   notes: json['notes'] as String?,
-  iDSal: (json['iDSal'] as num?)?.toInt() ?? 1404,
+  iDSal: (json['iDSal'] as num?)?.toInt() ?? 0,
 );
 
 Map<String, dynamic> _$CreateOrderDtoToJson(CreateOrderDto instance) =>

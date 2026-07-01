@@ -6,6 +6,9 @@ export 'src/repositories/i_auth_validator.dart';
 
 export 'src/dto_s/user/user.dart';
 export 'src/dto_s/person/person.dart';
+export 'src/dto_s/person/person_type.dart';
+export 'src/dto_s/role/role.dart';
+
 
 export 'src/dto_s/enum/enum.dart';
 export 'src/dto_s/enums_model/enums_model.dart';
@@ -62,7 +65,6 @@ export 'src/dto_s/user_model/user_model.dart';
 
 export 'src/dto_s/audio_state/audio_state.dart';
 export 'src/dto_s/task/task.dart';
-export 'src/dto_s/todo/todo.dart';
 export 'src/dto_s/design_template/design_template.dart';
 export 'src/dto_s/design_element/design_element.dart';
 export 'src/dto_s/page_settings/page_settings.dart';
@@ -72,6 +74,13 @@ export 'src/dto_s/base_request/base_request.dart';
 export 'src/dto_s/invoice_model/invoice_model.dart';
 export 'src/dto_s/invoice_line_model/invoice_line_model.dart';
 export 'src/dto_s/payment_model/payment_model.dart';
+
+export 'src/theme/app_color.dart';
+export 'src/theme/app_fonts.dart';
+export 'src/theme/app_theme.dart';
+export 'src/theme/theme_helper.dart';
+export 'src/theme/theme_provider.dart';
+export 'src/styles/themes.dart';
 
 export 'src/components/voice_recorder_component.dart';
 

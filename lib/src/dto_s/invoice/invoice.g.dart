@@ -8,7 +8,7 @@ part of 'invoice.dart';
 
 Invoice _$InvoiceFromJson(Map json) => Invoice(
   id: (json['id'] as num).toInt(),
-  iDSal: (json['iDSal'] as num?)?.toInt() ?? 0,
+  iDSal: (json['idSal'] as num?)?.toInt() ?? 0,
   invoiceNo: json['invoiceNo'] as String? ?? '',
   type: json['type'] as String? ?? 'Sale',
   personId: (json['personId'] as num?)?.toInt(),
@@ -92,5 +92,5 @@ Map<String, dynamic> _$InvoiceToJson(Invoice instance) => <String, dynamic>{
   'payments': instance.payments.map((e) => e.toJson()).toList(),
   'orders': instance.orders.map((e) => e.toJson()).toList(),
   'shipmentRequests': instance.shipmentRequests.map((e) => e.toJson()).toList(),
-  'iDSal': instance.iDSal,
+  'idSal': instance.iDSal,
 };

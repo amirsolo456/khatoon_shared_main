@@ -50,6 +50,7 @@ class InvoiceLineModel extends InvoiceLine {
   @override
   Map<String, dynamic> toJson() => _$InvoiceLineModelToJson(this);
 
+  @override
   InvoiceLineModel copyWith({
     int? id,
     int? invoiceId,

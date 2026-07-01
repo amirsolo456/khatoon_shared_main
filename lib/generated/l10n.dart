@@ -3387,6 +3387,126 @@ class S {
       args: [],
     );
   }
+
+  /// `Financial Year Settings`
+  String get settings_sal_mali_title {
+    return Intl.message(
+      'Financial Year Settings',
+      name: 'settings_sal_mali_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Financial Year (Number)`
+  String get settings_sal_mali_year {
+    return Intl.message(
+      'Financial Year (Number)',
+      name: 'settings_sal_mali_year',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Calculate Tax`
+  String get settings_sal_mali_has_tax {
+    return Intl.message(
+      'Calculate Tax',
+      name: 'settings_sal_mali_has_tax',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Tax Percentage`
+  String get settings_sal_mali_tax_percent {
+    return Intl.message(
+      'Tax Percentage',
+      name: 'settings_sal_mali_tax_percent',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Connection String`
+  String get settings_connection_string {
+    return Intl.message(
+      'Connection String',
+      name: 'settings_connection_string',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Instance Name (User)`
+  String get settings_connection_user {
+    return Intl.message(
+      'Instance Name (User)',
+      name: 'settings_connection_user',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Instance Password`
+  String get settings_connection_password {
+    return Intl.message(
+      'Instance Password',
+      name: 'settings_connection_password',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Financial year settings saved`
+  String get settings_sal_mali_save_success {
+    return Intl.message(
+      'Financial year settings saved',
+      name: 'settings_sal_mali_save_success',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Server Address Settings`
+  String get settings_server_address_title {
+    return Intl.message(
+      'Server Address Settings',
+      name: 'settings_server_address_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `http://192.168.1.100:5127/api`
+  String get settings_server_address_hint {
+    return Intl.message(
+      'http://192.168.1.100:5127/api',
+      name: 'settings_server_address_hint',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Server address changed successfully`
+  String get settings_server_address_success {
+    return Intl.message(
+      'Server address changed successfully',
+      name: 'settings_server_address_success',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Connection Settings`
+  String get settings_connection_title {
+    return Intl.message(
+      'Connection Settings',
+      name: 'settings_connection_title',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

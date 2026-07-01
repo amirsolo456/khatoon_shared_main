@@ -663,8 +663,44 @@ class MessageLookup extends MessageLookupByLibrary {
     "report_turnover": MessageLookupByLibrary.simpleMessage("Account Turnover"),
     "report_users": MessageLookupByLibrary.simpleMessage("Users Report"),
     "settings_about": MessageLookupByLibrary.simpleMessage("About"),
+    "settings_connection_password": MessageLookupByLibrary.simpleMessage(
+      "Instance Password",
+    ),
+    "settings_connection_string": MessageLookupByLibrary.simpleMessage(
+      "Connection String",
+    ),
+    "settings_connection_title": MessageLookupByLibrary.simpleMessage(
+      "Connection Settings",
+    ),
+    "settings_connection_user": MessageLookupByLibrary.simpleMessage(
+      "Instance Name (User)",
+    ),
     "settings_darkMode": MessageLookupByLibrary.simpleMessage("Dark Mode"),
     "settings_language": MessageLookupByLibrary.simpleMessage("Language"),
+    "settings_sal_mali_has_tax": MessageLookupByLibrary.simpleMessage(
+      "Calculate Tax",
+    ),
+    "settings_sal_mali_save_success": MessageLookupByLibrary.simpleMessage(
+      "Financial year settings saved",
+    ),
+    "settings_sal_mali_tax_percent": MessageLookupByLibrary.simpleMessage(
+      "Tax Percentage",
+    ),
+    "settings_sal_mali_title": MessageLookupByLibrary.simpleMessage(
+      "Financial Year Settings",
+    ),
+    "settings_sal_mali_year": MessageLookupByLibrary.simpleMessage(
+      "Financial Year (Number)",
+    ),
+    "settings_server_address_hint": MessageLookupByLibrary.simpleMessage(
+      "http://192.168.1.100:5127/api",
+    ),
+    "settings_server_address_success": MessageLookupByLibrary.simpleMessage(
+      "Server address changed successfully",
+    ),
+    "settings_server_address_title": MessageLookupByLibrary.simpleMessage(
+      "Server Address Settings",
+    ),
     "settings_settings": MessageLookupByLibrary.simpleMessage("Settings"),
     "settings_theme": MessageLookupByLibrary.simpleMessage("Theme"),
     "submit_account": MessageLookupByLibrary.simpleMessage("Submit Account"),

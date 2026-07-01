@@ -34,4 +34,31 @@ class UpdateOrderDto {
 
   factory UpdateOrderDto.fromJson(Map<String, dynamic> json) =>
       _$UpdateOrderDtoFromJson(json);
+
+  UpdateOrderDto copyWith({
+    int? quantity,
+    double? totalWeight,
+    double? price,
+    String? status,
+    String? trackingNumber,
+    String? shippingMethod,
+    double? shippingCost,
+    String? shippingAddress,
+    String? notes,
+    int? iDSal,
+  }) {
+    return UpdateOrderDto(
+      quantity: quantity ?? this.quantity,
+      totalWeight: totalWeight ?? this.totalWeight,
+      price: price ?? this.price,
+      iDSal: iDSal ?? this.iDSal,
+      status: status ?? this.status,
+      trackingNumber: trackingNumber ?? this.trackingNumber,
+      shippingMethod: shippingMethod ?? this.shippingMethod,
+      shippingCost: shippingCost ?? this.shippingCost,
+      shippingAddress: shippingAddress ?? this.shippingAddress,
+      notes: notes ?? this.notes,
+    );
+  }
 }
+

@@ -18,7 +18,7 @@ class CreateOrderDto {
   final double? shippingCost;
   final String? shippingAddress;
   final String? notes;
-  @JsonKey(name: 'iDSal', defaultValue: 1404)
+  @JsonKey(name: 'iDSal', defaultValue: 0)
   final int iDSal;
 
   CreateOrderDto({
@@ -34,10 +34,43 @@ class CreateOrderDto {
     this.shippingCost,
     this.shippingAddress,
     this.notes,
-    this.iDSal = 0,
+    required this.iDSal,
   });
 
   Map<String, dynamic> toJson() => _$CreateOrderDtoToJson(this);
   factory CreateOrderDto.fromJson(Map<String, dynamic> json) => _$CreateOrderDtoFromJson(json);
+
+  CreateOrderDto copyWith({
+    int? invoiceId,
+    int? customerId,
+    int? quantity,
+    double? totalWeight,
+    int? itemId,
+    double? price,
+    String? status,
+    DateTime? orderDate,
+    String? shippingMethod,
+    double? shippingCost,
+    String? shippingAddress,
+    String? notes,
+    int? iDSal,
+  }) {
+    return CreateOrderDto(
+      invoiceId: invoiceId ?? this.invoiceId,
+      customerId: customerId ?? this.customerId,
+      quantity: quantity ?? this.quantity,
+      totalWeight: totalWeight ?? this.totalWeight,
+      itemId: itemId ?? this.itemId,
+      price: price ?? this.price,
+      status: status ?? this.status,
+      orderDate: orderDate ?? this.orderDate,
+      shippingMethod: shippingMethod ?? this.shippingMethod,
+      shippingCost: shippingCost ?? this.shippingCost,
+      shippingAddress: shippingAddress ?? this.shippingAddress,
+      notes: notes ?? this.notes,
+      iDSal: iDSal ?? this.iDSal,
+    );
+  }
 }
+
 

@@ -32,7 +32,7 @@ class Order {
 
   Order({
     required this.id,
-    this.iDSal = 0,
+    required this.iDSal,
     this.invoiceId,
     required this.customerId,
     required this.createdByUserId,
@@ -57,4 +57,54 @@ class Order {
 
   factory Order.fromJson(Map<String, dynamic> json) => _$OrderFromJson(json);
   Map<String, dynamic> toJson() => _$OrderToJson(this);
+
+  Order copyWith({
+    int? id,
+    int? invoiceId,
+    int? customerId,
+    int? createdByUserId,
+    int? dispatchedByUserId,
+    DateTime? orderDate,
+    DateTime? shippedDate,
+    DateTime? deliveryDate,
+    String? status,
+    String? shippingMethod,
+    String? trackingNumber,
+    double? shippingCost,
+    String? shippingAddress,
+    int? quantity,
+    double? totalWeight,
+    int? itemId,
+    double? price,
+    double? totalAmount,
+    String? notes,
+    DateTime? createdAt,
+    DateTime? updatedAt,
+    int? iDSal,
+  }) {
+    return Order(
+      id: id ?? this.id,
+      invoiceId: invoiceId ?? this.invoiceId,
+      customerId: customerId ?? this.customerId,
+      createdByUserId: createdByUserId ?? this.createdByUserId,
+      dispatchedByUserId: dispatchedByUserId ?? this.dispatchedByUserId,
+      orderDate: orderDate ?? this.orderDate,
+      shippedDate: shippedDate ?? this.shippedDate,
+      deliveryDate: deliveryDate ?? this.deliveryDate,
+      status: status ?? this.status,
+      shippingMethod: shippingMethod ?? this.shippingMethod,
+      trackingNumber: trackingNumber ?? this.trackingNumber,
+      shippingCost: shippingCost ?? this.shippingCost,
+      shippingAddress: shippingAddress ?? this.shippingAddress,
+      quantity: quantity ?? this.quantity,
+      totalWeight: totalWeight ?? this.totalWeight,
+      itemId: itemId ?? this.itemId,
+      price: price ?? this.price,
+      totalAmount: totalAmount ?? this.totalAmount,
+      notes: notes ?? this.notes,
+      createdAt: createdAt ?? this.createdAt,
+      updatedAt: updatedAt ?? this.updatedAt,
+      iDSal: iDSal ?? this.iDSal,
+    );
+  }
 }

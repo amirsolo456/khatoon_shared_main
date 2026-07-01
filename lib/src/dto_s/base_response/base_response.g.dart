@@ -14,6 +14,7 @@ BaseResponse<T> _$BaseResponseFromJson<T>(
   message: json['Message'] as String,
   data: _$nullableGenericFromJson(json['Data'], fromJsonT),
   statusCode: (json['StatusCode'] as num?)?.toInt(),
+  iDSal: (json['iDSal'] as num?)?.toInt(),
   timestamp: DateTime.parse(json['Timestamp'] as String),
 );
 
@@ -24,6 +25,7 @@ Map<String, dynamic> _$BaseResponseToJson<T>(
   'Success': instance.success,
   'Message': instance.message,
   'Data': _$nullableGenericToJson(instance.data, toJsonT),
+  'iDSal': instance.iDSal,
   'StatusCode': instance.statusCode,
   'Timestamp': instance.timestamp.toIso8601String(),
 };

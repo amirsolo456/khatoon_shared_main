@@ -650,8 +650,44 @@ class MessageLookup extends MessageLookupByLibrary {
     "report_turnover": MessageLookupByLibrary.simpleMessage("گردش حساب"),
     "report_users": MessageLookupByLibrary.simpleMessage("گزارش کاربران"),
     "settings_about": MessageLookupByLibrary.simpleMessage("درباره برنامه"),
+    "settings_connection_password": MessageLookupByLibrary.simpleMessage(
+      "رمز عبور Instance",
+    ),
+    "settings_connection_string": MessageLookupByLibrary.simpleMessage(
+      "رشته اتصال",
+    ),
+    "settings_connection_title": MessageLookupByLibrary.simpleMessage(
+      "تنظیمات اتصال",
+    ),
+    "settings_connection_user": MessageLookupByLibrary.simpleMessage(
+      "نام Instance (کاربر)",
+    ),
     "settings_darkMode": MessageLookupByLibrary.simpleMessage("حالت تیره"),
     "settings_language": MessageLookupByLibrary.simpleMessage("زبان"),
+    "settings_sal_mali_has_tax": MessageLookupByLibrary.simpleMessage(
+      "احتساب مالیات",
+    ),
+    "settings_sal_mali_save_success": MessageLookupByLibrary.simpleMessage(
+      "تنظیمات سال مالی ذخیره شد",
+    ),
+    "settings_sal_mali_tax_percent": MessageLookupByLibrary.simpleMessage(
+      "درصد مالیات",
+    ),
+    "settings_sal_mali_title": MessageLookupByLibrary.simpleMessage(
+      "تنظیمات سال مالی",
+    ),
+    "settings_sal_mali_year": MessageLookupByLibrary.simpleMessage(
+      "سال مالی (عدد)",
+    ),
+    "settings_server_address_hint": MessageLookupByLibrary.simpleMessage(
+      "http://192.168.1.100:5127/api",
+    ),
+    "settings_server_address_success": MessageLookupByLibrary.simpleMessage(
+      "آدرس سرور با موفقیت تغییر کرد",
+    ),
+    "settings_server_address_title": MessageLookupByLibrary.simpleMessage(
+      "تنظیمات آدرس سرور",
+    ),
     "settings_settings": MessageLookupByLibrary.simpleMessage("تنظیمات"),
     "settings_theme": MessageLookupByLibrary.simpleMessage("پوسته"),
     "submit_account": MessageLookupByLibrary.simpleMessage("ثبت حساب"),

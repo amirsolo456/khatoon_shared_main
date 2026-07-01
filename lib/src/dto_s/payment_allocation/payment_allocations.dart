@@ -33,7 +33,7 @@ class PaymentAllocations {
     required this.invoiceId,
     required this.amountAllocated,
     required this.personId,
-    this.iDSal = 0,
+    required this.iDSal,
     DateTime? createdAt,
     DateTime? updatedAt,
     this.payment,
