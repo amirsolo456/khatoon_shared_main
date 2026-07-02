@@ -169,6 +169,12 @@ class Assets {
   static const AssetGenImage signOutDark = AssetGenImage(
     'assets/sign_out_dark.png',
   );
+  static const SvgGenImage sortDirection = SvgGenImage(
+    'assets/sort_direction.svg',
+  );
+  static const SvgGenImage sortDirectionLight = SvgGenImage(
+    'assets/sort_direction_light.svg',
+  );
   static const SvgGenImage sortSettingIcon = SvgGenImage(
     'assets/sort_setting_icon.svg',
   );
