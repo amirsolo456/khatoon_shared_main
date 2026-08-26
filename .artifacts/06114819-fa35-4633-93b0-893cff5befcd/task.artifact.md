@@ -1,0 +1,8 @@
+- [ ] Add dependencies to `invoice_module/pubspec.yaml`
+- [ ] Create `lib/src/business_logic/` directory in `invoice_module`
+- [ ] Move files from `khatoon_shared/lib/src/business_logic/` to `invoice_module/lib/src/business_logic/`
+- [ ] Update imports in moved files in `invoice_module`
+- [ ] Export moved business logic in `invoice_module/lib/index.dart`
+- [ ] Remove `business_logic` from `khatoon_shared/lib/src/`
+- [ ] Update `khatoon_shared/lib/index.dart`
+- [ ] Run `flutter analyze` and fix errors

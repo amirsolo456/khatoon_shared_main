@@ -6,23 +6,29 @@ part of 'id_sal_model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-IDSalModel _$IDSalModelFromJson(Map json) => IDSalModel(
+IdSalModel _$IdSalModelFromJson(Map json) => IdSalModel(
   id: (json['id'] as num).toInt(),
-  salMaliValue: (json['idSal'] as num).toInt(),
-  tax: (json['tax'] as num?)?.toDouble() ?? 0.0,
+  idSal: (json['idSal'] as num).toInt(),
+  isCurrent: json['isCurrent'] as bool,
+  tax: (json['tax'] as num?)?.toDouble(),
   hasTax: json['hasTax'] as bool,
   connectionString: json['connectionString'] as String?,
   connectionUser: json['connectionUser'] as String?,
   connectionPassword: json['connectionPassword'] as String?,
+  idState: (json['idState'] as num?)?.toInt(),
+  dbName: json['dbName'] as String?,
 );
 
-Map<String, dynamic> _$IDSalModelToJson(IDSalModel instance) =>
+Map<String, dynamic> _$IdSalModelToJson(IdSalModel instance) =>
     <String, dynamic>{
       'id': instance.id,
-      'idSal': instance.salMaliValue,
+      'idSal': instance.idSal,
+      'isCurrent': instance.isCurrent,
       'tax': instance.tax,
       'hasTax': instance.hasTax,
       'connectionString': instance.connectionString,
       'connectionUser': instance.connectionUser,
       'connectionPassword': instance.connectionPassword,
+      'idState': instance.idState,
+      'dbName': instance.dbName,
     };

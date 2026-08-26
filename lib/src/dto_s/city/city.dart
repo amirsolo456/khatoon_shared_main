@@ -1,41 +1,24 @@
-import 'package:json_annotation/json_annotation.dart';
+import 'package:equatable/equatable.dart';
 
-part 'city.g.dart';
-
-@JsonSerializable()
-class City {
+class City extends Equatable {
   final int id;
-  @JsonKey(name: 'provinceId')
-  final int provinceId;
-  final String name;
-  @JsonKey(name: 'cityType')
-  final int? cityType;      // nullable
-  final int? cityestan;     // nullable
-  final int? bakhsh;        // nullable
-  @JsonKey(name: 'amarCode')
-  final String? amarCode;   // nullable
+  final String? name;
+  final int cityType;
+  final int? provinceId;
+  final int? countyId;
+  final int? districtId;
+  final String? amarCode;
 
-
-  City({
+  const City({
     required this.id,
-    required this.provinceId,
-    required this.name,
-    this.cityType,
-    this.cityestan,
-    this.bakhsh,
+    this.name,
+    required this.cityType,
+    this.provinceId,
+    this.countyId,
+    this.districtId,
     this.amarCode,
   });
 
-  factory City.fromJson(Map<String, dynamic> json) => _$CityFromJson(json);
-  Map<String, dynamic> toJson() => _$CityToJson(this);
-
   @override
-  String toString() => name;
-
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) || other is City && other.id == id;
-
-  @override
-  int get hashCode => id.hashCode;
+  List<Object?> get props => [id, name, cityType, provinceId, countyId, districtId, amarCode];
 }

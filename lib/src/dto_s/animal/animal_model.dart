@@ -1,5 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
 import 'package:khatoon_shared/index.dart';
+import 'animal.dart';
 
 part 'animal_model.g.dart';
 
@@ -7,26 +8,28 @@ part 'animal_model.g.dart';
 class AnimalModel extends Animal {
   const AnimalModel({
     required super.id,
-    super.name,
     required super.tagNumber,
-    super.breed,
+    super.name,
     required super.type,
+    super.breed,
     required super.gender,
     super.birthDate,
+    super.purchaseDate,
     super.purchasePrice,
-    super.estimatedValue,
     super.purchaseSource,
+    super.currentWeight,
+    super.color,
+    super.healthStatus,
+    super.reproductionStatus,
     super.notes,
-    super.isActive = true,
+    required super.version,
+    required super.isDeleted,
     required super.createdAt,
     required super.updatedAt,
-    HealthStatus? healthStatus,
-    super.reproductionStatus,
-  }) : super(healthStatus: healthStatus ?? HealthStatus.good);
+  });
 
   factory AnimalModel.fromJson(Map<String, dynamic> json) =>
       _$AnimalModelFromJson(json);
 
-  @override
   Map<String, dynamic> toJson() => _$AnimalModelToJson(this);
 }

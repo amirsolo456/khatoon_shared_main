@@ -1,9 +1,6 @@
-import 'package:json_annotation/json_annotation.dart';
+import 'package:equatable/equatable.dart';
 
-part 'delivery.g.dart';
-
-@JsonSerializable()
-class Delivery {
+class Delivery extends Equatable {
   final int id;
   final int date;
   final int count;
@@ -16,8 +13,6 @@ class Delivery {
     required this.totalWeight,
   });
 
-  factory Delivery.fromJson(Map<String, dynamic> json) =>
-      _$DeliveryFromJson(json);
-
-  Map<String, dynamic> toJson() => _$DeliveryToJson(this);
+  @override
+  List<Object?> get props => [id, date, count, totalWeight];
 }

@@ -1,29 +1,16 @@
-// lib/features/enums/data/models/enums_model.dart
-import 'package:json_annotation/json_annotation.dart';
-import 'package:khatoon_shared/index.dart';
+import 'package:equatable/equatable.dart';
 
-part 'enums_model.g.dart';
-
-@JsonSerializable()
-class EnumsModel {
+class EnumsModel extends Equatable {
   final int id;
   final String name;
-  // final int tittleId;
-  final int? parentId;
-  final EnumsTittleModel? parent;
-  // final List<EnumsModel>? children;
+  final int parentId;
 
-  EnumsModel({
+  const EnumsModel({
     required this.id,
     required this.name,
-    // required this.tittleId,
-    this.parentId,
-    this.parent,
-    // this.children,
+    required this.parentId,
   });
 
-  factory EnumsModel.fromJson(Map<String, dynamic> json) =>
-      _$EnumsModelFromJson(json);
-
-  Map<String, dynamic> toJson() => _$EnumsModelToJson(this);
+  @override
+  List<Object?> get props => [id, name, parentId];
 }

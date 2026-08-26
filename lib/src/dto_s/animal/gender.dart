@@ -15,17 +15,16 @@ class AnimalGender extends Equatable {
   String get persianName {
     switch (gender) {
       case Gender.male:
-        return 'male';
+        return 'نر';
       case Gender.female:
-        return 'female';
+        return 'ماده';
       case Gender.other:
-        return 'other';
+        return 'اخته';
     }
   }
 
   @override
-  // TODO: implement props
-  List<Object?> get props => throw UnimplementedError();
+  List<Object?> get props => [id, gender, description];
 }
 
 extension AnimalGenderX on Gender {

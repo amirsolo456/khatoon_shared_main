@@ -4,13 +4,14 @@ part 'order_info.g.dart';
 
 @JsonSerializable()
 class OrderInfo {
-  String? colName;
-  bool? asc;
+  final String? orderBy;
+  final bool isDescending;
 
-  OrderInfo({this.colName, this.asc});
+  const OrderInfo({
+    this.orderBy,
+    this.isDescending = false,
+  });
 
-  factory OrderInfo.fromJson(Map<String, dynamic> json) =>
-      _$OrderInfoFromJson(json);
-
+  factory OrderInfo.fromJson(Map<String, dynamic> json) => _$OrderInfoFromJson(json);
   Map<String, dynamic> toJson() => _$OrderInfoToJson(this);
 }

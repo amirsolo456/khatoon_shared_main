@@ -7,20 +7,16 @@ part of 'paging_info.dart';
 // **************************************************************************
 
 PagingInfo _$PagingInfoFromJson(Map json) => PagingInfo(
-  onlyTotalCount: json['onlyTotalCount'] as bool?,
-  pageNumber: (json['pageNumber'] as num?)?.toInt(),
-  pageRecordCount: (json['pageRecordCount'] as num?)?.toInt(),
-  startIndex: (json['startIndex'] as num?)?.toInt(),
-  totalRowCount: (json['totalRowCount'] as num?)?.toInt(),
-  withTotalCount: json['withTotalCount'] as bool?,
+  pageNumber: (json['pageNumber'] as num?)?.toInt() ?? 1,
+  pageSize: (json['pageSize'] as num?)?.toInt() ?? 10,
+  totalCount: (json['totalCount'] as num?)?.toInt() ?? 0,
+  totalPages: (json['totalPages'] as num?)?.toInt() ?? 0,
 );
 
 Map<String, dynamic> _$PagingInfoToJson(PagingInfo instance) =>
     <String, dynamic>{
-      'onlyTotalCount': instance.onlyTotalCount,
-      'pageRecordCount': instance.pageRecordCount,
       'pageNumber': instance.pageNumber,
-      'startIndex': instance.startIndex,
-      'withTotalCount': instance.withTotalCount,
-      'totalRowCount': instance.totalRowCount,
+      'pageSize': instance.pageSize,
+      'totalCount': instance.totalCount,
+      'totalPages': instance.totalPages,
     };

@@ -1,63 +1,62 @@
-import 'package:json_annotation/json_annotation.dart';
+import 'package:equatable/equatable.dart';
 
-part 'payment.g.dart';
-
-@JsonSerializable()
-class Payment {
-  final int id;
-
+class Payment extends Equatable {
+  final int paymentId;
+  final String paymentNumber;
+  final DateTime paymentDate;
+  final int fiscalYear;
+  final int personId;
+  final String paymentMethod;
+  final int? paymentMethodId;
+  final int? paymentTypeId;
   final double amount;
-  final int? direction;
-  final int? paymentMethod;
-  final int? fromPersonId;
-  final int? toPersonId;
-  final String? reference;
-  final String? notes;
+  final String? bankAccountCode;
+  final String? referenceNumber;
+  final String status;
+  final String? description;
+  final DateTime createdAt;
+  final int? idSal;
+  final int fromPersonId;
+  final int toPersonId;
 
-
-  @JsonKey(name: 'iDSal', defaultValue: 0)
-  final int iDSal;
-
-  Payment({
-    required this.id,
-    required this.iDSal,
+  const Payment({
+    required this.paymentId,
+    required this.paymentNumber,
+    required this.paymentDate,
+    required this.fiscalYear,
+    required this.personId,
+    required this.paymentMethod,
+    this.paymentMethodId,
+    this.paymentTypeId,
     required this.amount,
-    required this.direction,
-    this.paymentMethod,
-    this.fromPersonId,
-    this.toPersonId,
-    this.reference,
-    this.notes,
-
+    this.bankAccountCode,
+    this.referenceNumber,
+    required this.status,
+    this.description,
+    required this.createdAt,
+    this.idSal,
+    required this.fromPersonId,
+    required this.toPersonId,
   });
 
-  factory Payment.fromJson(Map<String, dynamic> json) =>
-      _$PaymentFromJson(json);
-
-  Map<String, dynamic> toJson() => _$PaymentToJson(this);
-
-  Payment copyWith({
-    int? id,
-    double? amount,
-    int? direction,
-    int? paymentMethod,
-    int? fromPersonId,
-    int? toPersonId,
-    String? reference,
-    String? notes,
-    int? iDSal,
-  }) {
-    return Payment(
-      id: id ?? this.id,
-      amount: amount ?? this.amount,
-      direction: direction ?? this.direction,
-      paymentMethod: paymentMethod ?? this.paymentMethod,
-      fromPersonId: fromPersonId ?? this.fromPersonId,
-      toPersonId: toPersonId ?? this.toPersonId,
-      reference: reference ?? this.reference,
-      notes: notes ?? this.notes,
-      iDSal: iDSal ?? this.iDSal,
-    );
-  }
+  @override
+  List<Object?> get props => [
+        paymentId,
+        paymentNumber,
+        paymentDate,
+        fiscalYear,
+        personId,
+        paymentMethod,
+        paymentMethodId,
+        paymentTypeId,
+        amount,
+        bankAccountCode,
+        referenceNumber,
+        status,
+        description,
+        createdAt,
+        idSal,
+        fromPersonId,
+        toPersonId,
+      ];
 }
-

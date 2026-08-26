@@ -4,24 +4,18 @@ part 'paging_info.g.dart';
 
 @JsonSerializable()
 class PagingInfo {
-  bool? onlyTotalCount;
-  int? pageRecordCount;
-  int? pageNumber;
-  int? startIndex;
-  bool? withTotalCount;
-  int? totalRowCount;
+  final int pageNumber;
+  final int pageSize;
+  final int totalCount;
+  final int totalPages;
 
-  PagingInfo({
-    this.onlyTotalCount,
-    this.pageNumber,
-    this.pageRecordCount,
-    this.startIndex,
-    this.totalRowCount,
-    this.withTotalCount,
+  const PagingInfo({
+    this.pageNumber = 1,
+    this.pageSize = 10,
+    this.totalCount = 0,
+    this.totalPages = 0,
   });
 
-  factory PagingInfo.fromJson(Map<String, dynamic> fromJsonPagingInfo) =>
-      _$PagingInfoFromJson(fromJsonPagingInfo);
-
+  factory PagingInfo.fromJson(Map<String, dynamic> json) => _$PagingInfoFromJson(json);
   Map<String, dynamic> toJson() => _$PagingInfoToJson(this);
 }

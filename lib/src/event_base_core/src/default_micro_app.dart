@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:khatoon_shared/index.dart';
 
+import '../micro_core.dart';
+
 class DefaultMicroApp implements MicroApp {
   @override
   void initEventListeners() {

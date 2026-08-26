@@ -1,18 +1,15 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'package:khatoon_shared/index.dart';
 
 part 'filters.g.dart';
 
 @JsonSerializable()
 class Filters {
-  List<FilterInfo>? filterInfo;
-  bool? showOnlyBookmarked;
-  List<int>? tagIdsFilter;
+  final Map<String, dynamic>? values;
 
-  Filters({this.filterInfo, this.showOnlyBookmarked, this.tagIdsFilter});
+  const Filters({
+    this.values,
+  });
 
-  factory Filters.fromJson(Map<String, dynamic> fromJsonFilters) =>
-      _$FiltersFromJson(fromJsonFilters);
-
+  factory Filters.fromJson(Map<String, dynamic> json) => _$FiltersFromJson(json);
   Map<String, dynamic> toJson() => _$FiltersToJson(this);
 }

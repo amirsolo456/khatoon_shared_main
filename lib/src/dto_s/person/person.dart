@@ -1,11 +1,8 @@
-import 'package:json_annotation/json_annotation.dart';
+import 'package:equatable/equatable.dart';
 
-part 'person.g.dart';
-
-@JsonSerializable()
-class Person {
+class Person extends Equatable {
   final int id;
-  final String personType; // "Natural" or "Legal"
+  final String personType;
   final String? firstName;
   final String? lastName;
   final String? companyName;
@@ -21,14 +18,13 @@ class Person {
   final String? province;
   final bool isActive;
   final String? notes;
-
-  @JsonKey(name: 'createdAt')
   final DateTime createdAt;
+  final DateTime? updatedAt;
+  final String? personCode;
+  final String contactType;
+  final double creditLimit;
 
-  @JsonKey(name: 'updatedAt')
-  final DateTime updatedAt;
-
-  Person({
+  const Person({
     required this.id,
     required this.personType,
     this.firstName,
@@ -44,113 +40,38 @@ class Person {
     this.postalCode,
     this.city,
     this.province,
-    this.isActive = true,
+    required this.isActive,
     this.notes,
-    DateTime? createdAt,
-    DateTime? updatedAt,
-  })  : createdAt = createdAt ?? DateTime.now(),
-        updatedAt = updatedAt ?? DateTime.now();
-
-  factory Person.fromJson(Map<String, dynamic> json) => _$PersonFromJson(json);
-
-  Map<String, dynamic> toJson() => _$PersonToJson(this);
-
-  String get name {
-    if (companyName != null && companyName!.isNotEmpty) {
-      return companyName!;
-    }
-    final first = firstName ?? '';
-    final last = lastName ?? '';
-    if (first.isEmpty && last.isEmpty) return '';
-    return '$first $last'.trim();
-  }
-
-  String? get phoneNumber => phone ?? mobile;
-
-  int get age => 0;
-
-  Person copyWith({
-    int? id,
-    String? personType,
-    String? firstName,
-    String? lastName,
-    String? companyName,
-    String? nationalId,
-    String? phone,
-    String? address,
-    bool? isActive,
-    DateTime? createdAt,
-    DateTime? updatedAt,
-  }) {
-    return Person(
-      id: id ?? this.id,
-      personType: personType ?? this.personType,
-      firstName: firstName ?? this.firstName,
-      lastName: lastName ?? this.lastName,
-      companyName: companyName ?? this.companyName,
-      nationalId: nationalId ?? this.nationalId,
-      phone: phone ?? this.phone,
-      address: address ?? this.address,
-      isActive: isActive ?? this.isActive,
-      createdAt: createdAt ?? this.createdAt,
-      updatedAt: updatedAt ?? this.updatedAt,
-    );
-  }
-}
-
-@JsonSerializable()
-class PersonModel extends Person {
-  bool isSelected;
-
-  PersonModel({
-    required super.id,
-    required super.personType,
-    super.firstName,
-    super.lastName,
-    super.companyName,
-    super.nationalId,
-    super.economicCode,
-    super.registrationNumber,
-    super.phone,
-    super.mobile,
-    super.email,
-    super.address,
-    super.postalCode,
-    super.city,
-    super.province,
-    super.isActive = true,
-    super.notes,
-    super.createdAt,
-    super.updatedAt,
-    this.isSelected = false,
+    required this.createdAt,
+    this.updatedAt,
+    this.personCode,
+    required this.contactType,
+    required this.creditLimit,
   });
 
-  factory PersonModel.fromJson(Map<String, dynamic> json) => _$PersonModelFromJson(json);
-
-  factory PersonModel.fromEntity(Person entity) {
-    return PersonModel(
-      id: entity.id,
-      personType: entity.personType,
-      firstName: entity.firstName,
-      lastName: entity.lastName,
-      companyName: entity.companyName,
-      nationalId: entity.nationalId,
-      economicCode: entity.economicCode,
-      registrationNumber: entity.registrationNumber,
-      phone: entity.phone,
-      mobile: entity.mobile,
-      email: entity.email,
-      address: entity.address,
-      postalCode: entity.postalCode,
-      city: entity.city,
-      province: entity.province,
-      isActive: entity.isActive,
-      notes: entity.notes,
-      createdAt: entity.createdAt,
-      updatedAt: entity.updatedAt,
-    );
-  }
-
   @override
-  Map<String, dynamic> toJson() => _$PersonModelToJson(this);
+  List<Object?> get props => [
+        id,
+        personType,
+        firstName,
+        lastName,
+        companyName,
+        nationalId,
+        economicCode,
+        registrationNumber,
+        phone,
+        mobile,
+        email,
+        address,
+        postalCode,
+        city,
+        province,
+        isActive,
+        notes,
+        createdAt,
+        updatedAt,
+        personCode,
+        contactType,
+        creditLimit,
+      ];
 }

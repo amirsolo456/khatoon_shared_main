@@ -8,33 +8,28 @@ part of 'animal_model.dart';
 
 AnimalModel _$AnimalModelFromJson(Map json) => AnimalModel(
   id: (json['id'] as num).toInt(),
-  name: json['name'] as String?,
   tagNumber: json['tagNumber'] as String,
+  name: json['name'] as String?,
+  type: json['type'] as String,
   breed: json['breed'] as String?,
-  type: ProductsType.fromJson(Map<String, dynamic>.from(json['type'] as Map)),
-  gender: $enumDecode(_$GenderEnumMap, json['gender']),
+  gender: json['gender'] as String,
   birthDate: json['birthDate'] == null
       ? null
       : DateTime.parse(json['birthDate'] as String),
-  purchasePrice: (json['purchasePrice'] as num?)?.toDouble(),
-  estimatedValue: (json['estimatedValue'] as num?)?.toDouble(),
-  purchaseSource: json['purchaseSource'] as String?,
-  notes: json['notes'] as String?,
-  isActive: json['isActive'] as bool? ?? true,
-  createdAt: DateTime.parse(json['createdAt'] as String),
-  updatedAt: json['updatedAt'] == null
+  purchaseDate: json['purchaseDate'] == null
       ? null
-      : DateTime.parse(json['updatedAt'] as String),
-  healthStatus: $enumDecodeNullable(
-    _$HealthStatusEnumMap,
-    json['healthStatus'],
-  ),
-  reproductionStatus:
-      $enumDecodeNullable(
-        _$ReproductionStatusEnumMap,
-        json['reproductionStatus'],
-      ) ??
-      ReproductionStatus.notReady,
+      : DateTime.parse(json['purchaseDate'] as String),
+  purchasePrice: (json['purchasePrice'] as num?)?.toDouble(),
+  purchaseSource: json['purchaseSource'] as String?,
+  currentWeight: (json['currentWeight'] as num?)?.toDouble(),
+  color: json['color'] as String?,
+  healthStatus: json['healthStatus'] as String?,
+  reproductionStatus: json['reproductionStatus'] as String?,
+  notes: json['notes'] as String?,
+  version: (json['version'] as num).toInt(),
+  isDeleted: json['isDeleted'] as bool,
+  createdAt: DateTime.parse(json['createdAt'] as String),
+  updatedAt: DateTime.parse(json['updatedAt'] as String),
 );
 
 Map<String, dynamic> _$AnimalModelToJson(AnimalModel instance) =>
@@ -42,43 +37,20 @@ Map<String, dynamic> _$AnimalModelToJson(AnimalModel instance) =>
       'id': instance.id,
       'tagNumber': instance.tagNumber,
       'name': instance.name,
-      'type': instance.type.toJson(),
+      'type': instance.type,
       'breed': instance.breed,
-      'gender': _$GenderEnumMap[instance.gender]!,
+      'gender': instance.gender,
       'birthDate': instance.birthDate?.toIso8601String(),
+      'purchaseDate': instance.purchaseDate?.toIso8601String(),
       'purchasePrice': instance.purchasePrice,
       'purchaseSource': instance.purchaseSource,
-      'healthStatus': _$HealthStatusEnumMap[instance.healthStatus],
-      'reproductionStatus':
-          _$ReproductionStatusEnumMap[instance.reproductionStatus],
-      'estimatedValue': instance.estimatedValue,
+      'currentWeight': instance.currentWeight,
+      'color': instance.color,
+      'healthStatus': instance.healthStatus,
+      'reproductionStatus': instance.reproductionStatus,
       'notes': instance.notes,
+      'version': instance.version,
+      'isDeleted': instance.isDeleted,
       'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt?.toIso8601String(),
-      'isActive': instance.isActive,
+      'updatedAt': instance.updatedAt.toIso8601String(),
     };
-
-const _$GenderEnumMap = {
-  Gender.male: 'male',
-  Gender.female: 'female',
-  Gender.other: 'other',
-};
-
-const _$HealthStatusEnumMap = {
-  HealthStatus.excellent: 'excellent',
-  HealthStatus.good: 'good',
-  HealthStatus.average: 'average',
-  HealthStatus.recovering: 'recovering',
-  HealthStatus.underTreatment: 'underTreatment',
-  HealthStatus.critical: 'critical',
-  HealthStatus.unknown: 'unknown',
-};
-
-const _$ReproductionStatusEnumMap = {
-  ReproductionStatus.pregnant: 'pregnant',
-  ReproductionStatus.readyForPregnancy: 'readyForPregnancy',
-  ReproductionStatus.recentlyGaveBirth: 'recentlyGaveBirth',
-  ReproductionStatus.notReady: 'notReady',
-  ReproductionStatus.infertile: 'infertile',
-  ReproductionStatus.unknown: 'unknown',
-};

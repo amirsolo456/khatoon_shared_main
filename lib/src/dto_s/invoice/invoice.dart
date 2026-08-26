@@ -1,151 +1,173 @@
-import 'package:json_annotation/json_annotation.dart';
-import 'package:khatoon_shared/index.dart';
+import 'package:equatable/equatable.dart';
 
-part 'invoice.g.dart';
-
-@JsonSerializable()
-class Invoice {
+class Invoice extends Equatable {
   final int id;
-
-  @JsonKey(name: 'invoiceNo')
   final String invoiceNo;
-
-  @JsonKey(defaultValue: 'Sale')
   final String type;
-
-  @JsonKey(name: 'personId')
-  final int? personId;
-
-  @JsonKey(name: 'sellerEmployeeId')
-  final int? sellerEmployeeId;
-
-  @JsonKey(name: 'totalAmount')
   final double totalAmount;
-
   final String status;
   final String? notes;
   final bool isDeleted;
-  final bool? isPaid;
-
-  @JsonKey(fromJson: dateTimeFromJson, toJson: dateTimeToJson)
   final DateTime createdAt;
-
-  @JsonKey(fromJson: dateTimeFromJson, toJson: dateTimeToJson)
   final DateTime updatedAt;
-
-  @JsonKey(defaultValue: 1.0)
   final double version;
-
+  final int? personId;
   final bool isMultiShipment;
   final bool isMultiSettlement;
+  final int idSal;
+  final String? lastChangeDate;
+  final int changeUser;
+  final String idSanad;
+  final int? miz;
+  final double kalaBuyPrice;
+  final int idAnbar;
+  final int idSandogh;
+  final int idSandoghType;
+  final int idTarafType;
+  final int idTarafTahator;
+  final bool isSavedFinal;
+  final bool isTasviehDate;
+  final bool? isTasviehFaktor;
+  final int karmozdFrosh;
+  final double mabBed;
+  final double mabCheck;
+  final double mabDarSad;
+  final double mabFish;
+  final double mabFrosh;
+  final double? mabFroshCalNaghd;
+  final double mabHarGhest;
+  final double? mabKarMozd;
+  final double mabKart;
+  final double mabNaghd;
+  final double? mabTahator;
+  final double maliat1;
+  final double maliat1Darsad;
+  final int stateMaliat;
+  final double takhfif;
+  final double takhfifDarsad;
+  final double takhfifKala;
+  final bool takhfifKala2;
+  final double takhfif1;
+  final String? takhfifOnvan;
+  final int tasvieCheck;
+  final String tasviehDate;
+  final int? tasviehRozSum;
+  final double? tasviehMab;
+  final int tasvieType;
+  final String? tel;
 
-  // روابط (Navigation Properties)
-  @JsonKey(name: 'person')
-  final Person? person;
-
-  @JsonKey(name: 'sellerEmployee')
-  final Person? sellerEmployee;
-
-  @JsonKey(name: 'paymentAllocations', defaultValue: [])
-  final List<PaymentAllocations> paymentAllocations;
-
-  @JsonKey(name: 'invoiceLines', defaultValue: [])
-  final List<InvoiceLine> invoiceLines;
-
-  @JsonKey(name: 'payments', defaultValue: [])
-  final List<Payment> payments;
-
-  @JsonKey(name: 'orders', defaultValue: [])
-  final List<Order> orders;
-
-  @JsonKey(name: 'shipmentRequests', defaultValue: [])
-  final List<ShipmentRequest> shipmentRequests;
-
-  @JsonKey(name: 'idSal', defaultValue: 0)
-  final int iDSal;
-
-  Invoice({
+  const Invoice({
     required this.id,
-    required this.iDSal,
-    this.invoiceNo = '',
-    this.type = 'Sale',
-    this.personId,
-    this.sellerEmployeeId,
-    this.totalAmount = 0.0,
-    this.status = '',
+    required this.invoiceNo,
+    required this.type,
+    required this.totalAmount,
+    required this.status,
     this.notes,
-    this.isDeleted = false,
-    this.isPaid = false,
-    DateTime? createdAt,
-    DateTime? updatedAt,
-    this.version = 1.0,
-    this.isMultiShipment = false,
-    this.isMultiSettlement = false,
-    this.person,
-    this.sellerEmployee,
-    this.paymentAllocations = const [],
-    this.invoiceLines = const [],
-    this.payments = const [],
-    this.orders = const [],
-    this.shipmentRequests = const [],
-  })  : createdAt = createdAt ?? DateTime.now(),
-        updatedAt = updatedAt ?? DateTime.now();
+    required this.isDeleted,
+    required this.createdAt,
+    required this.updatedAt,
+    required this.version,
+    this.personId,
+    required this.isMultiShipment,
+    required this.isMultiSettlement,
+    required this.idSal,
+    this.lastChangeDate,
+    required this.changeUser,
+    required this.idSanad,
+    this.miz,
+    required this.kalaBuyPrice,
+    required this.idAnbar,
+    required this.idSandogh,
+    required this.idSandoghType,
+    required this.idTarafType,
+    required this.idTarafTahator,
+    required this.isSavedFinal,
+    required this.isTasviehDate,
+    this.isTasviehFaktor,
+    required this.karmozdFrosh,
+    required this.mabBed,
+    required this.mabCheck,
+    required this.mabDarSad,
+    required this.mabFish,
+    required this.mabFrosh,
+    this.mabFroshCalNaghd,
+    required this.mabHarGhest,
+    this.mabKarMozd,
+    required this.mabKart,
+    required this.mabNaghd,
+    this.mabTahator,
+    required this.maliat1,
+    required this.maliat1Darsad,
+    required this.stateMaliat,
+    required this.takhfif,
+    required this.takhfifDarsad,
+    required this.takhfifKala,
+    required this.takhfifKala2,
+    required this.takhfif1,
+    this.takhfifOnvan,
+    required this.tasvieCheck,
+    required this.tasviehDate,
+    this.tasviehRozSum,
+    this.tasviehMab,
+    required this.tasvieType,
+    this.tel,
+  });
 
-  factory Invoice.fromJson(Map<String, dynamic> json) => _$InvoiceFromJson(json);
-  Map<String, dynamic> toJson() => _$InvoiceToJson(this);
-
-
-  Invoice copyWith({
-    int? id,
-    int? iDSal,
-    String? invoiceNo,
-    String? type,
-    int? personId,
-    int? sellerEmployeeId,
-    double? totalAmount,
-    String? status,
-    String? notes,
-    bool? isDeleted,
-    DateTime? createdAt,
-    DateTime? updatedAt,
-    double? version,
-    bool? isMultiShipment,
-    bool? isMultiSettlement,
-    Person? person,
-    Person? sellerEmployee,
-    List<PaymentAllocations>? paymentAllocations,
-    List<InvoiceLine>? invoiceLines,
-    List<Payment>? payments,
-    List<Order>? orders,
-    List<ShipmentRequest>? shipmentRequests,
-  }) {
-    return Invoice(
-      id: id ?? this.id,
-      iDSal: iDSal ?? this.iDSal,
-      invoiceNo: invoiceNo ?? this.invoiceNo,
-      type: type ?? this.type,
-      personId: personId ?? this.personId,
-      sellerEmployeeId: sellerEmployeeId ?? this.sellerEmployeeId,
-      totalAmount: totalAmount ?? this.totalAmount,
-      status: status ?? this.status,
-      notes: notes ?? this.notes,
-      isDeleted: isDeleted ?? this.isDeleted,
-      createdAt: createdAt ?? this.createdAt,
-      updatedAt: updatedAt ?? this.updatedAt,
-      version: version ?? this.version,
-      isMultiShipment: isMultiShipment ?? this.isMultiShipment,
-      isMultiSettlement: isMultiSettlement ?? this.isMultiSettlement,
-      person: person ?? this.person,
-      sellerEmployee: sellerEmployee ?? this.sellerEmployee,
-      paymentAllocations: paymentAllocations ?? this.paymentAllocations,
-      invoiceLines: invoiceLines ?? this.invoiceLines,
-      payments: payments ?? this.payments,
-      orders: orders ?? this.orders,
-      shipmentRequests: shipmentRequests ?? this.shipmentRequests,
-    );
-  }
-
-  // توابع کمکی برای تبدیل DateTime
-  static DateTime dateTimeFromJson(String date) => DateTime.parse(date).toLocal();
-  static String dateTimeToJson(DateTime date) => date.toUtc().toIso8601String();
+  @override
+  List<Object?> get props => [
+        id,
+        invoiceNo,
+        type,
+        totalAmount,
+        status,
+        notes,
+        isDeleted,
+        createdAt,
+        updatedAt,
+        version,
+        personId,
+        isMultiShipment,
+        isMultiSettlement,
+        idSal,
+        lastChangeDate,
+        changeUser,
+        idSanad,
+        miz,
+        kalaBuyPrice,
+        idAnbar,
+        idSandogh,
+        idSandoghType,
+        idTarafType,
+        idTarafTahator,
+        isSavedFinal,
+        isTasviehDate,
+        isTasviehFaktor,
+        karmozdFrosh,
+        mabBed,
+        mabCheck,
+        mabDarSad,
+        mabFish,
+        mabFrosh,
+        mabFroshCalNaghd,
+        mabHarGhest,
+        mabKarMozd,
+        mabKart,
+        mabNaghd,
+        mabTahator,
+        maliat1,
+        maliat1Darsad,
+        stateMaliat,
+        takhfif,
+        takhfifDarsad,
+        takhfifKala,
+        takhfifKala2,
+        takhfif1,
+        takhfifOnvan,
+        tasvieCheck,
+        tasviehDate,
+        tasviehRozSum,
+        tasviehMab,
+        tasvieType,
+        tel,
+      ];
 }
